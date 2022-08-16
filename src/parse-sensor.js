@@ -3,7 +3,8 @@ const { default: Abck } = require("abck");
 
 const keys = {
     '-1,2,-94,-100,': 'key_ver',
-    '-1,2,-94,-101,': 'browser_info',
+    '-1,2,-94,-131,': 'browser_info',
+    '-1,2,-94,-101,': 'pua',
     '-1,2,-94,-105,': 'events',
     '-1,2,-94,-102,': 'informinfo',
     '-1,2,-94,-108,': 'forminfo',
@@ -52,13 +53,17 @@ function parse_sensor(sensor_data) {
     let previous_key_index = 0;
     for (let key in keys) {
 
-        let sensor_variable = sensor_data.substring(previous_key_index, sensor_data.indexOf(key, previous_key_index));
-        previous_key_index = sensor_data.indexOf(key, previous_key_index) + key.length;
+        const key_value = keys[key];
+        console.debug(`parse key: ${key_value}`);
 
-        parsed_sensor[keys[key]] = sensor_variable;
+        const key_index = sensor_data.indexOf(key, previous_key_index);
+        let sensor_variable = sensor_data.substring(previous_key_index, key_index);
+        previous_key_index = key_index + key.length;
+
+        parsed_sensor[key_value] = sensor_variable;
         if (sensor_variable == "") continue;
 
-        switch (keys[key]) {
+        switch (key_value) {
             case "browser_info":
                 const bd = (sensor_variable.match(/cpen(.*?)x12\:(\d+)/g,""))[0];
                 const bd_values = ["cpen", "i1", "dm", "cwen", "non", "opc", "fc", "sc", "wrc", "isc", "vib", "bat", "x11", "x12"];
@@ -280,6 +285,7 @@ function prettyPrint(parsed_sensor) {
         "loc": "bmak.loc (always empty)",
         "nav_perm":"bmak.nav_perm",
         "brv": "bmak.brv",
+        "pua": "bmak.pua",
     };
     Object.keys(browser_info).forEach(value => {
         let val = parsed_sensor[value];

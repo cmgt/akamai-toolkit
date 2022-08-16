@@ -82,22 +82,30 @@ async function ternary2if() {
     });
 }
 
-async function sensorParsing() {
-    rl.question('Paste sensor_data here: ', (sensor) => {
-        if (sensor == "") { rl.close(); return; }
+async function sensorParsing(sensor) {
+    if (sensor === true) {
+        rl.question('Paste sensor_data here: ', (sensor) => {
+            if (sensor == "") { rl.close(); return; }
 
-        try {
-            const missing_values = parse_sensor(sensor)
-            
-            if (missing_values.length) console.log(chalk.red.bold("\nMalformed sensor_data"));
-            missing_values.forEach(missing_value => {
-                console.log(chalk.red.underline("Missing value: " + missing_value));
-            });
-        }
-        catch { console.log(chalk.red.underline("Malformed sensor_data")); }
+            sensorParsingImp(sensor);
 
-        rl.close();
-    });
+                rl.close();
+            });        
+    } else if (sensor) {
+        sensorParsingImp(sensor);
+    }
+}
+
+function sensorParsingImp(sensor) {
+    try {
+        const missing_values = parse_sensor(sensor)
+        
+        if (missing_values.length) console.log(chalk.red.bold("\nMalformed sensor_data"));
+        missing_values.forEach(missing_value => {
+            console.log(chalk.red.underline("Missing value: " + missing_value));
+        });
+    }
+    catch { console.log(chalk.red.underline("Malformed sensor_data")); }
 }
 
 async function runPuppetter(config_file) {

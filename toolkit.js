@@ -12,7 +12,7 @@ async function main() {
     .option('-v, --version-check [url]', "Checks current Akamai version on a large set of Akamai-protected websites")
     .option('-c, --custom-script <config_file>', "Prompts a Puppeteer-controlled Chromium instance for script behavior analysis")
     .option('-t, --ternary', "Turns a ternary expression to a regular if-statement")
-    .option('-p, --parse', "Parses and check sensor_data")
+    .option('-p, --parse [sensor]', "Parses and check sensor_data")
     .option('-s, --source <url>', "deobfuscate the Akamai script from file source")
     .option('-h, --help', "Displays list of available parameters")
 
@@ -33,7 +33,7 @@ async function main() {
 
     else if (options.customScript) await runPuppetter(options.customScript);
 
-    else if (options.parse) sensorParsing();
+    else if (options.parse) sensorParsing(options.parse);
 
     else if (options.help) program.help();
 
