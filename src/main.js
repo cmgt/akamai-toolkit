@@ -1,6 +1,7 @@
 const fs = require('fs');
 const chalk = require('chalk');
 const beautify = require('js-beautify')
+const path = require('path');
 
 const readline = require('readline');
 const rl = readline.createInterface({
@@ -16,11 +17,11 @@ const { startPuppeteer, getPuppetteerConfigFromFile } = require('./browser');
 
 const config = require('../config.json');
 
-async function saveDeofbfuscatedFile(target) {
+async function saveDeofbfuscatedFile({target, source}) {
 
     if (!target.includes("http")) target = "https://" + target;
 
-    const script_obf = (await fetchAkamaiScript(target));
+    const script_obf = source ? {script: fs.readFileSync(path.join(__dirname, '/../in', source), 'utf8'), endpoint: target} : (await fetchAkamaiScript(target));
 
     if (!script_obf) {
         console.log(chalk.red.underline("Could not fetch Akamai script on target"));

@@ -13,13 +13,16 @@ async function main() {
     .option('-c, --custom-script <config_file>', "Prompts a Puppeteer-controlled Chromium instance for script behavior analysis")
     .option('-t, --ternary', "Turns a ternary expression to a regular if-statement")
     .option('-p, --parse', "Parses and check sensor_data")
+    .option('-s, --source <url>', "deobfuscate the Akamai script from file source")
     .option('-h, --help', "Displays list of available parameters")
 
     program.parse();
 
     const options = program.opts();
+
+    console.debug(options);
     
-    if (options.deobfuscate) await saveDeofbfuscatedFile(options.deobfuscate);
+    if (options.deobfuscate) await saveDeofbfuscatedFile({target: options.deobfuscate, source: options.source});
 
     else if (options.versionCheck) {
         if (options.versionCheck === true) { await checkVersions(); process.exit(0); }
