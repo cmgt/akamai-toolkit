@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\toolkit.js",
-            "args": ["-d", "https://www.overstock.com/", "-s", "akamai-overstock.js"]
+            // "args": ["-d", "https://www.overstock.com/", "-s", "akamai-overstock.js"]
         }
     ]
 }

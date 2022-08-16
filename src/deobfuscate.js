@@ -16,7 +16,7 @@ function deobfuscate(source) {
             // Find the variable with the identifier name "_ac". 
             // This holds all of the function & property names
             // so that it can be used as a lookup table.
-            const functionNameMap = path.node.declarations.find(d => d.id.name === "_ac");
+            const functionNameMap = path.node.declarations.find(d => d.id.name && d.id.name.startsWith("_ac"));
 
             if(functionNameMap) {
                 // copy all of the values into a copy of the array
@@ -34,7 +34,7 @@ function deobfuscate(source) {
             // replace it with the value retrieved from the _ac array.
             // e.g.
             // change document[_ac[183]] to document["activeElement"]
-            if(path.node.object.name === "_ac") {
+            if(path.node.object.name && path.node.object.name.startsWith("_ac")) {
                 path.replaceWith(t.stringLiteral(acArray[path.node.property.value]));
             }
         }
