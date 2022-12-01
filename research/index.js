@@ -4,7 +4,7 @@ const putout = require('putout');
 const fs = require('node:fs');
 const path = require('node:path');
 
-const source = fs.readFileSync(path.join(__dirname, 'akamai_sephora.js'), {encoding:'utf8'});
+const source = fs.readFileSync(path.join(__dirname, 'out.js'), {encoding:'utf8'});
 
 const res = putout(source, {
     plugins: [
@@ -13,14 +13,14 @@ const res = putout(source, {
         // 'remove-unreachable-code',
         // 'remove-nested-blocks'
         //'remove-useless-escape',
-        //'convert-apply-to-spread',
+        'convert-apply-to-spread',
         //'convert-arguments-to-rest',
         //'convert-to-arrow-function',
         //'convert-quotes-to-backticks',
         //'math/apply-exponentiation',
         //'math/apply-numeric-separators'
 
-        ['convert-jsfuck', require('./putout-plugins/putout-plugin-convert-jsfuck.js')],
+        //['convert-jsfuck', require('./putout-plugins/putout-plugin-convert-jsfuck.js')],
         //['convert-string', require('./putout-plugins/putout-plugin-convert-string.js')],
     ]
 });
