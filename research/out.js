@@ -337,9 +337,9 @@
         }
     };
     var UG = function() {
-        return ["\x6c\x65\x6e\x67\x74\x68", "\x41\x72\x72\x61\x79", "\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72", "\x6e\x75\x6d\x62\x65\x72", "\x61\x70\x70\x6c\x79", "\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65", "\x53\x74\x72\x69\x6e\x67", "\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74"];
+        return ['length', 'Array', 'constructor', 'number', 'apply', 'fromCharCode', 'String', 'charCodeAt'];
     };
-    function JwT(a, b, c) {
+    function indexOf(a, b, c) {
         return a.indexOf(b, c);
     }
     var dG = function(AG, LG) {
@@ -3813,7 +3813,7 @@
                 break;
             case Xf:
                 {
-                    mw = UG();
+                    mw = UG(); //['length', 'Array', 'constructor', 'number', 'apply', 'fromCharCode', 'String', 'charCodeAt']
                     K8();
                     qf();
                     k8();
@@ -6966,7 +6966,7 @@
     var dw = function(vFT) {
         return ~vFT;
     };
-    function XwT(a) {
+    function toString(a) {
         return a.toString();
     }
     var xFT = function() {
@@ -7113,14 +7113,14 @@
     var nb;
     var dFT;
     var kq;
-    function dfT(LfT, KwT, cfT) {
-        var pfT = JwT(LfT, "0x" + cfT);
-        var sfT = JwT(LfT, ';', pfT);
-        var qfT = pfT + xwT(cfT) + 3;
-        var HfT = nwT(LfT, qfT, sfT - qfT);
-        var twT = nwT(LfT, 0, pfT);
-        var TwT = nwT(LfT, sfT + 1);
-        var NwT = twT + TwT + typeof tT[KwT];
+    function dfT(functionSource, functionName, hash) {
+        var pfT = indexOf(functionSource, "0x" + hash);
+        var sfT = indexOf(functionSource, ';', pfT);
+        var qfT = pfT + xwT(hash) + 3;
+        var HfT = nwT(functionSource, qfT, sfT - qfT);
+        var twT = nwT(functionSource, 0, pfT);
+        var TwT = nwT(functionSource, sfT + 1);
+        var NwT = twT + TwT + typeof tT[functionName];
         var RwT = AfT(NwT, 784336);
         return HfT - RwT;
     }
@@ -7169,7 +7169,7 @@
     var Nj;
     var ms;
     function nT() {
-        JT = dfT(XwT(LLmjLYkgdy), "LLmjLYkgdy", "\x33\x39\x37\x34\x65\x37\x61");
+        JT = dfT(toString(LLmjLYkgdy), "LLmjLYkgdy", "3974e7a");
     }
     var Rp;
     var XW;
