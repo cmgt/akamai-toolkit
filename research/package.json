@@ -9,8 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@putout/plugin-convert-quotes-to-backticks": "^2.1.0",
-    "@putout/plugin-convert-to-arrow-function": "^3.0.0",
     "putout": "^28.0.1"
   }
 }
