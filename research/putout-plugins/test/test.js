@@ -1,5 +1,7 @@
 const evalExpr = require('../putout-plugin-evaluate-expression');
-const test = require('@putout/test')(__dirname, {
+const {createTest} = require('@putout/test');
+
+const test = createTest(__dirname, {
     'evaluate-expression': evalExpr,
 });
 
@@ -11,6 +13,11 @@ test('evaluate-expression: report', (t) => {
 
 // statement should be removed so result is empty
 test('evaluate-expression: transformCode', (t) => {
-    t.transform('../../out.js');
+    t.transformCode(`
+    function IfT() {
+        wJ = 4 + 10 + 6 * 10 * 10,
+        jx = 1 + 8 * 10 + 6 * 10 * 10;
+}
+    `);
     t.end();
 });
