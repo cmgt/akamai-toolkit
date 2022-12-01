@@ -13,7 +13,7 @@ const res = putout(source, {
         // 'remove-unreachable-code',
         // 'remove-nested-blocks'
         //'remove-useless-escape',
-        'convert-apply-to-spread',
+        //'convert-apply-to-spread',
         //'convert-arguments-to-rest',
         //'convert-to-arrow-function',
         //'convert-quotes-to-backticks',
