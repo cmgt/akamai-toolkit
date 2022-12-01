@@ -8,9 +8,9 @@ const source = fs.readFileSync(path.join(__dirname, 'out.js'), {encoding:'utf8'}
 
 const res = putout(source, {
     plugins: [
-        // 'remove-unused-variables',
-        // 'remove-unused-expressions',
-        // 'remove-unreachable-code',
+         'remove-unused-variables',
+         'remove-unused-expressions',
+         'remove-unreachable-code',
         // 'remove-nested-blocks'
         //'remove-useless-escape',
         //'convert-apply-to-spread',
