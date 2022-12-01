@@ -3104,8 +3104,7 @@
     };
     var not = function(j8) {
         return !j8;
-    };
-    var 5, 2, 8, 9, 1, 7, 6, 0, 3, 4, 10;
+    };    
     var cw = function(P8) {
         return -P8;
     };

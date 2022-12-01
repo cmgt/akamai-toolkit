@@ -7,6 +7,7 @@ const path = require('node:path');
 const source = fs.readFileSync(path.join(__dirname, 'out.js'), {encoding:'utf8'});
 
 const res = putout(source, {
+    rulesdir: 'rules',
     plugins: [
          //'remove-unused-variables',
          //'remove-unused-expressions',
@@ -25,4 +26,6 @@ const res = putout(source, {
     ]
 });
 
-fs.writeFileSync(path.join(__dirname, 'out.js'), res.code, {encoding: 'utf8'});
+console.debug('stop');
+
+//fs.writeFileSync(path.join(__dirname, 'out.js'), res.code, {encoding: 'utf8'});
