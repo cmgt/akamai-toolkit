@@ -1,4 +1,4 @@
-var wJ, jX;
+var wJ, jX, nx;
 
 function IfT() {
     wJ = 614,
@@ -8,8 +8,15 @@ function IfT() {
 function IfT1() {
     wJ = 614,
     jx = 681,
-    nx = 43,
-    HX = 281;
+    nx = 43;
+    var HX = 281;
     
-    console.log(614);
+    console.log(wJ);
+
+    for (HX; HX != nx; HX) {
+        switch (HX) {
+        case jx:
+            break;
+        }
+    }
 }
