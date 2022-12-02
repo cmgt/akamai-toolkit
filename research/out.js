@@ -40,7 +40,7 @@
                 {
                     Rw = 624;
                     //zw = 3
-                    if (equals1(typeof Mw, funcArray[zw])) {
+                    if (typeof Mw === funcArray[zw]) {
                         Mw = Yw;
                     }
                     var Ew = [] + [];
@@ -439,13 +439,13 @@
                             }
                             return sW;
                         }
-                        if (equals1(MC[funcArray[Gw]], windowObj[funcArray[Xw]])) {
+                        if (MC[funcArray[Gw]] === windowObj[funcArray[Xw]]) {
                             var EC = PG[mC[MC[ww]][ww]];
                             var JC = HG(58, [Lb, YC + Hf[Hf.length - 1] - scriptConst, IO, MC[Xw], QC, EC]);
                             sW += JC;
                             MC = MC[ww];
                             QC -= nC(4, [JC]);
-                        } else if (equals1(mC[MC][funcArray[Gw]], windowObj[funcArray[Xw]])) {
+                        } else if (mC[MC][funcArray[Gw]] === windowObj[funcArray[Xw]]) {
                             var EC = PG[mC[MC][ww]];
                             var JC = HG.call(null, 58, [1, YC + Hf[Hf.length - 1] - scriptConst, sb, 0, QC, EC]);
                             sW += JC;
@@ -486,7 +486,7 @@
                     var QC = TW[4];
                     var mC = TW[5];
                     tW += 220;
-                    if (equals1(typeof mC, funcArray[zw])) {
+                    if (typeof mC === funcArray[zw]) {
                         mC = zC;
                     }
                 }
@@ -796,7 +796,7 @@
                 break;
             case 67:
                 {
-                    if (equals1(typeof Y0[E0], TT.R9(...[1, EO, Xb]) + [][[]]) || J0[ww] < n0) {
+                    if (typeof Y0[E0] === TT.R9(...[1, EO, Xb]) + [][[]] || J0[ww] < n0) {
                         Y0[E0] = n0;
                         J0[ww] = n0 + sD[ww];
                         var v0 = WD(51, [TT[TT.m9(Ib, x0)].call(M0)]);
@@ -3138,13 +3138,13 @@
                             }
                             return Np;
                         }
-                        if (equals1(H8[funcArray[Gw]], windowObj[funcArray[Xw]])) {
+                        if (H8[funcArray[Gw]] === windowObj[funcArray[Xw]]) {
                             var Kp = Zp[tp[H8[ww]][ww]];
                             var kp = l8(16, [w0, Rp + Hf[Hf.length - 1] - scriptConst, Kp, q8, VO, H8[Xw]]);
                             Np += kp;
                             H8 = H8[ww];
                             q8 -= nC(34, [kp]);
-                        } else if (equals1(tp[H8][funcArray[Gw]], windowObj[funcArray[Xw]])) {
+                        } else if (tp[H8][funcArray[Gw]] === windowObj[funcArray[Xw]]) {
                             var Kp = Zp[tp[H8][ww]];
                             var kp = l8(16, [zO, Rp + Hf[Hf.length - 1] - scriptConst, Kp, q8, nh, 0]);
                             Np += kp;
@@ -3267,13 +3267,13 @@
                             }
                             return Ap;
                         }
-                        if (equals1(Ip[funcArray[Gw]], windowObj[funcArray[Xw]])) {
+                        if (Ip[funcArray[Gw]] === windowObj[funcArray[Xw]]) {
                             var cp = pp[Up[Ip[ww]][ww]];
                             var sp = l8(...[18, [Ip[Xw], Lp + Hf[Hf.length - 1] - scriptConst, Bp, LO, cp]]);
                             Ap += sp;
                             Ip = Ip[ww];
                             Bp -= nC(42, [sp]);
-                        } else if (equals1(Up[Ip][funcArray[Gw]], windowObj[funcArray[Xw]])) {
+                        } else if (Up[Ip][funcArray[Gw]] === windowObj[funcArray[Xw]]) {
                             var cp = pp[Up[Ip][ww]];
                             var sp = l8(18, [0, Lp + Hf[Hf.length - 1] - scriptConst, Bp, 1, cp]);
                             Ap += sp;
@@ -3313,7 +3313,7 @@
                 break;
             case 538:
                 {
-                    if (equals1(typeof Hp, funcArray[zw])) {
+                    if (typeof Hp === funcArray[zw]) {
                         Hp = Ts;
                     }
                     var Wp = [] + [];
@@ -3325,7 +3325,7 @@
                 {
                     B8 = 495;
                     var Ks = I8[4];
-                    if (equals1(typeof Zs, funcArray[zw])) {
+                    if (typeof Zs === funcArray[zw]) {
                         Zs = Cp;
                     }
                     var rp = [] + [];
@@ -3341,7 +3341,7 @@
             case 148:
                 {
                     var Up = I8[4];
-                    if (equals1(typeof Up, funcArray[zw])) {
+                    if (typeof Up === funcArray[zw]) {
                         Up = dp;
                     }
                     var Ap = [] + [];
@@ -3361,7 +3361,7 @@
                     var tp = I8[2];
                     var q8 = I8[3];
                     var H8 = I8[5];
-                    if (equals1(typeof tp, funcArray[zw])) {
+                    if (typeof tp === funcArray[zw]) {
                         tp = Tp;
                     }
                     B8 = 445;
@@ -3418,13 +3418,13 @@
                             }
                             return rp;
                         }
-                        if (equals1(bs[funcArray[Gw]], windowObj[funcArray[Xw]])) {
+                        if (bs[funcArray[Gw]] === windowObj[funcArray[Xw]]) {
                             var Gs = ms[Zs[bs[ww]][ww]];
                             var Ws = l8(54, [ks + Hf[Hf.length - 1] - scriptConst, w0, Gs, bs[Xw], Ks]);
                             rp += Ws;
                             bs = bs[ww];
                             Ks -= nC(46, [Ws]);
-                        } else if (equals1(Zs[bs][funcArray[Gw]], windowObj[funcArray[Xw]])) {
+                        } else if (Zs[bs][funcArray[Gw]] === windowObj[funcArray[Xw]]) {
                             var Gs = ms[Zs[bs][ww]];
                             var Ws = l8(...[54, [ks + Hf[Hf.length - 1] - scriptConst, Tj, Gs, 0, Ks]]);
                             rp += Ws;
@@ -3488,13 +3488,13 @@
                             }
                             return Wp;
                         }
-                        if (equals1(qs[funcArray[Gw]], windowObj[funcArray[Xw]])) {
+                        if (qs[funcArray[Gw]] === windowObj[funcArray[Xw]]) {
                             var Hs = ps[Hp[qs[ww]][ww]];
                             var t5 = l8(...[584, [ss, sO, Hs, qs[Xw], Ns + Hf[Hf.length - 1] - scriptConst]]);
                             Wp += t5;
                             qs = qs[ww];
                             ss -= nC(52, [t5]);
-                        } else if (equals1(Hp[qs][funcArray[Gw]], windowObj[funcArray[Xw]])) {
+                        } else if (Hp[qs][funcArray[Gw]] === windowObj[funcArray[Xw]]) {
                             var Hs = ps[Hp[qs][ww]];
                             var t5 = l8.call(null, 584, [ss, EO, Hs, 0, Ns + Hf[Hf.length - 1] - scriptConst]);
                             Wp += t5;
@@ -3719,7 +3719,7 @@
                         return jW.apply(this, [223, arguments]);
                     }(['i', 'h', 'ih', '5h', '5U', '5Uh', '5ic', 'M', '5', '5Kc', '$', '5Y', 'ii', 'iM', 'Mi$M$Ymi$U', 'OcOOYhm', 'MiOiYYc', 'YUUcU', 'Y', 'c'], mO));
                     sD = Cw(38, [['chhhhh', 'Mh$UPhhhhhh', '5', 'h', '$', '5Y', 'c', 'm', '5M', 'iM', 'c5', 'ci', 'OOOOOOO', 'mmmmmmm', '5hh', '5KM', 'iU', 'Mi$M$Ymi$Y', '$$$$$$', 'i', 'M', '5m', '5$', 'ic', 'cYKU', 'YUUcU', 'YUm$c', 'MiOiYYc', 'Mi$M$Ymi$U', 'OcOOYhm', 'U', 'MhYMiUY', '5h', 'ih', 'cKc', '5Kc'], 0]);
-                    if (equals1(typeof TT[TT.m9(...[Ib, rO])], TT.z9(mO, -UA, PO))) {
+                    if (typeof TT[TT.m9(...[Ib, rO])] === TT.z9(mO, -UA, PO)) {
                         TT[TT.m9.call(null, Ib, rO)] = windowObj[TT.Y9(...[dA, IO, zw])][TT.E9(nj, -AA)][TT.J9(db, -LA, dj, xO)];
                     }
                     J0 = [];
@@ -3946,7 +3946,7 @@
                                   , PtT = GD(22, [htT, tO])
                                   , gtT = windowObj[TT.O9(wj, -Ib, false)][TT.I1(...[lO, Oh, tb, MO])][TT.cZ(gO, Xh, pO, pb)](/\\|"/g, TT.R9(1, Td, true))
                                   , StT = ((TT.R9(1, Td, pw))[TT.pZ(vO, -XU, DO, Fb)](0, TT.hZ.call(null, EO, -Id, kO, Ib)))[TT.pZ.call(null, kO, -XU, ZO, Fb)](0);
-                                !BtT[TT.U1(sb, -RA)] && (equals1(0, 1) || 0 > 0) && (BtT = windowObj[TT.RZ(pw, RO, -MO)][TT.wT(Fb, jO, C4, -xI, C0, XO)](BtT, UtT(), Nq(8, [TT.U1(...[sb, -RA]), 1])));
+                                !BtT[TT.U1(sb, -RA)] && (0 === 1 || 0 > 0) && (BtT = windowObj[TT.RZ(pw, RO, -MO)][TT.wT(Fb, jO, C4, -xI, C0, XO)](BtT, UtT(), Nq(8, [TT.U1(...[sb, -RA]), 1])));
                                 var dtT = AtT(function LtT() {
                                     return [0, 0, 0, 0];
                                 }(), tO)
@@ -3968,7 +3968,7 @@
                                   , fTT = ETT[Xw]
                                   , wTT = ETT[Gw]
                                   , OTT = ETT[zw]
-                                  , bTT = sum(sum(sum(HtT, tTT), 0), WTT) + TTT + NTT
+                                  , bTT = sum(HtT, tTT) + 0 + WTT + TTT + NTT
                                   , CTT = GD(22, [DTT, TO, windowObj[TT.CZ(dO, bB)].bmak[TT.PQ(...[TO, Qd, jO, DP])]])
                                   , jTT = function PTT() {
                                     return function hTT(gTT) {
@@ -3986,7 +3986,7 @@
                                     try {
                                         var dTT = Hf.slice();
                                         var ATT;
-                                        return ATT = sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(windowObj[TT.NN.call(null, Ib, Lb, YO, wA, bO)](windowObj[TT.LZ(Tj, sj, 0)][TT.p1(...[pO, fd, tb, db])]), windowObj[TT.NN.call(null, Ib, wO, Ib, wA, bO)](windowObj[TT.LZ(Tj, sj, false)][TT.s1(bj, qw, VP)]) << 1), windowObj[TT.NN(Ib, Tj, UO, wA, bO)](windowObj[TT.LZ(Tj, sj, tG)][TT.QR(...[Ib, cb, pj, zO, ZO, pw])]) << Gw), windowObj[TT.NN(...[Ib, tO, TO, wA, bO])](windowObj[TT.LZ(...[Tj, sj, sb])][TT.q1(zO, MA, KO, cA)]) << zw), windowObj[TT.NN(Ib, false, bj, wA, bO)](windowObj[TT.lZ(FO, EO, DA)][TT.H1(FO, Pl, SO, fG)]) << tO), windowObj[TT.NN(...[Ib, Ib, C0, wA, bO])](windowObj[TT.LZ(Tj, sj, 0)][TT.tM(Ph, 0)]) << TO), windowObj[TT.NN(Ib, 1, DP, wA, bO)](windowObj[TT.LZ.call(null, Tj, sj, HD)][TT.TM(...[zO, zg])]) << XO), windowObj[TT.NN(Ib, 1, Gw, wA, bO)](windowObj[TT.LZ.call(null, Tj, sj, pw)][TT.DN(...[gC, vP, tO, 0, Hw])]) << bO), windowObj[TT.NN.call(null, Ib, xG, BO, wA, bO)](windowObj[TT.LZ(Tj, sj, 0)][TT.MR(WO, pb, EO, mL, xO, GO)]) << qw), windowObj[TT.NN(Ib, pO, MO, wA, bO)](windowObj[TT.LZ.call(null, Tj, sj, fG)][TT.NM(w0, Wh, BO, BO)]) << pw), windowObj[TT.NN(Ib, fd, tG, wA, bO)](windowObj[TT.LZ(Tj, sj, MO)][TT.RM(OS, RU)]) << NO), windowObj[TT.NN(Ib, kO, xG, wA, bO)](windowObj[TT.LZ(...[Tj, sj, true])][TT.KM.call(null, Hb, FU, PO, WL)]) << RO), windowObj[TT.NN.call(null, Ib, false, pb, wA, bO)](windowObj[TT.LZ(Tj, sj, 1)][TT.ZM.call(null, DP, JS, GO, OO)]) << xO), windowObj[TT.NN(Ib, 1, vP, wA, bO)](windowObj[TT.LZ.call(null, Tj, sj, wj)][TT.kM(...[vP, RO, pO])]) << Lw), windowObj[TT.NN(...[Ib, pb, nh, wA, bO])](windowObj[TT.LZ.call(null, Tj, sj, UO)][TT.rM(...[XO, E6, QO, XG])]) << sw), windowObj[TT.NN(Ib, false, c0, wA, bO)](windowObj[TT.LZ(...[Tj, sj, OO])][TT.QM(fG, -bO, NG)]) << BO), windowObj[TT.NN(Ib, Gw, NG, wA, bO)](windowObj[TT.LZ(Tj, sj, Hb)][TT.MM(...[ZO, Ld, pO])]) << TT[TT.mM(...[fI, Ch, nO])]()), windowObj[TT.NN(Ib, C0, Dj, wA, bO)](windowObj[TT.LZ(...[Tj, sj, gO])][TT.zM(nO, Ph, 0, MO)]) << sD[IO]), windowObj[TT.NN.call(null, Ib, 0, pw, wA, bO)](windowObj[TT.LZ(Tj, sj, BO)][TT.YM(MO, OA, false)]) << Aw), windowObj[TT.NN(Ib, vP, jO, wA, bO)](windowObj[TT.LZ(Tj, sj, JO)][TT.mR(1, HD, 1, kO, Lw, fO)]) << sD[UO]), windowObj[TT.NN(...[Ib, LO, XG, wA, bO])](windowObj[TT.LZ(...[Tj, sj, bj])][TT.EM.call(null, qO, Ud, vO)]) << mO), windowObj[TT.NN(...[Ib, RO, SO, wA, bO])](windowObj[TT.LZ(Tj, sj, w0)][TT.JM(XU, r0, Hb)]) << IO), windowObj[TT.NN(...[Ib, gC, KO, wA, bO])](windowObj[TT.LZ(Tj, sj, XO)][TT.zR(UO, DO, QO, NI, fD)]) << TT[TT.nM(XU, wL, rO, UO)]()) + (windowObj[TT.NN(Ib, fG, TG, wA, bO)](windowObj[TT.YR(hO, cO, TO, zO, XO, BO)][TT.sZ(pb, CL, TG)]) << sD[Fb]) + (windowObj[TT.NN(Ib, 0, Aw, wA, bO)](windowObj[TT.lZ(FO, XO, DA)][TT.ER(dO, true, Bd, gC, 0, TO)]) << TT[TT.vM(H4, Sc)]()),
+                                        return ATT = sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(windowObj[TT.NN.call(null, Ib, Lb, YO, wA, bO)](windowObj[TT.LZ(Tj, sj, 0)][TT.p1(...[pO, fd, tb, db])]), windowObj[TT.NN.call(null, Ib, wO, Ib, wA, bO)](windowObj[TT.LZ(Tj, sj, false)][TT.s1(bj, qw, VP)]) << 1), windowObj[TT.NN(Ib, Tj, UO, wA, bO)](windowObj[TT.LZ(Tj, sj, tG)][TT.QR(...[Ib, cb, pj, zO, ZO, pw])]) << Gw), windowObj[TT.NN(...[Ib, tO, TO, wA, bO])](windowObj[TT.LZ(...[Tj, sj, sb])][TT.q1(zO, MA, KO, cA)]) << zw), windowObj[TT.NN(Ib, false, bj, wA, bO)](windowObj[TT.lZ(FO, EO, DA)][TT.H1(FO, Pl, SO, fG)]) << tO), windowObj[TT.NN(...[Ib, Ib, C0, wA, bO])](windowObj[TT.LZ(Tj, sj, 0)][TT.tM(Ph, 0)]) << TO), windowObj[TT.NN(Ib, 1, DP, wA, bO)](windowObj[TT.LZ.call(null, Tj, sj, HD)][TT.TM(...[zO, zg])]) << XO), windowObj[TT.NN(Ib, 1, Gw, wA, bO)](windowObj[TT.LZ.call(null, Tj, sj, pw)][TT.DN(...[gC, vP, tO, 0, Hw])]) << bO), windowObj[TT.NN.call(null, Ib, xG, BO, wA, bO)](windowObj[TT.LZ(Tj, sj, 0)][TT.MR(WO, pb, EO, mL, xO, GO)]) << qw), windowObj[TT.NN(Ib, pO, MO, wA, bO)](windowObj[TT.LZ.call(null, Tj, sj, fG)][TT.NM(w0, Wh, BO, BO)]) << pw), windowObj[TT.NN(Ib, fd, tG, wA, bO)](windowObj[TT.LZ(Tj, sj, MO)][TT.RM(OS, RU)]) << NO), windowObj[TT.NN(Ib, kO, xG, wA, bO)](windowObj[TT.LZ(...[Tj, sj, true])][TT.KM.call(null, Hb, FU, PO, WL)]) << RO), windowObj[TT.NN.call(null, Ib, false, pb, wA, bO)](windowObj[TT.LZ(Tj, sj, 1)][TT.ZM.call(null, DP, JS, GO, OO)]) << xO), windowObj[TT.NN(Ib, 1, vP, wA, bO)](windowObj[TT.LZ.call(null, Tj, sj, wj)][TT.kM(...[vP, RO, pO])]) << Lw), windowObj[TT.NN(...[Ib, pb, nh, wA, bO])](windowObj[TT.LZ.call(null, Tj, sj, UO)][TT.rM(...[XO, E6, QO, XG])]) << sw), windowObj[TT.NN(Ib, false, c0, wA, bO)](windowObj[TT.LZ(...[Tj, sj, OO])][TT.QM(fG, -bO, NG)]) << BO), windowObj[TT.NN(Ib, Gw, NG, wA, bO)](windowObj[TT.LZ(Tj, sj, Hb)][TT.MM(...[ZO, Ld, pO])]) << TT[TT.mM(...[fI, Ch, nO])]()), windowObj[TT.NN(Ib, C0, Dj, wA, bO)](windowObj[TT.LZ(...[Tj, sj, gO])][TT.zM(nO, Ph, 0, MO)]) << sD[IO]), windowObj[TT.NN.call(null, Ib, 0, pw, wA, bO)](windowObj[TT.LZ(Tj, sj, BO)][TT.YM(MO, OA, false)]) << Aw), windowObj[TT.NN(Ib, vP, jO, wA, bO)](windowObj[TT.LZ(Tj, sj, JO)][TT.mR(1, HD, 1, kO, Lw, fO)]) << sD[UO]), windowObj[TT.NN(...[Ib, LO, XG, wA, bO])](windowObj[TT.LZ(...[Tj, sj, bj])][TT.EM.call(null, qO, Ud, vO)]) << mO) + (windowObj[TT.NN(...[Ib, RO, SO, wA, bO])](windowObj[TT.LZ(Tj, sj, w0)][TT.JM(XU, r0, Hb)]) << IO) + (windowObj[TT.NN(...[Ib, gC, KO, wA, bO])](windowObj[TT.LZ(Tj, sj, XO)][TT.zR(UO, DO, QO, NI, fD)]) << TT[TT.nM(XU, wL, rO, UO)]()) + (windowObj[TT.NN(Ib, fG, TG, wA, bO)](windowObj[TT.YR(hO, cO, TO, zO, XO, BO)][TT.sZ(pb, CL, TG)]) << sD[Fb]) + (windowObj[TT.NN(Ib, 0, Aw, wA, bO)](windowObj[TT.lZ(FO, XO, DA)][TT.ER(dO, true, Bd, gC, 0, TO)]) << TT[TT.vM(H4, Sc)]()),
                                         Hf.pop(),
                                         ATT;
                                     } catch {
@@ -4002,24 +4002,24 @@
                                   , RNT = (TT.R9(...[1, Td, FO]))[TT.pZ(lj, -XU, BO, Fb)](GD(22, [HTT, 0, BtT[TT.Lk(...[ND, jL, RG, XG])]]));
                                 windowObj[TT.CZ(dO, bB)].bmak[TT.JR(PL, -Ab, pw, sb, pb)] && (GD(22, [KNT, XO]),
                                 ZNT()),
-                                !kNT && (equals1(0, 1) || 0 > 0) && (!function rNT() {
+                                !kNT && (0 === 1 || 0 > 0) && (!function rNT() {
                                     Hf.push(Xl);
-                                    var QNT = [TT.XM(lU, rP), TT.FM(OO, xI, -Lj), TT.nR.call(null, w0, -Fl, MO, Aw, 0, HL), TT.fM(hL, 0), TT.vR(Ib, -Fj, xO, wO, rO), TT.wM.call(null, tG, pA, pb, TO), TT.xR(sb, -fl, Lb, pw, gO, mO), TT.XR(...[GO, LO, 0, -hd, !not({}), TO]), TT.OM(...[bl, gL]), TT.bM(...[gC, cc, 1, ND]), TT.FR.call(null, -wl, IO, sj, Td, Hw), TT.GM(...[lO, nO, j4]), TT.fR(sw, tO, C0, -Ol, qw, sw), TT.wR(DO, -Bd, nO, gC, XO, Fb)];
+                                    var QNT = [TT.XM(lU, rP), TT.FM(OO, xI, -Lj), TT.nR.call(null, w0, -Fl, MO, Aw, 0, HL), TT.fM(hL, 0), TT.vR(Ib, -Fj, xO, wO, rO), TT.wM.call(null, tG, pA, pb, TO), TT.xR(sb, -fl, Lb, pw, gO, mO), TT.XR(...[GO, LO, 0, -hd, !!{}, TO]), TT.OM(...[bl, gL]), TT.bM(...[gC, cc, 1, ND]), TT.FR.call(null, -wl, IO, sj, Td, Hw), TT.GM(...[lO, nO, j4]), TT.fR(sw, tO, C0, -Ol, qw, sw), TT.wR(DO, -Bd, nO, gC, XO, Fb)];
                                     var MNT = windowObj[TT.O9(wj, -HD, cb)][TT.Jk(...[sb, fd, SL])](TT.WM(tb, vS, TG));
                                     MNT[TT.CM(1, PL, XG, VO)] = TT.DM(Hb, q0),
                                     MNT[TT.Xk.call(null, DO, p0)][TT.jM(ZD, zw, cO)] = TT.PM.call(null, UO, -WO, 0);
                                     var mNT = TT.R9(...[1, hL, 0]);
                                     var zNT = (windowObj[TT.O9.call(null, wj, -HD, DO)][TT.hM.call(null, TO, EO, zO)](TT.gM(YL, bg, cb)))[sD[zw]];
-                                    zNT ? (QNT[TT.JN(bO, !not([]), zw, RS, -bl)](function(ENT) {
+                                    zNT ? (QNT[TT.JN(bO, !![], zw, RS, -bl)](function(ENT) {
                                         Hf.push(A6);
-                                        MNT[TT.Xk.call(null, DO, -L6)][TT.SM(fO, NI, RO, !not(1))] = ENT,
+                                        MNT[TT.Xk.call(null, DO, -L6)][TT.SM(fO, NI, RO, !!1)] = ENT,
                                         zNT[TT.O7(zw, -XU, GO, QO)](MNT),
-                                        mNT += (((TT.R9(1, -vB, gO))[TT.pZ.call(null, !not(0), -c6, tG, Fb)](ENT, TT.x9(XU, -SI, QO, wh)))[TT.pZ.call(null, zO, -c6, RD, Fb)](MNT[TT.OR.call(null, -p6, false, tb, VL, RO)], TT.hZ(EO, -QL, sb, XG)))[TT.pZ.call(null, GO, -c6, g0, Fb)](MNT[TT.VM(xI, FS, !not([]))], TT.dk(nh, -AI, ND)),
+                                        mNT += (((TT.R9(1, -vB, gO))[TT.pZ.call(null, !!0, -c6, tG, Fb)](ENT, TT.x9(XU, -SI, QO, wh)))[TT.pZ.call(null, zO, -c6, RD, Fb)](MNT[TT.OR.call(null, -p6, false, tb, VL, RO)], TT.hZ(EO, -QL, sb, XG)))[TT.pZ.call(null, GO, -c6, g0, Fb)](MNT[TT.VM(xI, FS, !![])], TT.dk(nh, -AI, ND)),
                                         zNT[TT.lM.call(null, sw, xV, TG, Xb)](MNT);
                                         Hf.pop();
                                     }),
                                     YNT = ztT(GH(mNT))) : YNT = TT.R9.call(null, 1, hL, xI);
-                                    nNT = TT.BM(Tj, vh, QO, p0) in windowObj[TT.CZ.call(null, dO, Ug)] && U4(0) !== windowObj[TT.CZ(dO, Ug)][TT.BM(...[false, vh, qw, p0])] ? windowObj[TT.CZ(dO, Ug)][TT.BM(!not([]), vh, AO, p0)] : -sD[Gw];
+                                    nNT = TT.BM(Tj, vh, QO, p0) in windowObj[TT.CZ.call(null, dO, Ug)] && U4(0) !== windowObj[TT.CZ(dO, Ug)][TT.BM(...[false, vh, qw, p0])] ? windowObj[TT.CZ(dO, Ug)][TT.BM(!![], vh, AO, p0)] : -sD[Gw];
                                     Hf.pop();
                                 }(),
                                 GD(22, [KtT, bO]),
@@ -4095,11 +4095,11 @@
                                   , bRT = FRT + fRT(wRT, FRT);
                                 ORT = YH() - ORT;
                                 var GRT = JtT || WRT();
-                                if (equals1(GRT[ww], CRT) || equals1(GRT[Xw], DRT)) {
+                                if (GRT[ww] === CRT || GRT[Xw] === DRT) {
                                     var jRT = TT.wm.call(null, QO, LO, WI);
                                     YRT = -TT[TT.qQ(...[fO, vI, dj, Ib])]() !== YRT[TT.F9(RO, Hc, rO, tb)]((TT.Xm(hO, bI, 0))[TT.pZ(...[0, -XU, tb, Fb])](xtT)) ? YRT[TT.cZ(...[ND, Xh, Fb, pb])]((TT.Xm(hO, bI, bO))[TT.pZ(pO, -XU, 0, Fb)](xtT), ((TT.Xm(hO, bI, 0))[TT.pZ(1, -XU, CO, Fb)](xtT))[TT.pZ(...[tw, -XU, VO, Fb])](jRT)) : ((((TT.R9(1, Td, cO))[TT.pZ(VO, -XU, 0, Fb)](YRT))[TT.pZ(OO, -XU, tb, Fb)](xtT, TT.Xm(hO, bI, true)))[TT.pZ(zO, -XU, Lb, Fb)](xtT))[TT.pZ(g0, -XU, kO, Fb)](jRT);
                                 }
-                                YRT = sum(sum(Gw, xtT), Gw) + xtT + (YRT = sum(sum(sum(sum(bRT, PRT), xtT), kO ^ GD(22, [HTT, 0, YRT])), xtT) + YRT);
+                                YRT = Gw + xtT + Gw + xtT + (YRT = sum(sum(bRT, PRT), xtT) + (kO ^ GD(22, [HTT, 0, YRT])) + xtT + YRT);
                                 var hRT = YH();
                                 YRT = function gRT(SRT, VRT) {
                                     Hf.push(q6);
@@ -4136,7 +4136,7 @@
                                     var TKT = TT.R9(1, -mU, true);
                                     if (!NKT)
                                         for (qRT = 0; 0 < dA; ++qRT)
-                                            0 < DO || equals1(RG, 0) || equals1(SO, 0) || equals1(DP, 0) ? RKT[qRT] = -1 : (RKT[qRT] = NKT[TT.K9.call(null, sw, -bd, SO)],
+                                            0 < DO || RG === 0 || SO === 0 || DP === 0 ? RKT[qRT] = -1 : (RKT[qRT] = NKT[TT.K9.call(null, sw, -bd, SO)],
                                             NKT += windowObj[TT.DZ(lj, -RL)][TT.DT(...[xO, DP, DP, lg, -jS])](0));
                                     for (qRT = 0; 0 < pRT[TT.K9.call(null, sw, -bd, 0)]; ++qRT) {
                                         var KKT = sRT >> qw & TT[TT.Wm(...[G4, Wd])]();
@@ -4157,7 +4157,7 @@
                                 }(YRT, GRT[ww]),
                                 LRT = YH() - LRT;
                                 var kKT = ((((((TT.R9(1, Td, true))[TT.pZ(tb, -XU, wO, Fb)](YH() - vtT, TT.hZ(EO, -Id, 1, XO)))[TT.pZ.call(null, false, -XU, Xb, Fb)](rKT, TT.hZ(EO, -Id, XG, WO)))[TT.pZ(...[Hb, -XU, sj, Fb])](ORT, TT.hZ(EO, -Id, CO, gC)))[TT.pZ.call(null, bj, -XU, Hw, Fb)](hRT, TT.hZ(EO, -Id, RG, false)))[TT.pZ(sO, -XU, fO, Fb)](LRT, TT.hZ(...[EO, -Id, XU, gC])))[TT.pZ(...[sO, -XU, xI, Fb])](QKT);
-                                YRT = sum(sum(sum(sum(sum(TT.hR(Gw, Aw, fG, CI, -FV), GRT[ww]), MKT), GRT[Xw]), MKT), kKT) + MKT + YRT;
+                                YRT = sum(sum(sum(TT.hR(Gw, Aw, fG, CI, -FV), GRT[ww]), MKT), GRT[Xw]) + MKT + kKT + MKT + YRT;
                             } catch {
                                 Hf = XRT.slice();
                             }
@@ -4232,7 +4232,7 @@
                             Hf.push(xL);
                             try {
                                 var r9T = Hf.slice();
-                                equals1(k9T[TT.x1.call(null, VO, sj, DS)], windowObj[TT.CZ(dO, A6)]) && N9T(Z9T);
+                                k9T[TT.x1.call(null, VO, sj, DS)] === windowObj[TT.CZ(dO, A6)] && N9T(Z9T);
                             } catch {
                                 Hf = r9T.slice();
                             }
@@ -4263,7 +4263,7 @@
                                     b9T = X9T(m9T[TT.IR(xO, C0, Lw, Xd, Xb)][TT.cm(gC, O6, Fb, IO)]),
                                     G9T = X9T(m9T[TT.IR(xO, true, pb, Xd, Xb)][TT.pm(Hb, ZO, vg)]));
                                     var W9T = (((((((((((TT.R9(1, Lc, true))[TT.pZ.call(null, CO, QO, YO, Fb)](0, TT.hZ(EO, -TO, 1, PO)))[TT.pZ.call(null, rO, QO, sO, Fb)](J9T, TT.hZ(...[EO, -TO, 1, 1])))[TT.pZ(PO, QO, Hb, Fb)](n9T, TT.hZ(EO, -TO, QO, WO)))[TT.pZ(0, QO, sw, Fb)](v9T, TT.hZ.call(null, EO, -TO, ND, WO)))[TT.pZ(XO, QO, RO, Fb)](x9T, TT.hZ(...[EO, -TO, bO, Xb])))[TT.pZ(gO, QO, vP, Fb)](F9T, TT.hZ(EO, -TO, Tj, zO)))[TT.pZ(VO, QO, lO, Fb)](f9T, TT.hZ(EO, -TO, Fb, Hw)))[TT.pZ(1, QO, HO, Fb)](w9T, TT.hZ(...[EO, -TO, Aw, 1])))[TT.pZ(...[qw, QO, 1, Fb])](O9T, TT.hZ.call(null, EO, -TO, wO, vP)))[TT.pZ(...[EO, QO, 1, Fb])](b9T, TT.hZ(EO, -TO, r0, sj)))[TT.pZ(CO, QO, IO, Fb)](G9T);
-                                    U4(sD[zw]) !== m9T[TT.cQ(tG, b6, 1)] && equals1(0, m9T[TT.cQ(tG, b6, DP)]) && (W9T = (TT.R9(1, Lc, TO))[TT.pZ(cO, QO, 1, Fb)](W9T, TT.pQ.call(null, LO, rl, true))),
+                                    U4(sD[zw]) !== m9T[TT.cQ(tG, b6, 1)] && 0 === m9T[TT.cQ(tG, b6, DP)] && (W9T = (TT.R9(1, Lc, TO))[TT.pZ(cO, QO, 1, Fb)](W9T, TT.pQ.call(null, LO, rl, true))),
                                     NRT = (TT.R9(1, Lc, 1))[TT.pZ(...[pO, QO, RD, Fb])](NRT + W9T, TT.dk.call(null, nh, DV, vP)),
                                     sTT += J9T,
                                     WTT = WTT + 0 + J9T,
@@ -4289,7 +4289,7 @@
                                       , I9T = X9T(h9T[TT.cm(Ub, -hA, bj, IO)])
                                       , U9T = X9T(h9T[TT.pm(...[Hb, wO, DA])])
                                       , d9T = (((((TT.R9(1, -Qh, 1))[TT.pZ(...[nh, -Xc, false, Fb])](0, TT.hZ(EO, -Mh, 1, HD)))[TT.pZ(fd, -Xc, SO, Fb)](l9T, TT.hZ(EO, -Mh, cb, Dj)))[TT.pZ(ND, -Xc, LO, Fb)](B9T, TT.hZ.call(null, EO, -Mh, 1, RG)))[TT.pZ(false, -Xc, kO, Fb)](I9T, TT.hZ(...[EO, -Mh, FO, PO])))[TT.pZ(false, -Xc, true, Fb)](U9T);
-                                    U4(0) !== h9T[TT.cQ(tG, -dA, Hw)] && equals1(!sD[Gw], h9T[TT.cQ(tG, -dA, 0)]) && (d9T = (TT.R9(...[1, -Qh, AO]))[TT.pZ.call(null, AO, -Xc, RD, Fb)](d9T, TT.pQ(LO, jV, NG))),
+                                    U4(0) !== h9T[TT.cQ(tG, -dA, Hw)] && !sD[Gw] === h9T[TT.cQ(tG, -dA, 0)] && (d9T = (TT.R9(...[1, -Qh, AO]))[TT.pZ.call(null, AO, -Xc, RD, Fb)](d9T, TT.pQ(LO, jV, NG))),
                                     RRT = (TT.R9.call(null, 1, -Qh, ND))[TT.pZ(tb, -Xc, QO, Fb)](RRT + d9T, TT.dk(nh, -fG, IO)),
                                     sTT += l9T,
                                     GTT = 0 + l9T,
@@ -4520,7 +4520,7 @@
                                     GkT = 0;
                                 }
                                 var ckT;
-                                return ckT = sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(sum(WkT, CkT << 1), DkT << Gw), jkT << TT[TT.NY(XU, Lc, cb, WS)]()), PkT << tO), hkT << TO), gkT << XO), SkT << bO), 0 << qw), 0 << sD[tO]), VkT << NO), lkT << RO) + (BkT << xO) + (IkT << Lw),
+                                return ckT = sum(sum(sum(sum(sum(sum(sum(sum(sum(WkT, CkT << 1), DkT << Gw), jkT << TT[TT.NY(XU, Lc, cb, WS)]()), PkT << tO), hkT << TO), gkT << XO), SkT << bO), 0 << qw), 0 << sD[tO]) + (VkT << NO) + (lkT << RO) + (BkT << xO) + (IkT << Lw),
                                 Hf.pop(),
                                 ckT;
                             }(), TT.hZ.call(null, EO, -Ph, vO, bj)))[TT.pZ(...[vO, -tG, EO, Fb])](JkT, TT.hZ(...[EO, -Ph, XU, Lb])))[TT.pZ.call(null, BO, -tG, true, Fb)](nkT, TT.hZ(EO, -Ph, nj, false)))[TT.pZ(...[PO, -tG, false, Fb])](vkT, TT.hZ(EO, -Ph, xO, xG)))[TT.pZ(...[Aw, -tG, true, Fb])](xkT, TT.hZ(EO, -Ph, WO, Ub)))[TT.pZ(1, -tG, 1, Fb)](XkT, TT.hZ(EO, -Ph, true, 1)))[TT.pZ(Ib, -tG, true, Fb)](FkT, TT.hZ(EO, -Ph, MO, bO)))[TT.pZ.call(null, CO, -tG, 1, Fb)](fkT, TT.hZ(EO, -Ph, g0, PO)))[TT.pZ(r0, -tG, tb, Fb)](QkT, TT.hZ.call(null, EO, -Ph, XO, C0)))[TT.pZ.call(null, fO, -tG, fO, Fb)](pkT, TT.hZ(...[EO, -Ph, Hb, Gw])))[TT.pZ(0, -tG, DO, Fb)](VZT, TT.hZ(EO, -Ph, HO, Fb)))[TT.pZ(qw, -tG, xO, Fb)](lZT, TT.hZ(...[EO, -Ph, nh, wj])))[TT.pZ(BO, -tG, Ib, Fb)](BZT, TT.hZ.call(null, EO, -Ph, hO, hO)))[TT.pZ(...[0, -tG, wO, Fb])](IZT, TT.hZ(EO, -Ph, XG, EO)))[TT.pZ(1, -tG, XO, Fb)](dZT, TT.hZ(EO, -Ph, qb, true)))[TT.pZ(fO, -tG, nO, Fb)](UZT, TT.hZ(EO, -Ph, qb, 0)))[TT.pZ(1, -tG, Lb, Fb)](AZT, TT.hZ.call(null, EO, -Ph, 1, nO)))[TT.pZ.call(null, CO, -tG, VO, Fb)](function skT() {
@@ -4621,7 +4621,7 @@
                             sNT = function GrT() {
                                 Hf.push(Nl);
                                 var WrT;
-                                return WrT = windowObj[TT.CZ(dO, Jl)][TT.f2(RO, t0, pb, WO)] ? TT.CN(Gw, tO, nh, FS, xO) : equals1(U4(0), windowObj[TT.CZ(dO, Jl)][TT.bK(Ib, xO, BO, rO, WO)]) ? TT.dK.call(null, NG, NV) : TT.C7(Ab, Fj, Gw, lI),
+                                return WrT = windowObj[TT.CZ(dO, Jl)][TT.f2(RO, t0, pb, WO)] ? TT.CN(Gw, tO, nh, FS, xO) : U4(0) === windowObj[TT.CZ(dO, Jl)][TT.bK(Ib, xO, BO, rO, WO)] ? TT.dK.call(null, NG, NV) : TT.C7(Ab, Fj, Gw, lI),
                                 Hf.pop(),
                                 WrT;
                             }(),
@@ -4657,7 +4657,7 @@
                                 return drT = windowObj[TT.CZ(dO, zB)][TT.F7(...[RO, Dj, wA])] && windowObj[TT.CZ(dO, zB)][TT.F7(RO, false, wA)][TT.I2.call(null, bl, -RD, wj)] && windowObj[TT.CZ(dO, zB)][TT.F7(...[RO, 1, wA])][TT.I2(bl, -RD, nO)][TT.U2(bj, LD)] && windowObj[TT.CZ(...[dO, zB])][TT.F7.call(null, RO, wj, wA)][TT.I2(bl, -RD, UO)][TT.d2(bO, sd, dO, tG)] && TT.XZ.call(null, pb, MA, SO, HO) == typeof windowObj[TT.CZ(dO, zB)][TT.F7(RO, FO, wA)][TT.I2.call(null, bl, -RD, Lb)][TT.U2(bj, LD)] && TT.XZ(pb, MA, db, HD) == typeof windowObj[TT.CZ(dO, zB)][TT.F7.call(null, RO, 0, wA)][TT.I2(bl, -RD, Lb)][TT.U2(bj, LD)] ? (function ArT() {
                                     Hf.push(Ud);
                                     var LrT;
-                                    return LrT = !((TT.E9(nj, Jd) in windowObj[TT.CZ(dO, qd)][TT.F7(RO, !not([]), jA)][TT.I2(...[bl, Rc, zw])][TT.U2(bj, vg)] || TT.E9(nj, Jd) in windowObj[TT.CZ(dO, qd)][TT.F7(...[RO, HD, jA])][TT.I2(bl, Rc, r0)][TT.d2(...[bO, U6, nO, PO])])),
+                                    return LrT = !((TT.E9(nj, Jd) in windowObj[TT.CZ(dO, qd)][TT.F7(RO, !![], jA)][TT.I2(...[bl, Rc, zw])][TT.U2(bj, vg)] || TT.E9(nj, Jd) in windowObj[TT.CZ(dO, qd)][TT.F7(...[RO, HD, jA])][TT.I2(bl, Rc, r0)][TT.d2(...[bO, U6, nO, PO])])),
                                     Hf.pop(),
                                     LrT;
                                 }() && function crT() {
@@ -4673,7 +4673,7 @@
                                     } catch (qrT) {
                                         Hf = prT.slice();
                                         var HrT;
-                                        return HrT = equals1(TT.FZ.call(null, IO, -bU, PO, E4), qrT[TT.h9(Aw, -qL, pO)][TT.GZ.call(null, rO, -Ic, false, bj)]),
+                                        return HrT = TT.FZ.call(null, IO, -bU, PO, E4) === qrT[TT.h9(Aw, -qL, pO)][TT.GZ.call(null, rO, -Ic, false, bj)],
                                         Hf.pop(),
                                         HrT;
                                     }
@@ -4929,7 +4929,7 @@
                                                 Hf.push(IV);
                                                 var C1T = vRT();
                                                 var D1T;
-                                                return D1T = ~C1T[TT.F9(RO, -Dj, tb, 1)](TT.zk(...[pw, -UV, GO, XU])) && (~C1T[TT.F9(RO, -Dj, XO, sw)](TT.BT.call(null, -dV, ZO, NO, vV, TO)) || ~C1T[TT.F9(...[RO, -Dj, zw, Ab])](TT.Yk(EO, Cl, tb)) || ~C1T[TT.F9(RO, -Dj, 1, tb)](TT.Ek(...[!not(0), -AV, C0, PO]))),
+                                                return D1T = ~C1T[TT.F9(RO, -Dj, tb, 1)](TT.zk(...[pw, -UV, GO, XU])) && (~C1T[TT.F9(RO, -Dj, XO, sw)](TT.BT.call(null, -dV, ZO, NO, vV, TO)) || ~C1T[TT.F9(...[RO, -Dj, zw, Ab])](TT.Yk(EO, Cl, tb)) || ~C1T[TT.F9(RO, -Dj, 1, tb)](TT.Ek(...[!!0, -AV, C0, PO]))),
                                                 Hf.pop(),
                                                 D1T;
                                             }()) {
@@ -5007,7 +5007,7 @@
                         function p1T() {
                             Hf.push(Sc);
                             var kMT = [TT.pk(...[CO, TG, -Lb]), TT.qk.call(null, FO, UO, 1), TT.Hk(...[p0, mV, 0]), TT.sT(zw, wj, Xh, -sO, g0, BO), TT.tr.call(null, rO, YO, true), TT.Tr(...[BO, xI, JO]), TT.Nr(...[SO, zV, bj, sO]), TT.Rr(sw, Hb, sh), TT.Kr.call(null, nj, DO, Fd), TT.Zr(...[KO, wO, qh]), TT.kr.call(null, cA, cd), TT.rr(BO, HP, 1, sO), TT.Qr(...[Tj, Hh, cO, r0]), TT.qT(ZO, -MO, vO, xG, RG, RD), TT.Mr(JO, wO, -Vc), TT.mr(mO, tg), TT.HT.call(null, -ZO, bO, pO, j6, sw), TT.zr(xI, Tg), TT.Yr(kO, XS), TT.Er(RD, Ng, tb, xG), TT.Jr.call(null, BO, -xO), TT.tN.call(null, bj, dj, xO, -Fb, BO, db), TT.nr(...[fd, pA, kO, EO]), TT.vr.call(null, Fb, c0, false, WO), TT.xr(...[KU, sA]), TT.TN.call(null, -r0, 1, 1, fO, UO), TT.Xr(zO, PB, w0, RO)];
-                            if (equals1(U4(0), windowObj[TT.LZ(...[Tj, Gw, FO])][TT.Fr(LO, Jh)])) {
+                            if (U4(0) === windowObj[TT.LZ(...[Tj, Gw, FO])][TT.Fr(LO, Jh)]) {
                                 var rMT;
                                 return rMT = null,
                                 Hf.pop(),
@@ -5034,7 +5034,7 @@
                             try {
                                 var JMT = Hf.slice();
                                 var nMT;
-                                return nMT = !!windowObj[TT.CZ(dO, Ol)][TT.br(...[RG, S0, not(0)])],
+                                return nMT = !!windowObj[TT.CZ(dO, Ol)][TT.br(...[RG, S0, !0])],
                                 Hf.pop(),
                                 nMT;
                             } catch {
@@ -5051,7 +5051,7 @@
                             try {
                                 var XMT = Hf.slice();
                                 var FMT;
-                                return FMT = !!windowObj[TT.CZ(dO, -RA)][TT.Gr(not(not([])), -dc, fO, pj)],
+                                return FMT = !!windowObj[TT.CZ(dO, -RA)][TT.Gr(!![], -dc, fO, pj)],
                                 Hf.pop(),
                                 FMT;
                             } catch {
@@ -5296,14 +5296,14 @@
                                     MzT;
                                 }
                                 var zzT = (windowObj[TT.RZ(pw, false, -Md)][TT.E9(nj, -K0)][TT.J9(...[qO, -Eh, 0, xO])].call(rzT))[TT.U9(...[LO, T6, PO, Hb])](qw, -sD[Gw]);
-                                equals1(TT.RZ(pw, MO, -Md), zzT) && rzT[TT.h9(...[Aw, Ib, JO])] && (zzT = rzT[TT.h9(Aw, Ib, gO)][TT.GZ(cb, -fO, Xb, bj)]);
-                                if (equals1(TT.xN(vP, -md, MO, zw, 0, Aw), zzT) || equals1(TT.GQ(...[sO, rO, -zd]), zzT)) {
+                                TT.RZ(pw, MO, -Md) === zzT && rzT[TT.h9(...[Aw, Ib, JO])] && (zzT = rzT[TT.h9(Aw, Ib, gO)][TT.GZ(cb, -fO, Xb, bj)]);
+                                if (TT.xN(vP, -md, MO, zw, 0, Aw) === zzT || TT.GQ(...[sO, rO, -zd]) === zzT) {
                                     var YzT;
                                     return YzT = windowObj[TT.I9(...[nj, -Yd, 0, XO])][TT.WQ(...[TG, false, -hA])](rzT),
                                     Hf.pop(),
                                     YzT;
                                 }
-                                if (equals1(TT.CQ(mO, -xB, wj, KV), zzT) || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/[TT.DQ(nO, 1, true, ND)](zzT)) {
+                                if (TT.CQ(mO, -xB, wj, KV) === zzT || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/[TT.DQ(nO, 1, true, ND)](zzT)) {
                                     var EzT;
                                     return EzT = mzT(rzT, QzT),
                                     Hf.pop(),
@@ -5437,11 +5437,11 @@
                                       , OYT = vYT[TT.UQ(...[NG, qB, HD, pb])] ? Xw : sD[zw]
                                       , bYT = vYT[TT.dQ(Bg, -Gd, cb)] ? Xw : ww
                                       , GYT = vYT[TT.fN(XO, DP, SO, FO, -Vg)] ? Xw : sD[zw]
-                                      , WYT = sum(dG(qw, wYT), dG(tO, OYT)) + dG(Gw, bYT) + GYT;
+                                      , WYT = dG(qw, wYT) + dG(tO, OYT) + dG(Gw, bYT) + GYT;
                                     xYT = YH() - JYT;
                                     var CYT = q7T(null);
                                     fYT && XYT && (XYT = 0 !== fYT && sD[zw] !== XYT && fYT !== XYT ? -1 : 0 !== XYT ? XYT : fYT),
-                                    equals1(0, OYT) && equals1(0, bYT) && equals1(sD[zw], GYT) && greatOrEqual(XYT, sD[RO]) && (XYT = equals1(zw, EYT) && greatOrEqual(XYT, sD[RO]) && XYT <= Xh ? -Gw : greatOrEqual(XYT, CO) && XYT <= gO ? -zw : greatOrEqual(XYT, WL) && XYT <= TT[TT.AQ(KO, -OI, RD)]() ? -TT[TT.LQ.call(null, tw, sg)]() : -Gw),
+                                    0 === OYT && 0 === bYT && sD[zw] === GYT && greatOrEqual(XYT, sD[RO]) && (XYT = zw === EYT && greatOrEqual(XYT, sD[RO]) && XYT <= Xh ? -Gw : greatOrEqual(XYT, CO) && XYT <= gO ? -zw : greatOrEqual(XYT, WL) && XYT <= TT[TT.AQ(KO, -OI, RD)]() ? -TT[TT.LQ.call(null, tw, sg)]() : -Gw),
                                     CYT !== MYT ? (mYT = sD[zw],
                                     MYT = CYT) : mYT += 1;
                                     var DYT = function jYT(PYT) {
@@ -5455,16 +5455,16 @@
                                         }
                                         var SYT = hYT[TT.Rk(wO, Bl, Tj, 0)](TT.wN.call(null, w0, -Od, SO, tO, VO, 0));
                                         var VYT;
-                                        return VYT = equals1(1, null == SYT ? -1 : c7T(SYT)) && 1 > xO && equals1(-Gw, PYT) ? Xw : ww,
+                                        return VYT = 1 === (null == SYT ? -1 : c7T(SYT)) && 1 > xO && -Gw === PYT ? Xw : ww,
                                         Hf.pop(),
                                         VYT;
                                     }(XYT);
-                                    if (equals1(0, DYT)) {
+                                    if (0 === DYT) {
                                         var lYT = (((((((TT.R9(...[1, -JB, true]))[TT.pZ.call(null, false, -NL, false, Fb)](0, TT.hZ.call(null, EO, -tU, xO, XG)))[TT.pZ(MO, -NL, HO, Fb)](EYT, TT.hZ(EO, -tU, AO, 1)))[TT.pZ(...[sj, -NL, DO, Fb])](xYT, TT.hZ(EO, -tU, pb, DP)))[TT.pZ(...[cb, -NL, wO, Fb])](XYT, TT.hZ.call(null, EO, -tU, PO, 0)))[TT.pZ.call(null, RG, -NL, vP, Fb)](0, TT.hZ(EO, -tU, VO, DP)))[TT.pZ.call(null, fd, -NL, kO, Fb)](WYT, TT.hZ(...[EO, -tU, tG, 1])))[TT.pZ.call(null, false, -NL, lj, Fb)](CYT);
-                                        U4(TT[TT.SZ(...[nj, -qO, false, TG])]()) !== vYT[TT.cQ(tG, -fh, cO)] && equals1(0, vYT[TT.cQ(tG, -fh, xG)]) && (lYT = (TT.R9(...[1, -JB, RD]))[TT.pZ(...[XG, -NL, true, Fb])](lYT, TT.pQ(LO, L6, true))),
+                                        U4(TT[TT.SZ(...[nj, -qO, false, TG])]()) !== vYT[TT.cQ(tG, -fh, cO)] && 0 === vYT[TT.cQ(tG, -fh, xG)] && (lYT = (TT.R9(...[1, -JB, RD]))[TT.pZ(...[XG, -NL, true, Fb])](lYT, TT.pQ(LO, L6, true))),
                                         lYT = (TT.R9.call(null, 1, -JB, dO))[TT.pZ(pw, -NL, TO, Fb)](lYT, TT.dk(nh, -K0, sb)),
                                         nTT += lYT,
-                                        ctT = sum(sum(sum(sum(0, 0), EYT), xYT), XYT) + WYT + CYT;
+                                        ctT = sum(sum(0, 0), EYT) + xYT + XYT + WYT + CYT;
                                     } else
                                         FYT = 0;
                                 }
@@ -5509,9 +5509,9 @@
                                     Hf.pop(),
                                     Z2T;
                                 }
-                                !N2T || equals1(-1, N2T[TT.F9.call(null, RO, S4, tO, false)](TT.nQ.call(null, vP, pO, -zw))) || windowObj[TT.HZ(FO, qS)](windowObj[TT.sZ(pb, NS, KO)]((N2T[TT.EQ(ZO, cD, true, lO)](TT.nQ(vP, KO, -zw)))[sD[zw]], NO)) || windowObj[TT.HZ(FO, qS)](windowObj[TT.sZ(pb, NS, RD)]((N2T[TT.EQ(db, cD, HO, lO)](TT.nQ(...[vP, r0, -zw])))[Xw], NO)) ? AYT = 1 : (pYT = windowObj[TT.sZ(pb, NS, 1)]((N2T[TT.EQ.call(null, 1, cD, qb, lO)](TT.nQ(vP, gO, -zw)))[ww], NO),
+                                !N2T || -1 === N2T[TT.F9.call(null, RO, S4, tO, false)](TT.nQ.call(null, vP, pO, -zw)) || windowObj[TT.HZ(FO, qS)](windowObj[TT.sZ(pb, NS, KO)]((N2T[TT.EQ(ZO, cD, true, lO)](TT.nQ(vP, KO, -zw)))[sD[zw]], NO)) || windowObj[TT.HZ(FO, qS)](windowObj[TT.sZ(pb, NS, RD)]((N2T[TT.EQ(db, cD, HO, lO)](TT.nQ(...[vP, r0, -zw])))[Xw], NO)) ? AYT = 1 : (pYT = windowObj[TT.sZ(pb, NS, 1)]((N2T[TT.EQ.call(null, 1, cD, qb, lO)](TT.nQ(vP, gO, -zw)))[ww], NO),
                                 sYT = windowObj[TT.sZ.call(null, pb, NS, HD)]((N2T[TT.EQ(false, cD, false, lO)](TT.nQ(...[vP, 1, -zw])))[Xw], NO)),
-                                !R2T || equals1(-1, R2T[TT.F9(...[RO, S4, Ub, Xb])](TT.nQ(vP, cO, -zw))) || windowObj[TT.HZ(FO, qS)](windowObj[TT.sZ.call(null, pb, NS, dj)]((R2T[TT.EQ(false, cD, dj, lO)](TT.nQ.call(null, vP, RO, -zw)))[ww], NO)) || windowObj[TT.HZ(...[FO, qS])](windowObj[TT.sZ(pb, NS, FO)]((R2T[TT.EQ(...[pw, cD, C0, lO])](TT.nQ(...[vP, gO, -zw])))[Xw], NO)) ? AYT = 1 : (LYT = windowObj[TT.sZ(pb, NS, qb)]((R2T[TT.EQ.call(null, XU, cD, NG, lO)](TT.nQ(...[vP, Tj, -zw])))[sD[zw]], NO),
+                                !R2T || -1 === R2T[TT.F9(...[RO, S4, Ub, Xb])](TT.nQ(vP, cO, -zw)) || windowObj[TT.HZ(FO, qS)](windowObj[TT.sZ.call(null, pb, NS, dj)]((R2T[TT.EQ(false, cD, dj, lO)](TT.nQ.call(null, vP, RO, -zw)))[ww], NO)) || windowObj[TT.HZ(...[FO, qS])](windowObj[TT.sZ(pb, NS, FO)]((R2T[TT.EQ(...[pw, cD, C0, lO])](TT.nQ(...[vP, gO, -zw])))[Xw], NO)) ? AYT = 1 : (LYT = windowObj[TT.sZ(pb, NS, qb)]((R2T[TT.EQ.call(null, XU, cD, NG, lO)](TT.nQ(...[vP, Tj, -zw])))[sD[zw]], NO),
                                 cYT = windowObj[TT.sZ(pb, NS, Ib)]((R2T[TT.EQ(Hw, cD, Fb, lO)](TT.nQ(...[vP, TG, -zw])))[Xw], NO)),
                                 K2T && TT.EZ(sw, BI, fO, Fb) == typeof K2T ? qYT = K2T : (AYT = 1,
                                 qYT = K2T || qYT);
@@ -5768,7 +5768,7 @@
                                 try {
                                     var ZJT = Hf.slice();
                                     var kJT;
-                                    return kJT = windowObj[TT.LZ(Tj, -Ld, true)][TT.Fr.call(null, LO, x6)] && windowObj[TT.LZ(...[Tj, -Ld, Ub])][TT.Fr(LO, x6)][ww] && windowObj[TT.LZ.call(null, Tj, -Ld, qw)][TT.Fr(LO, x6)][ww][ww] && windowObj[TT.LZ.call(null, Tj, -Ld, true)][TT.Fr(LO, x6)][ww][ww][TT.s7(Gw, XO, BI)] ? equals1(windowObj[TT.LZ(Tj, -Ld, 1)][TT.Fr(...[LO, x6])][ww][ww][TT.s7(Gw, w0, BI)], windowObj[TT.LZ.call(null, Tj, -Ld, MO)][TT.Fr.call(null, LO, x6)][ww]) ? TT.dK(...[NG, A0]) : TT.t9(gO, dj, bV) : TT.CN.call(null, Gw, xG, kO, FS, -Qd),
+                                    return kJT = windowObj[TT.LZ(Tj, -Ld, true)][TT.Fr.call(null, LO, x6)] && windowObj[TT.LZ(...[Tj, -Ld, Ub])][TT.Fr(LO, x6)][ww] && windowObj[TT.LZ.call(null, Tj, -Ld, qw)][TT.Fr(LO, x6)][ww][ww] && windowObj[TT.LZ.call(null, Tj, -Ld, true)][TT.Fr(LO, x6)][ww][ww][TT.s7(Gw, XO, BI)] ? windowObj[TT.LZ(Tj, -Ld, 1)][TT.Fr(...[LO, x6])][ww][ww][TT.s7(Gw, w0, BI)] === windowObj[TT.LZ.call(null, Tj, -Ld, MO)][TT.Fr.call(null, LO, x6)][ww] ? TT.dK(...[NG, A0]) : TT.t9(gO, dj, bV) : TT.CN.call(null, Gw, xG, kO, FS, -Qd),
                                     Hf.pop(),
                                     kJT;
                                 } catch {
@@ -5787,7 +5787,7 @@
                                     var YJT = (windowObj[TT.lZ(FO, C0, -AA)][TT.BZ(tw, -cj, false, sb)](dG(Dc, windowObj[TT.lZ(FO, TO, -AA)][TT.IZ.call(null, r0, NG, QO, 1)]())))[TT.J9(true, -cd, RO, xO)]();
                                     var EJT;
                                     return windowObj[TT.LZ(Tj, -pd, c0)][TT.Fr.call(null, LO, -gO)][TT.q7.call(null, vP, -Z0, false, cb)] = YJT,
-                                    EJT = equals1(windowObj[TT.LZ(Tj, -pd, Lw)][TT.Fr(LO, -gO)][TT.q7(vP, -Z0, g0, true)], YJT) ? TT.dK(NG, NG) : TT.t9(gO, JO, cA),
+                                    EJT = windowObj[TT.LZ(Tj, -pd, Lw)][TT.Fr(LO, -gO)][TT.q7(vP, -Z0, g0, true)] === YJT ? TT.dK(NG, NG) : TT.t9(gO, JO, cA),
                                     Hf.pop(),
                                     EJT;
                                 } catch {
@@ -5804,7 +5804,7 @@
                                 try {
                                     var XJT = Hf.slice();
                                     var FJT;
-                                    return FJT = windowObj[TT.LZ(...[Tj, ND, 0])][TT.Fr(LO, AL)] && windowObj[TT.LZ(...[Tj, ND, xI])][TT.Fr(LO, AL)][TT[TT.SZ(vP, X6, Ib, TG)]()] ? equals1(windowObj[TT.LZ(Tj, ND, w0)][TT.Fr(LO, AL)][TT.cN(rO, Xb, Hw, Gc, tO)](sD[WO]), windowObj[TT.LZ(Tj, ND, DO)][TT.Fr(LO, AL)][ww]) ? TT.dK.call(null, NG, f6) : TT.t9(gO, JO, F6) : TT.CN(Gw, ZO, WO, FS, TO),
+                                    return FJT = windowObj[TT.LZ(...[Tj, ND, 0])][TT.Fr(LO, AL)] && windowObj[TT.LZ(...[Tj, ND, xI])][TT.Fr(LO, AL)][TT[TT.SZ(vP, X6, Ib, TG)]()] ? windowObj[TT.LZ(Tj, ND, w0)][TT.Fr(LO, AL)][TT.cN(rO, Xb, Hw, Gc, tO)](sD[WO]) === windowObj[TT.LZ(Tj, ND, DO)][TT.Fr(LO, AL)][ww] ? TT.dK.call(null, NG, f6) : TT.t9(gO, JO, F6) : TT.CN(Gw, ZO, WO, FS, TO),
                                     Hf.pop(),
                                     FJT;
                                 } catch {
@@ -5888,14 +5888,14 @@
                                     tnT;
                                 }
                                 var NnT = (windowObj[TT.RZ(pw, c0, -WU)][TT.E9.call(null, nj, -NI)][TT.J9(sO, -RI, w0, xO)].call(qJT))[TT.U9(Gw, O6, Lw, Hb)](qw, -sD[Gw]);
-                                equals1(TT.RZ(pw, Gw, -WU), NnT) && qJT[TT.h9(Aw, AO, true)] && (NnT = qJT[TT.h9(Aw, AO, xI)][TT.GZ.call(null, Lw, -LO, cO, bj)]);
-                                if (equals1(TT.xN(OO, -zP, wO, zw, ZO, Aw), NnT) || equals1(TT.GQ(sO, false, -KI), NnT)) {
+                                TT.RZ(pw, Gw, -WU) === NnT && qJT[TT.h9(Aw, AO, true)] && (NnT = qJT[TT.h9(Aw, AO, xI)][TT.GZ.call(null, Lw, -LO, cO, bj)]);
+                                if (TT.xN(OO, -zP, wO, zw, ZO, Aw) === NnT || TT.GQ(sO, false, -KI) === NnT) {
                                     var RnT;
                                     return RnT = windowObj[TT.I9(nj, -xB, lO, db)][TT.WQ(TG, w0, -ZI)](qJT),
                                     Hf.pop(),
                                     RnT;
                                 }
-                                if (equals1(TT.CQ.call(null, 1, -kI, NO, KV), NnT) || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/[TT.DQ(DO, -RO, mO, ND)](NnT)) {
+                                if (TT.CQ.call(null, 1, -kI, NO, KV) === NnT || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/[TT.DQ(DO, -RO, mO, ND)](NnT)) {
                                     var KnT;
                                     return KnT = TnT(qJT, HJT),
                                     Hf.pop(),
@@ -5973,7 +5973,7 @@
                         var rKT = TT[TT.SZ(vP, Td, zw, TG)]();
                         var QKT = ww;
                         var CZT = VMT;
-                        var YnT = equals1(TT.m1(DO, VI, xG, ND), windowObj[TT.O9(wj, -Xg, Xb)][TT.W9(pw, -qO, rO, 0)][TT.M7(WO, -AI, TG)]) ? TT.h7(sw, VU) : TT.z1(...[pw, qO, true]);
+                        var YnT = TT.m1(DO, VI, xG, ND) === windowObj[TT.O9(wj, -Xg, Xb)][TT.W9(pw, -qO, rO, 0)][TT.M7(WO, -AI, TG)] ? TT.h7(sw, VU) : TT.z1(...[pw, qO, true]);
                         var EnT = 0;
                         var DZT = !sD[Gw];
                         var mQT = 0;
@@ -6040,7 +6040,7 @@
                                     var PnT = sD[zw]
                                       , hnT = WnT
                                       , gnT = CnT;
-                                    if (equals1(1, GnT) && tYT < rYT || 1 !== GnT && 0 < QYT) {
+                                    if (1 === GnT && tYT < rYT || 1 !== GnT && 0 < QYT) {
                                         var SnT = bnT || windowObj[TT.CZ(dO, sB)][TT.lQ.call(null, c0, G4, LO, tO)]
                                           , VnT = -1
                                           , lnT = -1;
@@ -6049,14 +6049,14 @@
                                         lnT = windowObj[TT.lZ(FO, MO, 1)][TT.BZ(nj, RV, OO, sb)](SnT[TT.E1(1, 0, G6)])),
                                         PnT = YH() - DnT;
                                         var BnT = (((((TT.R9(...[1, hA, 1]))[TT.pZ(nh, -tw, 0, Fb)](0, TT.hZ.call(null, EO, -T4, C0, 0)))[TT.pZ(lj, -tw, UO, Fb)](GnT, TT.hZ(...[EO, -T4, false, fG])))[TT.pZ.call(null, QO, -tw, lj, Fb)](PnT, TT.hZ(EO, -T4, vP, IO)))[TT.pZ(...[Fb, -tw, true, Fb])](VnT, TT.hZ.call(null, EO, -T4, Fb, 1)))[TT.pZ(vP, -tw, DO, Fb)](lnT);
-                                        U4(0) !== SnT[TT.cQ(tG, q0, gC)] && equals1(!sD[Gw], SnT[TT.cQ(tG, q0, dj)]) && (BnT = (TT.R9(1, hA, UO))[TT.pZ(WO, -tw, Lw, Fb)](BnT, TT.pQ(...[LO, vd, vO]))),
+                                        U4(0) !== SnT[TT.cQ(tG, q0, gC)] && !sD[Gw] === SnT[TT.cQ(tG, q0, dj)] && (BnT = (TT.R9(1, hA, UO))[TT.pZ(WO, -tw, Lw, Fb)](BnT, TT.pQ(...[LO, vd, vO]))),
                                         xTT = (TT.R9.call(null, 1, hA, gC))[TT.pZ.call(null, c0, -tw, qO, Fb)](xTT + BnT, TT.dk(nh, Pc, NG)),
-                                        stT = sum(sum(sum(0, 0), GnT), PnT) + VnT + lnT,
+                                        stT = sum(0, 0) + GnT + PnT + VnT + lnT,
                                         hnT = sD[zw],
                                         gnT = 0;
                                     }
                                     var InT;
-                                    return equals1(sD[Gw], GnT) ? tYT++ : TYT++,
+                                    return sD[Gw] === GnT ? tYT++ : TYT++,
                                     rTT++,
                                     InT = Nq(8, [TT.sQ(true, fL, 1, IP), PnT, TT.J1(HD, Fb, YO), hnT, TT.n1(qb, QU, jO), 0]),
                                     Hf.pop(),
@@ -6069,7 +6069,7 @@
                             wnT && (V9T = wnT[TT.J1(HD, sO, fO)],
                             E9T = wnT[TT.n1(...[qb, x0, Aw])],
                             sTT += wnT[TT.sQ(nj, lV, 1, IP)],
-                            ItT && equals1(sD[Hw], fnT) && nnT < 1 && (VtT = TO,
+                            ItT && sD[Hw] === fnT && nnT < 1 && (VtT = TO,
                             GD(22, [EtT, 1]),
                             D9T(),
                             nnT++));
@@ -6082,7 +6082,7 @@
                                 try {
                                     var HnT = Hf.slice();
                                     var t3T = sD[zw];
-                                    if (equals1(1, snT) && 0 < RYT || 1 !== snT && 0 < KYT) {
+                                    if (1 === snT && 0 < RYT || 1 !== snT && 0 < KYT) {
                                         var T3T = pnT || windowObj[TT.CZ(dO, K6)][TT.lQ.call(null, false, cP, NO, tO)]
                                           , N3T = -1
                                           , R3T = -sD[Gw];
@@ -6099,13 +6099,13 @@
                                             var r3T = U4(TT[TT.SZ.call(null, VO, R4, PO, TG)]()) !== T3T[TT.X1(AV, BP)] ? T3T[TT.X1(AV, BP)] : T3T[TT.F1.call(null, C0, Kc, Hw, Ab)];
                                             null != r3T && 1 !== r3T && (k3T = ((TT.R9(...[1, TL, IO]))[TT.pZ.call(null, HD, kO, 0, Fb)](k3T, TT.hZ.call(null, EO, -wO, Hw, false)))[TT.pZ(vO, kO, Gw, Fb)](r3T));
                                         }
-                                        U4(0) !== T3T[TT.cQ(tG, N4, CO)] && equals1(0, T3T[TT.cQ(tG, N4, false)]) && (k3T = (TT.R9(1, TL, Aw))[TT.pZ.call(null, UO, kO, 1, Fb)](k3T, TT.f1(AO, cU, lj, 1))),
+                                        U4(0) !== T3T[TT.cQ(tG, N4, CO)] && 0 === T3T[TT.cQ(tG, N4, false)] && (k3T = (TT.R9(1, TL, Aw))[TT.pZ.call(null, UO, kO, 1, Fb)](k3T, TT.f1(AO, cU, lj, 1))),
                                         k3T = (TT.R9(...[1, TL, lO]))[TT.pZ(tO, kO, UO, Fb)](k3T, TT.dk(...[nh, pA, xI])),
-                                        ptT = sum(sum(sum(0, 0), snT), t3T) + N3T + R3T,
+                                        ptT = sum(0, 0) + snT + t3T + N3T + R3T,
                                         vTT += k3T;
                                     }
                                     var Q3T;
-                                    return equals1(1, snT) ? pzT++ : szT++,
+                                    return 1 === snT ? pzT++ : szT++,
                                     kTT++,
                                     Q3T = Nq(8, [TT.sQ.call(null, Tj, vB, 1, IP), t3T]),
                                     Hf.pop(),
@@ -6116,7 +6116,7 @@
                                 Hf.pop();
                             }(dnT, AnT, windowObj[TT.CZ(...[dO, E4])].bmak[TT.PQ.call(null, TO, -vP, r0, true)]);
                             LnT && (sTT += LnT[TT.sQ(...[true, -rB, IO, IP])],
-                            ItT && equals1(zw, AnT) && (VtT = 1,
+                            ItT && zw === AnT && (VtT = 1,
                             GD(22, [EtT, 1]),
                             D9T()));
                             Hf.pop();
@@ -6138,7 +6138,7 @@
                                     var f3T = Hf.slice();
                                     var w3T = ww
                                       , O3T = 0;
-                                    if (equals1(sD[Gw], X3T) && qzT < ZYT || 1 !== X3T && HzT < kYT) {
+                                    if (sD[Gw] === X3T && qzT < ZYT || 1 !== X3T && HzT < kYT) {
                                         var b3T = x3T || windowObj[TT.CZ(dO, pd)][TT.lQ(1, UV, true, tO)];
                                         if (b3T && TT.O1(bO, QO, CV) !== b3T[TT.b1(XU, Zc, 1, false)]) {
                                             O3T = 1;
@@ -6149,14 +6149,14 @@
                                             W3T = windowObj[TT.lZ(FO, true, pj)][TT.BZ(...[tw, l6, tw, sb])](b3T[TT.E1(1, c0, sA)])),
                                             w3T = YH() - F3T;
                                             var C3T = (((((TT.R9(...[1, hc, 1]))[TT.pZ(...[WO, xG, xI, Fb])](0, TT.hZ(EO, 1, zw, true)))[TT.pZ.call(null, true, xG, 1, Fb)](X3T, TT.hZ(EO, 1, fG, TG)))[TT.pZ(QO, xG, Xb, Fb)](w3T, TT.hZ(EO, 1, r0, sb)))[TT.pZ(true, xG, c0, Fb)](G3T, TT.hZ(...[EO, 1, 0, FO])))[TT.pZ(BO, xG, fO, Fb)](W3T);
-                                            U4(0) !== b3T[TT.cQ(...[tG, XL, 0])] && equals1(0, b3T[TT.cQ(tG, XL, bj)]) && (C3T = (TT.R9(1, hc, Hb))[TT.pZ(vO, xG, NG, Fb)](C3T, TT.pQ(LO, Cd, MO))),
-                                            qtT = sum(sum(sum(0, 0), X3T), w3T) + G3T + W3T,
+                                            U4(0) !== b3T[TT.cQ(...[tG, XL, 0])] && 0 === b3T[TT.cQ(tG, XL, bj)] && (C3T = (TT.R9(1, hc, Hb))[TT.pZ(vO, xG, NG, Fb)](C3T, TT.pQ(LO, Cd, MO))),
+                                            qtT = sum(0, 0) + X3T + w3T + G3T + W3T,
                                             XTT = (TT.R9(1, hc, nO))[TT.pZ(...[0, xG, 0, Fb])](XTT + C3T, TT.dk.call(null, nh, RI, Ib)),
-                                            equals1(sD[Gw], X3T) ? qzT++ : HzT++;
+                                            sD[Gw] === X3T ? qzT++ : HzT++;
                                         }
                                     }
                                     var D3T;
-                                    return equals1(1, X3T) ? qzT++ : HzT++,
+                                    return 1 === X3T ? qzT++ : HzT++,
                                     QTT++,
                                     D3T = Nq(8, [TT.sQ.call(null, xI, Md, 1, IP), w3T, TT.G1(pO, mO, Dj), 1]),
                                     Hf.pop(),
@@ -6167,7 +6167,7 @@
                                 Hf.pop();
                             }(E3T, J3T, windowObj[TT.CZ(dO, wB)].bmak[TT.PQ.call(null, TO, xd, DO, 1)]);
                             n3T && (sTT += n3T[TT.sQ(TO, -qb, false, IP)],
-                            ItT && equals1(zw, J3T) && n3T[TT.G1(pO, -mB, db)] && (VtT = Gw,
+                            ItT && zw === J3T && n3T[TT.G1(pO, -mB, db)] && (VtT = Gw,
                             GD(22, [EtT, 1]),
                             D9T()));
                             Hf.pop();
@@ -6259,7 +6259,7 @@
                         }
                         function A3T() {
                             Hf.push(jd);
-                            equals1(0, 1) && windowObj[TT.CZ(dO, XS)][TT.lm(GO, S0)] && (windowObj[TT.CZ(dO, XS)][TT.lm(...[GO, S0])](TT.sm(XU, -wh, 1, zw), P9T, 1),
+                            0 === 1 && windowObj[TT.CZ(dO, XS)][TT.lm(GO, S0)] && (windowObj[TT.CZ(dO, XS)][TT.lm(...[GO, S0])](TT.sm(XU, -wh, 1, zw), P9T, 1),
                             windowObj[TT.CZ(dO, XS)][TT.lm(GO, S0)](TT.qm(Yh, cb), M9T, 1),
                             JnT = 1),
                             V9T = sD[zw],
@@ -6276,13 +6276,13 @@
                                   , NvT = q3T[TT.Rk(...[wO, CA, Lb, vO])](TT.wN(...[SO, -N4, sw, tO, pw, 0]))
                                   , RvT = null == NvT ? -1 : c7T(NvT)
                                   , KvT = q3T[TT.Rk(...[wO, CA, FO, false])](TT.UR(xO, sj, db, Uc, -sP));
-                                c3T = null == KvT ? -1 : equals1(TT.Nz(...[VO, -lV, XU, lO]), KvT = KvT[TT.Tk.call(null, Bg, -wI)]()) ? sD[zw] : equals1(TT.dR(wj, tb, PV, -EB, ZO, Gw), KvT) ? sD[Gw] : Gw;
+                                c3T = null == KvT ? -1 : TT.Nz(...[VO, -lV, XU, lO]) === (KvT = KvT[TT.Tk.call(null, Bg, -wI)]()) ? sD[zw] : TT.dR(wj, tb, PV, -EB, ZO, Gw) === KvT ? sD[Gw] : Gw;
                                 var ZvT = q3T[TT.Rz(...[mO, Lb, hV])]
                                   , kvT = q3T[TT.P9(...[lO, tB, DO, Aw])]
                                   , rvT = ww
                                   , QvT = ww;
                                 ZvT && 0 !== ZvT[TT.K9.call(null, sw, -MI, pb)] && (QvT = sD[Gw]),
-                                !kvT || equals1(0, kvT[TT.K9(sw, -MI, xO)]) || QvT && equals1(kvT, ZvT) || (rvT = 1),
+                                !kvT || 0 === kvT[TT.K9(sw, -MI, xO)] || QvT && kvT === ZvT || (rvT = 1),
                                 Gw !== RvT && (L3T = (((((((TT.R9(1, -tG, ND))[TT.pZ(fG, -zI, HD, Fb)](L3T + RvT, TT.hZ.call(null, EO, -xB, 0, 1)))[TT.pZ(...[KO, -zI, gO, Fb])](c3T, TT.hZ(EO, -xB, hO, false)))[TT.pZ.call(null, pw, -zI, zw, Fb)](1, TT.hZ.call(null, EO, -xB, 0, zw)))[TT.pZ(nO, -zI, jO, Fb)](TvT, TT.hZ(EO, -xB, BO, qb)))[TT.pZ(db, -zI, sO, Fb)](tvT, TT.hZ.call(null, EO, -xB, tb, qO)))[TT.pZ(VO, -zI, Lb, Fb)](H3T, TT.hZ(EO, -xB, GO, 1)))[TT.pZ(0, -zI, w0, Fb)](QvT, TT.dk(...[nh, qw, c0])));
                             }
                             var MvT;
@@ -6347,7 +6347,7 @@
                             var VvT = OvT[sD[Gw]];
                             !mQT && SvT > -sD[Gw] && (P3T(),
                             mQT = 1);
-                            return equals1(-1, VvT) || 0 < VvT;
+                            return -1 === VvT || 0 < VvT;
                         }
                         function sendSensors() {
                             Hf.push(NV);
@@ -6384,7 +6384,7 @@
                                                     var HvT = (windowObj[TT.JQ(db, -GB, false)](svT))[TT.EQ.call(null, gO, -Oc, fG, lO)](TT.nQ(vP, tO, -LL));
                                                     if (HvT[TT.K9(sw, -CV, QO)] > TO) {
                                                         var txT = windowObj[TT.sZ(...[pb, BV, NG])](HvT[TO], NO);
-                                                        pvT = windowObj[TT.HZ(FO, wB)](txT) || equals1(-1, txT) ? windowObj[TT.YR(lj, -bB, 1, zO, XO, dO)][TT.s2(...[XG, ql, cO, GO])] : txT,
+                                                        pvT = windowObj[TT.HZ(FO, wB)](txT) || -1 === txT ? windowObj[TT.YR(lj, -bB, 1, zO, XO, dO)][TT.s2(...[XG, ql, cO, GO])] : txT,
                                                         pvT = txT;
                                                     }
                                                 } catch {
@@ -6413,7 +6413,7 @@
                             try {
                                 var kxT = Hf.slice();
                                 var rxT = UYT(1);
-                                if (NNT = equals1(!sD[zw], rxT[TT.HQ(...[1, wB, vP, zO])]) ? Xw : ww,
+                                if (NNT = !sD[zw] === rxT[TT.HQ(...[1, wB, vP, zO])] ? Xw : ww,
                                 GD(22, [EtT, 1, rxT[TT.bN(...[c0, -JO, gC, bO, tO, 1])]]),
                                 windowObj[TT.O9(...[wj, -wj, zw])][TT.tE(RG, BU, tG, BO)](TT.PK(0, -w0, sw, fG, xO, cO)) && ((windowObj[TT.O9.call(null, wj, -wj, pw)][TT.tE(Ab, BU, zO, BO)](TT.PK(mO, -w0, HO, fG, xO, gC)))[TT.P9(lO, Jj, IO, Aw)] = ((TT.hK(tO, -lO, Hb, w0, Gw, LO))[TT.pZ(pb, -sj, Ub, Fb)](windowObj[TT.OT(...[Cj, -w0, tO, XU, zw])](rxT[TT.AK(bj, Kc, 0)]), TT.TE(Lw, pV)))[TT.pZ.call(null, tO, -sj, FO, Fb)](windowObj[TT.OT.call(null, Cj, -w0, tO, xI, xG)](YRT))),
                                 U4(0) !== windowObj[TT.O9.call(null, wj, -wj, 0)][TT.NE(...[sb, TV, SO])](TT.PK.call(null, ZO, -w0, NG, fG, xO, pw)))
@@ -6428,7 +6428,7 @@
                         , TT.q2(MO, fA), function zxT() {
                             Hf.push(CB);
                             var YxT = UYT(1);
-                            NNT = equals1(!sD[zw], YxT[TT.HQ(...[db, Rd, Lb, zO])]) ? sD[Gw] : ww;
+                            NNT = !sD[zw] === YxT[TT.HQ(...[db, Rd, Lb, zO])] ? sD[Gw] : ww;
                             GD(22, [EtT, 1, YxT[TT.bN(...[CO, zw, dj, bO, tO, w0])]]);
                             P3T();
                             var ExT;
@@ -6458,7 +6458,7 @@
                         }
                         , "_setAu", function _setAu(XxT) {
                             Hf.push(Gj);
-                            TT.EZ(sw, -jU, vO, 0) == typeof XxT && (YnT = equals1(sD[zw], XxT[TT.kE(WL, -nc, wO, nh)](TT.rE.call(null, Fb, XG, Ol), 0)) ? (((TT.R9(...[1, -S0, qw]))[TT.pZ.call(null, Lw, -fS, 0, Fb)](EnT ? TT.m1(DO, V4, Ub, JO) : windowObj[TT.O9(...[wj, -sL, VO])][TT.W9(pw, -Xc, g0, qw)][TT.M7.call(null, WO, -tU, nj)], TT.m7(tO, -HI, Ab)))[TT.pZ(...[true, -fS, wj, Fb])](windowObj[TT.O9(wj, -sL, XG)][TT.W9(pw, -Xc, 0, sw)][TT.GN.call(null, -GS, jO, JO, Hc, qw)]))[TT.pZ(DO, -fS, TO, Fb)](XxT) : XxT);
+                            TT.EZ(sw, -jU, vO, 0) == typeof XxT && (YnT = sD[zw] === XxT[TT.kE(WL, -nc, wO, nh)](TT.rE.call(null, Fb, XG, Ol), 0) ? (((TT.R9(...[1, -S0, qw]))[TT.pZ.call(null, Lw, -fS, 0, Fb)](EnT ? TT.m1(DO, V4, Ub, JO) : windowObj[TT.O9(...[wj, -sL, VO])][TT.W9(pw, -Xc, g0, qw)][TT.M7.call(null, WO, -tU, nj)], TT.m7(tO, -HI, Ab)))[TT.pZ(...[true, -fS, wj, Fb])](windowObj[TT.O9(wj, -sL, XG)][TT.W9(pw, -Xc, 0, sw)][TT.GN.call(null, -GS, jO, JO, Hc, qw)]))[TT.pZ(DO, -fS, TO, Fb)](XxT) : XxT);
                             Hf.pop();
                         }
                         , TT.gK.call(null, xO, HO, g0, tb, -UV), function FxT(fxT) {
@@ -6482,7 +6482,7 @@
                         }
                         ]),
                         FG[TT.d9.call(null, TG, -tL, true)] = function(PxT) {
-                            equals1(PxT, YnT) && (MRT = 1);
+                            PxT === YnT && (MRT = 1);
                         }
                         ,
                         windowObj[TT.CZ(dO, nl)].bmak[TT.JR.call(null, PL, -Tl, pw, wj, QO)]) {
@@ -6513,10 +6513,10 @@
                                             Hf.pop(),
                                             pxT;
                                         }(VxT);
-                                        BxT[TT.K9(sw, -HI, 1)] > zw && (windowObj[TT.CZ.call(null, dO, nl)].bmak[TT.KE(g0, Xd, 0)]._setFsp(equals1(TT.dK.call(null, NG, AU), BxT[TT.Z9(dj, jg)](0))),
-                                        windowObj[TT.CZ(dO, nl)].bmak[TT.KE(g0, Xd, true)]._setBm(equals1(TT.dK(NG, AU), BxT[TT.Z9(...[dj, jg])](1))),
-                                        windowObj[TT.CZ.call(null, dO, nl)].bmak[TT.KE(g0, Xd, HD)][TT.gK(...[xO, nj, jO, tb, -UV])](equals1(TT.dK(...[NG, AU]), BxT[TT.Z9(...[dj, jg])](Gw))),
-                                        windowObj[TT.CZ(dO, nl)].bmak[TT.KE(...[g0, Xd, cO])][TT.QE.call(null, Qh, JS)](equals1(TT.dK(NG, AU), BxT[TT.Z9(dj, jg)](zw))),
+                                        BxT[TT.K9(sw, -HI, 1)] > zw && (windowObj[TT.CZ.call(null, dO, nl)].bmak[TT.KE(g0, Xd, 0)]._setFsp(TT.dK.call(null, NG, AU) === BxT[TT.Z9(dj, jg)](0)),
+                                        windowObj[TT.CZ(dO, nl)].bmak[TT.KE(g0, Xd, true)]._setBm(TT.dK(NG, AU) === BxT[TT.Z9(...[dj, jg])](1)),
+                                        windowObj[TT.CZ.call(null, dO, nl)].bmak[TT.KE(g0, Xd, HD)][TT.gK(...[xO, nj, jO, tb, -UV])](TT.dK(...[NG, AU]) === BxT[TT.Z9(...[dj, jg])](Gw)),
+                                        windowObj[TT.CZ(dO, nl)].bmak[TT.KE(...[g0, Xd, cO])][TT.QE.call(null, Qh, JS)](TT.dK(NG, AU) === BxT[TT.Z9(dj, jg)](zw)),
                                         windowObj[TT.CZ.call(null, dO, nl)].bmak[TT.KE(...[g0, Xd, pb])]._setAu(lxT));
                                     }
                                 }
@@ -6576,7 +6576,7 @@
                                     Hf.push(cB);
                                     SNT[NXT[TT.gQ.call(null, E4, -kI)] + NXT[TT.SQ(RD, fA, Lw, JO)]] = NXT[TT.XN(cO, kO, tO, -SB, XU, XO)],
                                     ItT && (VtT = qw,
-                                    equals1(Gw, NXT[TT.hQ(KV, JS)]) && (xnT = sD[Gw]),
+                                    Gw === NXT[TT.hQ(KV, JS)] && (xnT = sD[Gw]),
                                     GD(22, [EtT, 1]),
                                     D9T());
                                     Hf.pop();
@@ -6759,7 +6759,7 @@
                     var pXT = Kq[0];
                     Hf.push(xh);
                     var sXT;
-                    return sXT = equals1(typeof pXT, [] + [][[]]) ? TT.X9(0, IP, UO, wO) : TT.v9.call(null, Xh, Fh) + pXT + TT.x9(...[1, fh, VO, wh]),
+                    return sXT = typeof pXT === 'undefined' ? TT.X9(0, IP, UO, wO) : TT.v9.call(null, Xh, Fh) + pXT + TT.x9(...[1, fh, VO, wh]),
                     Hf.pop(),
                     sXT;
                 }
@@ -6770,7 +6770,7 @@
                     var fXT = Kq[1];
                     Rq += 482;
                     Hf.push(vh);
-                    if (typeof kq[fXT] !== [] + [][[]]) {
+                    if (typeof kq[fXT] !== 'undefined') {
                         Hf.pop();
                         return;
                     }
@@ -6860,7 +6860,7 @@
                 {
                     var EFT = TT.mT[0] - 1;
                     TT.mT[0] = 0;
-                    if (typeof TT.dE === [] + [][[]]) {
+                    if (typeof TT.dE === 'undefined') {
                         try {
                             TT.dE = 4;
                             var JFT = F0();
@@ -6899,14 +6899,14 @@
                 Hf.push(zB);
                 (function DFT() {
                     Hf.push(SI);
-                    if (typeof kq[ww] !== [] + [][[]]) {
+                    if (typeof kq[ww] !== 'undefined') {
                         Hf.pop();
                         return;
                     }
                     function jFT(PFT) {
                         Hf.push(VI);
                         var hFT;
-                        return hFT = equals1(typeof PFT, TT.R9(1, -lI, ZO) + [][[]]) ? TT.X9(0, -q0, qb, false) : TT.v9(Xh, zP) + PFT + TT.x9(...[mO, -fG, JO, wh]),
+                        return hFT = typeof PFT === TT.R9(1, -lI, ZO) + [][[]] ? TT.X9(0, -q0, qb, false) : TT.v9(Xh, zP) + PFT + TT.x9(...[mO, -fG, JO, wh]),
                         Hf.pop(),
                         hFT;
                     }
@@ -7100,9 +7100,9 @@
     var FXT;
     function RT() {
         TT = {};
-        if (typeof window !== [] + [][[]]) {
+        if (typeof window !== 'undefined') {
             windowObj = window;
-        } else if (typeof global !== '' + [][[]]) {
+        } else if (typeof global !== 'undefined') {
             windowObj = global;
         } else {
             windowObj = this;
