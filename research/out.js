@@ -4292,7 +4292,7 @@
                                     U4(0) !== h9T[TT.cQ(tG, -dA, Hw)] && equals1(!sD[Gw], h9T[TT.cQ(tG, -dA, 0)]) && (d9T = (TT.R9(...[1, -Qh, AO]))[TT.pZ.call(null, AO, -Xc, RD, Fb)](d9T, TT.pQ(LO, jV, NG))),
                                     RRT = (TT.R9.call(null, 1, -Qh, ND))[TT.pZ(tb, -Xc, QO, Fb)](RRT + d9T, TT.dk(nh, -fG, IO)),
                                     sTT += l9T,
-                                    GTT = 0 + 0 + l9T,
+                                    GTT = 0 + l9T,
                                     S9T++;
                                 }
                                 ItT && 0 > 1 && 0 < 1 && (VtT = XO,
@@ -6923,7 +6923,7 @@
                         }
                     }
                     kq[ww] = BFT ? BFT : Xw;
-                    TT[TT.n9(cA, cV, rO)][ww] = 0 + 1;
+                    TT[TT.n9(cA, cV, rO)][ww] = 1;
                     Hf.pop();
                 }());
                 if (TT.mT[0] > 0) {
