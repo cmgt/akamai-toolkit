@@ -8,7 +8,7 @@ const {
 
 const {NumericLiteral} = types;
 
-const fixKeys = ['arguments', 'right', 'test'];
+const fixKeys = ['arguments', 'right', 'test', 'elements'];
 
 const {replaceWith} = operator;
 
