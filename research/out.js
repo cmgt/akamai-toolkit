@@ -952,7 +952,7 @@
             case 479:
                 {
                     for (var k4 = ww; k4 < r4; ++k4) {
-                        var Q4 = M4[TT.f9(MO, -jO, TG, ![])](k4);
+                        var Q4 = M4[TT.f9(MO, -jO, TG, false)](k4);
                         if (Q4 != NO && Q4 != Lw && Q4 != DO) {
                             Z4 = (Z4 << TO) - Z4 + Q4;
                             Z4 = Z4 | 0;
@@ -2662,7 +2662,7 @@
                 break;
             case 10:
                 {
-                    Xw = +!![];
+                    Xw = 1;
                     Gw = Xw + Xw;
                     c4 = 139;
                     zw = Xw + Gw;
@@ -4779,7 +4779,7 @@
                         function YH() {
                             Hf.push(D0);
                             var k7T;
-                            return k7T = windowObj[TT.A9(...[lj, tL, GO, sb])][TT.L9.call(null, cO, Dj, cw(Z6))] ? windowObj[TT.A9.call(null, lj, tL, not(not({})), KO)][TT.L9.call(null, cO, Hw, cw(Z6))]() : +new (windowObj[TT.A9(lj, tL, w0, ![])])(),
+                            return k7T = windowObj[TT.A9(...[lj, tL, GO, sb])][TT.L9.call(null, cO, Dj, cw(Z6))] ? windowObj[TT.A9.call(null, lj, tL, not(not({})), KO)][TT.L9.call(null, cO, Hw, cw(Z6))]() : +new (windowObj[TT.A9(lj, tL, w0, false)])(),
                             Hf.pop(),
                             k7T;
                         }
