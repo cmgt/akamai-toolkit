@@ -8,6 +8,8 @@ const {
 
 const {NumericLiteral} = types;
 
+const fixKeys = ['arguments', 'right', 'test'];
+
 const {replaceWith} = operator;
 
 module.exports.report = () => `replace const assignment`;
@@ -24,7 +26,7 @@ module.exports.fix = ({path, leftPath, rightPath}) => {
     const {referencePaths} = binding;
 
     for (const rPath of referencePaths) {
-        if (rPath.isIdentifier()) {
+        if (rPath.isIdentifier() && fixKeys.includes(rPath.inList ? rPath.listKey : rPath.key)) {
             replaceWith(rPath, NumericLiteral(rightNode.value));
         }
     }
