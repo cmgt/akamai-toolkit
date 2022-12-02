@@ -1,4 +1,4 @@
-var wJ, jX, nx;
+var wJ, jx, nx;
 
 function IfT() {
     wJ = 614,
