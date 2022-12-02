@@ -27,7 +27,7 @@
                 if (typeof Mw === funcArray[zw]) {
                     Mw = Yw;
                 }
-                var Ew = [] + [];
+                var Ew = '';
                 nw = xw - Hf[Hf.length - 1] + scriptConst;
                 break;
             case 627:
@@ -104,7 +104,7 @@
                 var Rb = Kw[0];
                 var Gb = Kw[1];
                 Rw = 583;
-                var rw = [] + [];
+                var rw = '';
                 var Qb = (Gb - Hf[Hf.length - 1] + scriptConst) % WO;
                 break;
             case 76:
@@ -181,7 +181,7 @@
             case 51:
                 var hG = Kw[0];
                 var gG = Kw[1];
-                var Bw = [] + [];
+                var Bw = '';
                 Rw = 111;
                 var lw = (gG - Hf[Hf.length - 1] + scriptConst) % sO;
                 var Pw = sf[hG];
@@ -191,7 +191,7 @@
                 Rw = 501;
                 var VG = Kw[1];
                 var kG = Kw[3];
-                var kw = [] + [];
+                var kw = '';
                 var mG = (VG - Hf[Hf.length - 1] + scriptConst) % Aw;
                 break;
             case 37:
@@ -230,7 +230,7 @@
         for (tW; tW != 478; tW) {
             switch (tW) {
             case 569:
-                var RW = [] + [];
+                var RW = '';
                 tW -= 453;
                 var KW = ZW[kW];
                 for (var rW = KW.length - 1; rW >= 0; rW--) {
@@ -339,7 +339,7 @@
                 tW = 522;
                 break;
             case 278:
-                var sW = [] + [];
+                var sW = '';
                 YC = vC - Hf[Hf.length - 1] + scriptConst;
                 tW += 397;
                 break;
@@ -432,7 +432,7 @@
                 var hW = TW[1];
                 var gW = Nb[TG];
                 tW = 144;
-                var EW = [] + [];
+                var EW = '';
                 break;
             case 10:
                 var kW = TW[0];
@@ -448,7 +448,7 @@
                 var mD = TW[0];
                 var YD = TW[2];
                 tW = 55;
-                var fW = [] + [];
+                var fW = '';
                 var FW = (YD - Hf[Hf.length - 1] + scriptConst) % IO;
                 var nW = ED[mD];
                 var JW = ww;
@@ -465,7 +465,7 @@
                 tW = 543;
                 var tC = TW[1];
                 var TC = sf[fD];
-                var ZC = [] + [];
+                var ZC = '';
                 var RC = sf[FD];
                 break;
             case 551:
@@ -796,7 +796,7 @@
                 return Th;
             case 51:
                 var Nh = p4[0];
-                var Rh = [] + [];
+                var Rh = '';
                 for (var Kh = Nh.length - 1; Kh >= 0; Kh--) {
                     Rh += Nh[Kh];
                 }
@@ -934,7 +934,7 @@
                 break;
             case 28:
                 var IS = p4[0];
-                var Th = [] + [];
+                var Th = '';
                 c4 += 580;
                 var US = IS.length - 1;
                 if (US >= 0) {
@@ -1066,7 +1066,7 @@
                 c4 = 701;
                 var rg = p4[2];
                 var Qg = ED[Tj];
-                var Dh = [] + [];
+                var Dh = '';
                 break;
             case 259:
                 c4 = 55;
@@ -1083,7 +1083,7 @@
                 break;
             case 32:
                 var Ul = p4[0];
-                var dl = [] + [];
+                var dl = '';
                 for (var Al = Ul.length - 1; Al >= 0; Al--) {
                     dl += Ul[Al];
                 }
@@ -1227,7 +1227,7 @@
             case 7:
                 c4 += 331;
                 var cS = p4[0];
-                var LS = [] + [];
+                var LS = '';
                 var AS = cS.length - 1;
                 break;
             case 20:
@@ -1305,7 +1305,7 @@
                 break;
             case 54:
                 var gd = p4[0];
-                var hI = [] + [];
+                var hI = '';
                 c4 += 119;
                 var Sd = gd.length - 1;
                 if (Sd >= 0) {
@@ -1799,7 +1799,7 @@
                 if (typeof Hp === funcArray[zw]) {
                     Hp = Ts;
                 }
-                var Wp = [] + [];
+                var Wp = '';
                 B8 = 312;
                 Ns = Rs - Hf[Hf.length - 1] + scriptConst;
                 break;
@@ -1809,7 +1809,7 @@
                 if (typeof Zs === funcArray[zw]) {
                     Zs = Cp;
                 }
-                var rp = [] + [];
+                var rp = '';
                 ks = rs - Hf[Hf.length - 1] + scriptConst;
                 break;
             case 445:
@@ -1821,7 +1821,7 @@
                 if (typeof Up === funcArray[zw]) {
                     Up = dp;
                 }
-                var Ap = [] + [];
+                var Ap = '';
                 B8 += 579;
                 Lp = Ms - Hf[Hf.length - 1] + scriptConst;
                 break;
@@ -1838,7 +1838,7 @@
                     tp = Tp;
                 }
                 B8 = 445;
-                var Np = [] + [];
+                var Np = '';
                 break;
             case 46:
                 B8 = 559;
@@ -1960,7 +1960,7 @@
                 B8 = 552;
                 var R5 = I8[3];
                 var Xs = ZG[sw];
-                var qp = [] + [];
+                var qp = '';
                 var ns = ZG[R5];
                 break;
             case 106:
@@ -2064,7 +2064,7 @@
             case 82:
                 var l5 = I8[0];
                 var B5 = I8[1];
-                var Cs = [] + [];
+                var Cs = '';
                 B8 = 520;
                 var gs = (B5 - Hf[Hf.length - 1] + scriptConst) % Fb;
                 var js = ZW[l5];
@@ -2432,8 +2432,8 @@
         var pfT = indexOf(functionSource, "0x" + marker);
         var sfT = indexOf(functionSource, ';', pfT);
         var qfT = pfT + marker.length + 3;
-        var HfT = substr(functionSource, qfT, sfT - qfT); //1735280502
-        var twT = substr(functionSource, 0, pfT);
+        var HfT = functionSource.substr(qfT, sfT - qfT); //1735280502
+        var twT = functionSource.substr(0, pfT);
         var TwT = substr(functionSource, sfT + 1);
         var NwT = twT + TwT + typeof windowObj[functionName];
         var RwT = calcHash(NwT, 784336);
