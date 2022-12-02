@@ -4,10 +4,11 @@ const putout = require('putout');
 const fs = require('node:fs');
 const path = require('node:path');
 
-const source = fs.readFileSync(path.join(__dirname, 'out.js'), {encoding:'utf8'});
+const file = 'out.js';
+const source = fs.readFileSync(path.join(__dirname, file), {encoding:'utf8'});
 
 const res = putout(source, {
-    rulesdir: 'rules',
+    //rulesdir: 'rules',
     plugins: [
          //'remove-unused-variables',
          //'remove-unused-expressions',
@@ -23,9 +24,10 @@ const res = putout(source, {
 
         //['convert-jsfuck', require('./putout-plugins/putout-plugin-convert-jsfuck.js')],
         //['convert-string', require('./putout-plugins/putout-plugin-convert-string.js')],
+        ['evaluate-expression', require('./rules/evaluate-expression/lib/evaluate-expression')],
     ]
 });
 
 console.debug('stop');
 
-//fs.writeFileSync(path.join(__dirname, 'out.js'), res.code, {encoding: 'utf8'});
+fs.writeFileSync(path.join(__dirname, file), res.code, {encoding: 'utf8'});
