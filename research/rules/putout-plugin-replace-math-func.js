@@ -29,4 +29,6 @@ module.exports.replace = () => ({
     'length(__a)':'__a.length',
     //'self(__a)':'+__a',
     'neg(__a)':'-__a',
+
+    'substr(__a, __b, __c)': '__a.substr(__b, __c)'
 });

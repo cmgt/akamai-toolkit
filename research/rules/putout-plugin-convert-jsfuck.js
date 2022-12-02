@@ -5,6 +5,7 @@ module.exports.report = () => `JSFuck convert`;
 module.exports.replace = () => ({
     '[] + [][[]]':"'undefined'",
     "'' + [][[]]":"'undefined'",
+    '[] + []':'',
     '+!+[]': '1',
     '+!![]': '1',
     '+[]': '0',

@@ -10,12 +10,12 @@ const source = fs.readFileSync(path.join(__dirname, file), {encoding:'utf8'});
 const res = putout(source, {
     //rulesdir: 'rules',
     plugins: [
-         //'remove-unused-variables',
-         //'remove-unused-expressions',
-         //'remove-unreachable-code',
-        // 'remove-nested-blocks'
+         'remove-unused-variables',
+         'remove-unused-expressions',
+         'remove-unreachable-code',
+        'remove-nested-blocks',       
+        'remove-unreferenced-variables',
         //'remove-useless-escape',
-        //'remove-unreferenced-variables',
 
         //'convert-apply-to-spread',
         //'convert-arguments-to-rest',
@@ -28,7 +28,7 @@ const res = putout(source, {
         //['convert-string', require('./putout-plugins/putout-plugin-convert-string.js')],
         //['evaluate-expression', require('./rules/evaluate-expression/lib/evaluate-expression')],
         //['replace-const-assignment', require('./rules/replace-const-assignment/lib/replace-const-assignment')],
-        ['replace-math-func', require('./rules/putout-plugin-replace-math-func')],
+        //['replace-math-func', require('./rules/putout-plugin-replace-math-func')],
     ]
 });
 
