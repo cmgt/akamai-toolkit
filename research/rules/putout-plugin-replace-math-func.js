@@ -10,6 +10,7 @@ module.exports.replace = () => ({
     'notEqual1(__a, __b)':'__a != __b',
     'lessOrEqual(__a, __b)':'__a <= __b',
     'div(__a, __b)':'__a / __b',
+    'mod(__a, __b)':'__a % __b',
     'bitwiseXOR(__a, __b)':'__a ^ __b',
     'and(__a, __b)':'__a & __b',
     'or(__a, __b)':'__a | __b',
@@ -23,6 +24,7 @@ module.exports.replace = () => ({
     'not(__a)':'!__a',    
 
     'toString(__a)':'__a.toString()',
+    'length(__a)':'__a.length',
     //'self(__a)':'+__a',
     'neg(__a)':'-__a',
 });
