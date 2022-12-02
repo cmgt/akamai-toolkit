@@ -19,12 +19,14 @@ module.exports.fix = ({path, leftPath, rightPath}) => {
     
     const binding = path.scope.getBinding(name);
 
-    if (!binding.referenced) return;
+    if (!binding?.referenced) return;
 
     const {referencePaths} = binding;
 
     for (const rPath of referencePaths) {
-        
+        if (rPath.isIdentifier()) {
+            replaceWith(rPath, NumericLiteral(rightNode.value));
+        }
     }
 };
 

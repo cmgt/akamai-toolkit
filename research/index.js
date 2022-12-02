@@ -4,7 +4,7 @@ const putout = require('putout');
 const fs = require('node:fs');
 const path = require('node:path');
 
-const file = 'out.js';
+const file = 'test.js';
 const source = fs.readFileSync(path.join(__dirname, file), {encoding:'utf8'});
 
 const res = putout(source, {
