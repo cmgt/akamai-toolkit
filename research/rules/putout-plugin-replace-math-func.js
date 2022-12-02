@@ -6,6 +6,7 @@ module.exports.replace = () => ({
     'sum(__a, __b)':'__a + __b',
     'subtract(__a, __b)':'__a - __b',
     'equal(__a, __b)':'__a == __b',
+    'equals1(__a, __b)':'__a === __b',
     'notEqual(__a, __b)':'__a !== __b',
     'notEqual1(__a, __b)':'__a != __b',
     'lessOrEqual(__a, __b)':'__a <= __b',
