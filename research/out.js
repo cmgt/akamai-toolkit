@@ -1,18 +1,12 @@
 (function LLmjLYkgdy() {
     RT();
     IfT();
-    VfT();
-    var bXT = SfT();
+    var dFT = [1709091091];
+    var bXT = ['Bf'];
     gfT();
     hfT();
-    function VfT() {
-        dFT = [1709091091];
-    }
     PfT();
-    var zT = ffT();
-    function ffT() {
-        return [1165554296, 884252625, 1968191296, 11804024, -WfT, -CfT, 702161197, -jfT];
-    }
+    var zT = [1165554296, 884252625, 1968191296, 11804024, -WfT, -CfT, 702161197, -jfT];
     var mod = function(Uf, df) {
         return Uf % df;
     };
@@ -678,9 +672,6 @@
     };
     0x3974e7a,
     1735280502;
-    function SfT() {
-        return ['Bf'];
-    }
     var GD = function WD(CD, DD) {
         var PD = hD(new Number(19), gD);
         var SD = PD;
@@ -7026,7 +7017,6 @@
     var WXT;
     var Hf;
     var nb;
-    var dFT;
     var kq;
     function calcConstHash(functionSource, functionName, marker) {
         //0x3974e7a,
