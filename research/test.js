@@ -3,22 +3,7 @@ var Xw;
 var Gw;
 var zw;
 var Rw;
+var CO;
 
-switch (i) {
-    case 10:
-                Xw = 1;
-                Gw = 1 + 2;
-                c4 = 139;
-                zw = 3;
-                Rw = 3 - 1 + 3;
-                break;
-           }
-
-
-           while (zw != 85) {
-           }
-
-           for (Rw; Rw != 379; Rw) {
-            switch (Rw) {
-            }
-        }
+CO = 33;
+                tw = CO * 2 + 1 - 4;
