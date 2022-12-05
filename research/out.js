@@ -23,7 +23,7 @@
             case 636:
                 Rw = 624;
                 //zw = 3
-                if (typeof Mw === funcArray[3]) {
+                if (typeof Mw === 'number') {
                     Mw = Yw;
                 }
                 var Ew = '';
@@ -34,7 +34,7 @@
             case 624:
                 Rw += 3;
                 while (fw > 0) {
-                    if (bw[funcArray[2]] !== windowObj[funcArray[1]] && bw >= Mw[funcArray[0]]) {
+                    if (bw['constructor'] !== windowObj['Array'] && bw >= Mw['length']) {
                         if (Mw == Yw) {
                             Ew += Cw(0, [nw]);
                         }
@@ -220,7 +220,7 @@
     var charCodeAt = function(cG, pG) {
         //bO = 7
         //charCodeAt
-        return cG[funcArray[7]](pG);
+        return cG['charCodeAt'](pG);
     };
     var Cw = function HG(tW, TW) {
         for (tW; tW != 478; tW) {
@@ -272,7 +272,7 @@
                 }
                 break;
             case 484:
-                for (var lW = BW[funcArray[0]] - 1; lW >= 0; --lW) {
+                for (var lW = BW['length'] - 1; lW >= 0; --lW) {
                     TT[BW[lW]] = function() {
                         var IW = BW[lW];
                         return function(UW, dW, AW, LW, cW) {
@@ -308,19 +308,19 @@
                 kC;
             case 675:
                 while (QC > 0) {
-                    if (MC[funcArray[2]] !== windowObj[funcArray[1]] && MC >= mC[funcArray[0]]) {
+                    if (MC['constructor'] !== windowObj['Array'] && MC >= mC['length']) {
                         if (mC == zC) {
                             sW += HG(0, [YC]);
                         }
                         return sW;
                     }
-                    if (MC[funcArray[2]] === windowObj[funcArray[1]]) {
+                    if (MC['constructor'] === windowObj['Array']) {
                         var EC = PG[mC[MC[0]][0]];
                         var JC = HG(58, [91, YC + Hf[Hf.length - 1] - scriptConst, 21, MC[1], QC, EC]);
                         sW += JC;
                         MC = MC[0];
                         QC -= nC(4, [JC]);
-                    } else if (mC[MC][funcArray[2]] === windowObj[funcArray[1]]) {
+                    } else if (mC[MC]['constructor'] === windowObj['Array']) {
                         var EC = PG[mC[MC][0]];
                         var JC = HG.call(null, 58, [1, YC + Hf[Hf.length - 1] - scriptConst, 35, 0, QC, EC]);
                         sW += JC;
@@ -343,10 +343,10 @@
                 tW += 478;
                 var xC = TW[0];
                 if (65536 <= 65535) {
-                    return windowObj[funcArray[6]][funcArray[5]](65536);
+                    return windowObj['String']['fromCharCode'](65536);
                 } else {
                     xC -= 65536;
-                    return windowObj[funcArray[6]][funcArray[5]][funcArray[4]](null, [(65536 >> 10) + 55296, 65536 % 1024 + 56320]);
+                    return windowObj['String']['fromCharCode']['apply'](null, [(65536 >> 10) + 55296, 65536 % 1024 + 56320]);
                 }
                 break;
             case 58:
@@ -355,7 +355,7 @@
                 var QC = TW[4];
                 var mC = TW[5];
                 tW += 220;
-                if (typeof mC === funcArray[3]) {
+                if (typeof mC === 'number') {
                     mC = zC;
                 }
                 break;
@@ -365,7 +365,7 @@
                 return Tw(47, [ZC]);
             case 489:
                 tW = 478;
-                for (var OC = bC[funcArray[0]] - 1; OC >= 0; --OC) {
+                for (var OC = bC['length'] - 1; OC >= 0; --OC) {
                     TT[bC[OC]] = function() {
                         var GC = bC[OC];
                         return function(WC, CC, DC, jC, PC) {
@@ -395,7 +395,7 @@
                 tW = 478;
                 return fW;
             case 491:
-                for (var SC = VC[funcArray[0]] - 1; SC >= 0; --SC) {
+                for (var SC = VC['length'] - 1; SC >= 0; --SC) {
                     TT[VC[SC]] = function() {
                         var lC = VC[SC];
                         return function(BC, IC, UC) {
@@ -1578,19 +1578,19 @@
                 break;
             case 199:
                 while (q8 > 0) {
-                    if (H8[funcArray[2]] !== windowObj[funcArray[1]] && H8 >= tp[funcArray[0]]) {
+                    if (H8['constructor'] !== windowObj['Array'] && H8 >= tp['length']) {
                         if (tp == Tp) {
                             Np += Cw(0, [Rp]);
                         }
                         return Np;
                     }
-                    if (H8[funcArray[2]] === windowObj[funcArray[1]]) {
+                    if (H8['constructor'] === windowObj['Array']) {
                         var Kp = Zp[tp[H8[0]][0]];
                         var kp = l8(16, [87, Rp + Hf[Hf.length - 1] - scriptConst, Kp, q8, 51, H8[1]]);
                         Np += kp;
                         H8 = H8[0];
                         q8 -= nC(34, [kp]);
-                    } else if (tp[H8][funcArray[2]] === windowObj[funcArray[1]]) {
+                    } else if (tp[H8]['constructor'] === windowObj['Array']) {
                         var Kp = Zp[tp[H8][0]];
                         var kp = l8(16, [82, Rp + Hf[Hf.length - 1] - scriptConst, Kp, q8, 79, 0]);
                         Np += kp;
@@ -1608,7 +1608,7 @@
                 return rp;
             case 263:
                 B8 = 559;
-                for (var Qp = Mp[funcArray[0]] - 1; Qp >= 0; --Qp) {
+                for (var Qp = Mp['length'] - 1; Qp >= 0; --Qp) {
                     TT[Mp[Qp]] = function() {
                         var mp = Mp[Qp];
                         return function(zp, Yp, Ep, Jp, np, vp) {
@@ -1682,19 +1682,19 @@
                 break;
             case 727:
                 while (Bp > 0) {
-                    if (Ip[funcArray[2]] !== windowObj[funcArray[1]] && Ip >= Up[funcArray[0]]) {
+                    if (Ip['constructor'] !== windowObj['Array'] && Ip >= Up['length']) {
                         if (Up == dp) {
                             Ap += Cw(0, [Lp]);
                         }
                         return Ap;
                     }
-                    if (Ip[funcArray[2]] === windowObj[funcArray[1]]) {
+                    if (Ip['constructor'] === windowObj['Array']) {
                         var cp = pp[Up[Ip[0]][0]];
                         var sp = l8(...[18, [Ip[1], Lp + Hf[Hf.length - 1] - scriptConst, Bp, 56, cp]]);
                         Ap += sp;
                         Ip = Ip[0];
                         Bp -= nC(42, [sp]);
-                    } else if (Up[Ip][funcArray[2]] === windowObj[funcArray[1]]) {
+                    } else if (Up[Ip]['constructor'] === windowObj['Array']) {
                         var cp = pp[Up[Ip][0]];
                         var sp = l8(18, [0, Lp + Hf[Hf.length - 1] - scriptConst, Bp, 1, cp]);
                         Ap += sp;
@@ -1722,7 +1722,7 @@
                 nb();
                 break;
             case 538:
-                if (typeof Hp === funcArray[3]) {
+                if (typeof Hp === 'number') {
                     Hp = Ts;
                 }
                 var Wp = '';
@@ -1732,7 +1732,7 @@
             case 67:
                 B8 = 495;
                 var Ks = I8[4];
-                if (typeof Zs === funcArray[3]) {
+                if (typeof Zs === 'number') {
                     Zs = Cp;
                 }
                 var rp = '';
@@ -1744,7 +1744,7 @@
                 break;
             case 148:
                 var Up = I8[4];
-                if (typeof Up === funcArray[3]) {
+                if (typeof Up === 'number') {
                     Up = dp;
                 }
                 var Ap = '';
@@ -1760,7 +1760,7 @@
                 var tp = I8[2];
                 var q8 = I8[3];
                 var H8 = I8[5];
-                if (typeof tp === funcArray[3]) {
+                if (typeof tp === 'number') {
                     tp = Tp;
                 }
                 B8 = 445;
@@ -1797,19 +1797,19 @@
             case 495:
                 B8 += 255;
                 while (Ks > 0) {
-                    if (bs[funcArray[2]] !== windowObj[funcArray[1]] && bs >= Zs[funcArray[0]]) {
+                    if (bs['constructor'] !== windowObj['Array'] && bs >= Zs['length']) {
                         if (Zs == Cp) {
                             rp += Cw(0, [ks]);
                         }
                         return rp;
                     }
-                    if (bs[funcArray[2]] === windowObj[funcArray[1]]) {
+                    if (bs['constructor'] === windowObj['Array']) {
                         var Gs = ms[Zs[bs[0]][0]];
                         var Ws = l8(54, [ks + Hf[Hf.length - 1] - scriptConst, 87, Gs, bs[1], Ks]);
                         rp += Ws;
                         bs = bs[0];
                         Ks -= nC(46, [Ws]);
-                    } else if (Zs[bs][funcArray[2]] === windowObj[funcArray[1]]) {
+                    } else if (Zs[bs]['constructor'] === windowObj['Array']) {
                         var Gs = ms[Zs[bs][0]];
                         var Ws = l8(...[54, [ks + Hf[Hf.length - 1] - scriptConst, 70, Gs, 0, Ks]]);
                         rp += Ws;
@@ -1835,7 +1835,7 @@
             case 55:
                 var Ss = I8[0];
                 B8 += 504;
-                for (var Vs = Ss[funcArray[0]] - 1; Vs >= 0; --Vs) {
+                for (var Vs = Ss['length'] - 1; Vs >= 0; --Vs) {
                     TT[Ss[Vs]] = function() {
                         var ls = Ss[Vs];
                         return function(Bs, Is, Us, ds, As, Ls) {
@@ -1856,19 +1856,19 @@
             case 312:
                 B8 -= 9;
                 while (ss > 0) {
-                    if (qs[funcArray[2]] !== windowObj[funcArray[1]] && qs >= Hp[funcArray[0]]) {
+                    if (qs['constructor'] !== windowObj['Array'] && qs >= Hp['length']) {
                         if (Hp == Ts) {
                             Wp += Cw(0, [Ns]);
                         }
                         return Wp;
                     }
-                    if (qs[funcArray[2]] === windowObj[funcArray[1]]) {
+                    if (qs['constructor'] === windowObj['Array']) {
                         var Hs = ps[Hp[qs[0]][0]];
                         var t5 = l8(...[584, [ss, 27, Hs, qs[1], Ns + Hf[Hf.length - 1] - scriptConst]]);
                         Wp += t5;
                         qs = qs[0];
                         ss -= nC(52, [t5]);
-                    } else if (Hp[qs][funcArray[2]] === windowObj[funcArray[1]]) {
+                    } else if (Hp[qs]['constructor'] === windowObj['Array']) {
                         var Hs = ps[Hp[qs][0]];
                         var t5 = l8.call(null, 584, [ss, 60, Hs, 0, Ns + Hf[Hf.length - 1] - scriptConst]);
                         Wp += t5;
@@ -1924,7 +1924,7 @@
             case 806:
                 var n5 = I8[0];
                 B8 -= 247;
-                for (var v5 = n5[funcArray[0]] - 1; v5 >= 0; --v5) {
+                for (var v5 = n5['length'] - 1; v5 >= 0; --v5) {
                     TT[n5[v5]] = function() {
                         var x5 = n5[v5];
                         return function(X5, F5, f5, w5, O5) {
