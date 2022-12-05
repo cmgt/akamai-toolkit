@@ -10,13 +10,13 @@ const source = fs.readFileSync(path.join(__dirname, file), {encoding:'utf8'});
 const res = putout(source, {
     //rulesdir: 'rules',
     plugins: [
-        //  'remove-unused-variables',
-        //  'remove-unused-expressions',
-        //  'remove-unreachable-code',
+          'remove-unused-variables',
+          'remove-unused-expressions',
+          'remove-unreachable-code',
         // 'remove-nested-blocks',       
-        // 'remove-unreferenced-variables',
+         'remove-unreferenced-variables',
         //'remove-useless-escape',
-        'remove-useless-functions',
+        //'remove-useless-functions',
 
         //'convert-apply-to-spread',
         //'convert-arguments-to-rest',
