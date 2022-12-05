@@ -7,10 +7,10 @@ var Rw;
 switch (i) {
     case 10:
                 Xw = 1;
-                Gw = Xw + 2;
+                Gw = 1 + 2;
                 c4 = 139;
                 zw = 3;
-                Rw = 2 - 1 + 3;
+                Rw = 3 - 1 + 3;
                 break;
            }
 
