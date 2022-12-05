@@ -23,6 +23,14 @@ module.exports.fix = ({path, leftPath, rightPath, operator}) => {
     case '*':
         replaceWith(path, NumericLiteral(leftNode.value * rightNode.value));
         break;
+    
+    case '-':
+        replaceWith(path, NumericLiteral(leftNode.value - rightNode.value));
+        break;
+    
+    case '/':
+        replaceWith(path, NumericLiteral(leftNode.value / rightNode.value));
+        break;
     }
 };
 
