@@ -30,5 +30,8 @@ module.exports.replace = () => ({
     //'self(__a)':'+__a',
     'neg(__a)':'-__a',
 
-    'substr(__a, __b, __c)': '__a.substr(__b, __c)'
+    'substr(__a, __b, __c)': '__a.substr(__b, __c)',
+    'substr(__a, __b)': '__a.substr(__b)',
+    'indexOf(__a, __b, __c)': '__a.indexOf(__b, __c)',
+    'indexOf(__a, __b)': '__a.indexOf(__b)',
 });
