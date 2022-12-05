@@ -16,6 +16,7 @@ const res = putout(source, {
         // 'remove-nested-blocks',       
         // 'remove-unreferenced-variables',
         //'remove-useless-escape',
+        'remove-useless-functions',
 
         //'convert-apply-to-spread',
         //'convert-arguments-to-rest',
