@@ -886,7 +886,7 @@
                 Pg = 3 * pw * CO - 2 - tO;
                 hg = CO * 3 * bO;
                 gg = TO - bO + pw + 2 * H4;
-                Sg = CO * NO - 2 * 1 - H4;
+                Sg = CO * NO - 2 - H4;
                 Vg = qw + CO * bO * 2 + 1;
                 c4 = 791;
                 break;
@@ -1105,7 +1105,7 @@
                 UO = 2 + qw + bO + TO * 1;
                 c4 = 681;
                 dO = qw * NO + 3 - TO - pw;
-                AO = 1 * 2 * 3 + qw * tO;
+                AO = 6 + qw * tO;
                 break;
             case 33:
                 c4 += 151;
@@ -1377,14 +1377,14 @@
                 sj = 2 + tO * bO * 3 + NO;
                 break;
             case 67:
-                Ub = 1 + 2 - 3 + qw + CO;
+                Ub = 3 - 3 + qw + CO;
                 TG = pw * qw + 1 - TO - tO;
                 NG = tO * XO + bO * qw - pw;
                 RG = 2 + NO * TO - tO - pw;
                 xG = CO + bO + tO + qw + 2;
                 XG = 3 + CO * 2 + TO;
                 Ab = XO + 3 + pw * bO + tO;
-                fG = bO * qw + NO + 2 * 1;
+                fG = bO * qw + NO + 2;
                 c4 = 162;
                 break;
             case 225:
@@ -1490,7 +1490,7 @@
                 Aw = XO - 2 + TO + pw;
                 Lw = 2 + bO + tO;
                 c4 = 517;
-                sw = 2 + 1 + XO - tO + pw;
+                sw = 3 + XO - tO + pw;
                 Hw = 2 * bO + XO - 1;
                 break;
             case 689:
@@ -1529,8 +1529,8 @@
                 break;
             case 139:
                 TO = 3 + tO - 2;
-                bO = 3 * 1 * tO - TO;
-                XO = 2 * 3 * 1;
+                bO = 3 * tO - TO;
+                XO = 6;
                 pw = tO * TO - 2 - 3 - XO;
                 qw = bO - XO + tO * 3 - TO;
                 c4 = 69;
@@ -1547,7 +1547,7 @@
                 break;
             case 754:
                 HP = 1 + XO - H4 + pw * CO;
-                N4 = 1 + 2 + CO * qw + NO;
+                N4 = 3 + CO * qw + NO;
                 HD = bO + NO * pw + qw - XO;
                 c4 -= 217;
                 kP = pw - CO * qw + NO * H4;
@@ -1567,10 +1567,10 @@
                 break;
             case 376:
                 db = XO * 3 * TO - CO - qw;
-                qb = TO * qw - 3 * 1;
+                qb = TO * qw - 3;
                 Hb = tO + XO + TO + 2 * qw;
                 c4 = 67;
-                tG = 3 * 1 + pw * TO + bO;
+                tG = 3 + pw * TO + bO;
                 break;
             case 367:
                 c4 += 63;
