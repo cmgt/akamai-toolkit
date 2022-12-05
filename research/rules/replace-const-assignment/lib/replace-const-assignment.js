@@ -31,10 +31,12 @@ module.exports.fix = ({path, leftPath, rightPath}) => {
     const {referencePaths} = binding;
     
     for (const rPath of referencePaths) {
-        if (rPath.isIdentifier() && (rPath.parentPath.isBinaryExpression() && (rPath.key === 'right' || operators.includes(rPath.parent.operator)) || rPath.parentPath.isArrayExpression())
+        if (rPath.isIdentifier() && (rPath.parentPath.isUnaryExpression() && rPath.parent.operator === '-'
+        || rPath.parentPath.isBinaryExpression() && (rPath.key === 'right' || operators.includes(rPath.parent.operator))
+        || rPath.parentPath.isArrayExpression())
         //fixKeys.includes(rPath.inList ? rPath.listKey : rPath.key)
         ) {
-            replaceWith(rPath, NumericLiteral(rightNode.value));
+            replaceWith(rPath.isUnaryExpression() ? rPath.argument : rPath, NumericLiteral(rightNode.value));
         }
     }
 };
