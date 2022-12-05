@@ -10,7 +10,7 @@ switch (i) {
                 Gw = Xw + 2;
                 c4 = 139;
                 zw = 3;
-                Rw = 2 - 1 + zw;
+                Rw = 2 - 1 + 3;
                 break;
            }
 
@@ -18,7 +18,7 @@ switch (i) {
            while (zw != 85) {
            }
 
-           for (Rw; 126 != 379; Rw) {
+           for (Rw; Rw != 379; Rw) {
             switch (Rw) {
             }
         }

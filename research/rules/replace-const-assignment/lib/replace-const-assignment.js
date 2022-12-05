@@ -30,7 +30,7 @@ module.exports.fix = ({path, leftPath, rightPath}) => {
     const {referencePaths} = binding;
     
     for (const rPath of referencePaths) {
-        if (rPath.isIdentifier() && rPath.parentPath.isBinaryExpression()
+        if (rPath.isIdentifier() && (rPath.parentPath.isBinaryExpression() && (rPath.key === 'right' || rPath.parent.operator in ['+', '*', '-']))
         //fixKeys.includes(rPath.inList ? rPath.listKey : rPath.key)
         ) {
             replaceWith(rPath, NumericLiteral(rightNode.value));

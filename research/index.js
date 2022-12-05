@@ -16,7 +16,7 @@ const res = putout(source, {
         // 'remove-nested-blocks',       
         // 'remove-unreferenced-variables',
         //'remove-useless-escape',
-        'remove-useless-functions',
+        //'remove-useless-functions',
 
         //'convert-apply-to-spread',
         //'convert-arguments-to-rest',
@@ -27,7 +27,7 @@ const res = putout(source, {
 
         //['convert-jsfuck', require('./rules/putout-plugin-convert-jsfuck.js')],
         //['convert-string', require('./putout-plugins/putout-plugin-convert-string.js')],
-        ['evaluate-expression', require('./rules/evaluate-expression/lib/evaluate-expression')],
+        //['evaluate-expression', require('./rules/evaluate-expression/lib/evaluate-expression')],
         ['replace-const-assignment', require('./rules/replace-const-assignment/lib/replace-const-assignment')],
         //['replace-math-func', require('./rules/putout-plugin-replace-math-func')],
         //['replace-func-call', require('./rules/putout-plugin-replace-func-call')],
