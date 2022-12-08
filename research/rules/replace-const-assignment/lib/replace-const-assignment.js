@@ -35,6 +35,7 @@ module.exports.fix = ({path, leftPath, rightPath}) => {
         || rPath.parentPath.isBinaryExpression() && (rPath.key === 'right' || operators.includes(rPath.parent.operator))
         || rPath.parentPath.isArrayExpression()
         || rPath.parentPath.isMemberExpression()
+        || rPath.parentPath.isCallExpression()
         )
         //fixKeys.includes(rPath.inList ? rPath.listKey : rPath.key)
         ) {

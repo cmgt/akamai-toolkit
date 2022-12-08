@@ -12,3 +12,7 @@ var tw = 63;
 var arr = [-33, -33, Rw, [63]];
 
 const el = arr[1];
+
+const TT = {TZ: (v) => (v)};
+
+TT.TZ(33);
