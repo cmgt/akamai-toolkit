@@ -31,13 +31,12 @@ module.exports.fix = ({ path, leftPath, rightPath }) => {
         rPath.parentPath.isArrayExpression() ||
         rPath.parentPath.isMemberExpression() ||
         rPath.parentPath.isCallExpression() ||
-        rPath.parentPath.isVariableDeclarator())
-      //fixKeys.includes(rPath.inList ? rPath.listKey : rPath.key)
+        rPath.parentPath.isVariableDeclarator())      
     ) {
       targetNodes.push(rPath.isUnaryExpression() ? rPath.argument : rPath);
     } else if (
       isUpdateExpression(rPath.parent) ||
-      isAssignmentExpression(rPath.parent)
+      (isAssignmentExpression(rPath.parent) && rPath.key === 'left')
     ) {
       return;
     }

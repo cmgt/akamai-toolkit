@@ -7,7 +7,7 @@ var beautify = require("js-beautify").js;
 
 let input = "test.js";
 //input = "akamai_sephora_2.js";
-//input = "out.js";
+input = "out.js";
 const output = "out.js";
 const source = fs.readFileSync(path.join(__dirname, input), {
   encoding: "utf8",
@@ -45,7 +45,7 @@ const res = putout(source, {
 
 const code = beautify(res.code, { indent_size: 2, space_in_empty_paren: true });
 
-if (input !== "test") {
+if (input !== "test.js") {
   fs.writeFileSync(path.join(__dirname, "out", Date.now() + output), code, {
     encoding: "utf8",
   });
