@@ -1,18 +1,15 @@
-var i;
-var Xw;
-var Gw;
-var zw;
-var Rw;
-var CO;
+const t = 'undefined';
 
-i = 1;
-CO = 33;
-var tw = 63;
-
-var arr = [-33, -33, Rw, [63]];
-
-const el = arr[1];
-
-const TT = {TZ: (v) => (v)};
-
-TT.TZ(33);
+function Vvl() {
+        B9 = 1,
+        N9 = 1 + !0 + !0 + !0 + !0,
+        f9 = 1 + !0 + !0 + !0 + !0 + !0,
+        k9 = !0 + !0 + !0 + !0,
+        Y9 = 1 + !0 + !0,
+        J9 = 1 + !0 + !0 + !0 + !0 + !0 + !0,
+        lD = [1] + [0] - [],
+        z9 = 0,
+        g9 = [1] + [0] - 1,
+        G9 = !0 + !0,
+        T9 = [1] + [0] - 1 - 1;
+    }

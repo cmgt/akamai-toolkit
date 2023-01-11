@@ -58,17 +58,17 @@ module.exports.traverse = ({push}) => ({
         }
     },
     
-    // VariableDeclarator: (path) => {
-    //     const leftPath = path.get('id');
-    //     const rightPath = path.get('init');
+    VariableDeclarator: (path) => {
+        const leftPath = path.get('id');
+        const rightPath = path.get('init');
     
-    //     if (leftPath.isIdentifier() && rightPath.isNumericLiteral()) {
-    //         push({
-    //             path,
-    //             leftPath,
-    //             rightPath,
-    //         });
-    //     }
-    // },
+        if (leftPath.isIdentifier() && rightPath.isNumericLiteral()) {
+            push({
+                path,
+                leftPath,
+                rightPath,
+            });
+        }
+    },
 });
 
