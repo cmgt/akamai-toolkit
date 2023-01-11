@@ -1,15 +1,11 @@
-const t = 'undefined';
-
-function Vvl() {
-        B9 = 1,
-        N9 = 1 + !0 + !0 + !0 + !0,
-        f9 = 1 + !0 + !0 + !0 + !0 + !0,
-        k9 = !0 + !0 + !0 + !0,
-        Y9 = 1 + !0 + !0,
-        J9 = 1 + !0 + !0 + !0 + !0 + !0 + !0,
-        lD = [1] + [0] - [],
-        z9 = 0,
-        g9 = [1] + [0] - 1,
-        G9 = !0 + !0,
-        T9 = [1] + [0] - 1 - 1;
+function Zl() {
+    bl = {};
+    if (typeof window !== [] + [][[]]) {
+        ll = window;
+    } else if (typeof global !== [] + [][[]]) {
+        ll = global;
+    } else {
+        ll = this;
     }
+    Hl();
+}
