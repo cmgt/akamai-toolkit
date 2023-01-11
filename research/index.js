@@ -7,6 +7,7 @@ var beautify = require("js-beautify").js;
 
 let input = "test.js";
 input = "akamai_sephora_2.js";
+input = "out.js";
 const output = "out.js";
 const source = fs.readFileSync(path.join(__dirname, input), {
   encoding: "utf8",
@@ -25,9 +26,9 @@ const res = putout(source, {
     //['convert-jsfuck', require('./rules/putout-plugin-convert-jsfuck.js')],
     //['convert-string', require('./putout-plugins/putout-plugin-convert-string.js')],
     //['replace-const-assignment', require('./rules/replace-const-assignment/lib/replace-const-assignment')],
-    //['evaluate-expression', require('./rules/putout-plugin-evaluate-expression')],
+    ['evaluate-expression', require('./rules/putout-plugin-evaluate-expression')],
     //['replace-math-func', require('./rules/putout-plugin-replace-math-func')],
-    ["replace-func-call", require("./rules/putout-plugin-replace-func-call")],
+    //["replace-func-call", require("./rules/putout-plugin-replace-func-call")],
 
     //"remove-unused-variables",
     //"remove-unused-expressions",
@@ -41,8 +42,16 @@ const res = putout(source, {
 
 console.debug("stop");
 
+const code = beautify(res.code, { indent_size: 2, space_in_empty_paren: true });
+
 fs.writeFileSync(
-  path.join(__dirname, output),
-  beautify(res.code, { indent_size: 2, space_in_empty_paren: true }),
+  path.join(__dirname, "out", Date.now() + output),
+  code,
   { encoding: "utf8" }
 );
+
+fs.writeFileSync(
+    path.join(__dirname, output),
+    code,
+    { encoding: "utf8" }
+  );
