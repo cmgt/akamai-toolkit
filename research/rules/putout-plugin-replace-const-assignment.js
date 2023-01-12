@@ -4,7 +4,12 @@ const { types, operator } = require("putout");
 const operators = ["+", "*", "-", "/"];
 
 const { replaceWith } = operator;
-const { valueToNode, isUpdateExpression, isAssignmentExpression } = types;
+const {
+  valueToNode,
+  isUpdateExpression,
+  isAssignmentExpression,
+  UnaryExpression,
+} = types;
 
 module.exports.report = () => `replace const assignment`;
 
@@ -19,8 +24,16 @@ module.exports.fix = ({ path, leftPath, rightPath }) => {
   const { referencePaths } = binding;
 
   const targetNodes = [];
+  const sourceNode = valueToNode(rightNode.value);
 
   for (const rPath of referencePaths) {
+    if (
+      isUpdateExpression(rPath.parent) ||
+      (isAssignmentExpression(rPath.parent) && rPath.key === "left")
+    ) {
+      return;
+    }
+
     if (
       rPath.isIdentifier() &&
       ((rPath.parentPath.isBinaryExpression() &&
@@ -36,19 +49,24 @@ module.exports.fix = ({ path, leftPath, rightPath }) => {
       targetNodes.push(rPath);
     } else if (
       rPath.parentPath.isUnaryExpression() &&
-      rPath.parent.operator === "-"
+      (rPath.parent.operator === "-" ||
+        rPath.parent.operator === "!" ||
+        rPath.parent.operator === "~")
     ) {
-      targetNodes.push(rPath.parent.argument);
-    } else if (
-      isUpdateExpression(rPath.parent) ||
-      (isAssignmentExpression(rPath.parent) && rPath.key === "left")
-    ) {
-      return;
+      replaceWith(
+        rPath.parentPath,
+        UnaryExpression(rPath.parent.operator, sourceNode)
+      );
     }
   }
 
-  const sourceNode = valueToNode(rightNode.value);
-  targetNodes.forEach((node) => replaceWith(node, sourceNode));
+  targetNodes.forEach((node) => {
+    try {
+      replaceWith(node, sourceNode);
+    } catch (e) {
+      console.log(e, rPath, node);
+    }
+  });
 };
 
 module.exports.traverse = ({ push }) => ({
