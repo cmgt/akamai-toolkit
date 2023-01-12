@@ -24,7 +24,7 @@ const res = putout(source, {
     //'math/apply-numeric-separators'
 
     //['convert-jsfuck', require('./rules/putout-plugin-convert-jsfuck.js')],
-    ['convert-string', require('./rules/putout-plugin-convert-string.js')],
+    //['convert-string', require('./rules/putout-plugin-convert-string.js')],
     //['replace-const-assignment', require('./rules/putout-plugin-replace-const-assignment')],
     // [
     //   "evaluate-expression",
