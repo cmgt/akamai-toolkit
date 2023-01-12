@@ -1,10 +1,20 @@
-'use strict';
+"use strict";
 
-module.exports.report = () => `string convert`;
+const { types, operator } = require("putout");
+const { valueToNode } = types;
+const { replaceWith } = operator;
 
-module.exports.replace = () => ({   
-    '"__a"': ({__a}, path) => {                       
-        path.node.raw = __a;
-        return path.node;
-    },  
+module.exports.report = () => `convert string`;
+
+module.exports.fix = ({ path }) => {
+  replaceWith(path, valueToNode(path.node.value));
+};
+
+module.exports.traverse = ({ push }) => ({
+  StringLiteral: (path) => {
+    const value = path.node.raw;
+    if (value && value.includes("\\")) {
+      push({ path });
+    }
+  },
 });

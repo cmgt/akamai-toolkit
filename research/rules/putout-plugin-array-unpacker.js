@@ -9,9 +9,10 @@ module.exports.report = () => `evaluate expressions`;
 
 function isSimpleArrayAccess(node) {
   return (
-    node.type == "ComputedMemberExpression" &&
-    node.object.type == "IdentifierExpression" &&
-    node.expression.type == "LiteralNumericExpression"
+    node.isMemberExpression() &&
+    node.computed &&
+    node.object.type == "Identifier" &&
+    node.property.type == "NumericLiteral"
   );
 }
 

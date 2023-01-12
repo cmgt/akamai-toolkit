@@ -1,13 +1,14 @@
-let B9 = 1;
+const a = [' ', 'World', 'Hello', "test"];
 
-switch (Math.round(Math.random() * 2)) {
-  case 1:
-    return z9;
-  case z9:
-    return 1;
+function qwl(a, b) {
+  return a.charCodeAt(b);
 }
 
 
+var F3 = function(S3, X3) {
+  return S3 >= X3;
+};
 
-N9 = 1;
-N8 += 1;
+F3(Kw, 0);
+
+var Mwl = qwl(bwl, Kwl);
