@@ -32,6 +32,7 @@ const res = putout(source, {
     // ],
     //['replace-math-func', require('./rules/putout-plugin-replace-math-func')],
     //["replace-func-call", require("./rules/putout-plugin-replace-func-call")],
+    ["array-unpack", require("./rules/putout-plugin-array-unpacker")],
 
     //"remove-unused-variables",
     //"remove-unused-expressions",
