@@ -24,7 +24,7 @@ const res = putout(source, {
     //'math/apply-numeric-separators'
 
     //['convert-jsfuck', require('./rules/putout-plugin-convert-jsfuck.js')],
-    //['convert-string', require('./putout-plugins/putout-plugin-convert-string.js')],
+    ['convert-string', require('./rules/putout-plugin-convert-string.js')],
     //['replace-const-assignment', require('./rules/putout-plugin-replace-const-assignment')],
     // [
     //   "evaluate-expression",
@@ -33,24 +33,32 @@ const res = putout(source, {
     //['replace-math-func', require('./rules/putout-plugin-replace-math-func')],
     //["replace-func-call", require("./rules/putout-plugin-replace-func-call")],
 
-    "remove-unused-variables",
+    //"remove-unused-variables",
     //"remove-unused-expressions",
     //  'remove-unreachable-code',
     // 'remove-nested-blocks',
-    // 'remove-unreferenced-variables',
+    //"remove-unreferenced-variables",
     //'remove-useless-escape',
-    "remove-useless-functions",
+    //"remove-useless-functions",
   ],
 });
 
 const code = beautify(res.code, { indent_size: 2, space_in_empty_paren: true });
 
 if (input !== "test.js") {
-  fs.writeFileSync(path.join(__dirname, "out", Date.now() + output), code, {
+  fs.writeFileSync(
+    path.join(__dirname, "out", Date.now() + "." + output),
+    code,
+    {
+      encoding: "utf8",
+    }
+  );
+
+  fs.writeFileSync(path.join(__dirname, output), code, { encoding: "utf8" });
+} else {
+  fs.writeFileSync(path.join(__dirname, "test." + output), code, {
     encoding: "utf8",
   });
 }
-
-fs.writeFileSync(path.join(__dirname, output), code, { encoding: "utf8" });
 
 console.debug("stop");

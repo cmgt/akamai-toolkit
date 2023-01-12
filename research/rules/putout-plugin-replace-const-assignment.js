@@ -1,7 +1,7 @@
 "use strict";
 
 const { types, operator } = require("putout");
-const operators = ["+", "*", "-","/"];
+const operators = ["+", "*", "-", "/"];
 
 const { replaceWith } = operator;
 const { valueToNode, isUpdateExpression, isAssignmentExpression } = types;
@@ -23,20 +23,25 @@ module.exports.fix = ({ path, leftPath, rightPath }) => {
   for (const rPath of referencePaths) {
     if (
       rPath.isIdentifier() &&
-      ((rPath.parentPath.isUnaryExpression() &&
-        rPath.parent.operator === "-") ||
-        (rPath.parentPath.isBinaryExpression() &&
-          (rPath.key === "right" ||
-            operators.includes(rPath.parent.operator))) ||
+      ((rPath.parentPath.isBinaryExpression() &&
+        (rPath.key === "right" || operators.includes(rPath.parent.operator))) ||
         rPath.parentPath.isArrayExpression() ||
         rPath.parentPath.isMemberExpression() ||
         rPath.parentPath.isCallExpression() ||
-        rPath.parentPath.isVariableDeclarator())      
+        rPath.parentPath.isVariableDeclarator() ||
+        rPath.parentPath.isSwitchCase() ||
+        rPath.parentPath.isReturnStatement() ||
+        (isAssignmentExpression(rPath.parent) && rPath.key === "right"))
     ) {
-      targetNodes.push(rPath.isUnaryExpression() ? rPath.argument : rPath);
+      targetNodes.push(rPath);
+    } else if (
+      rPath.parentPath.isUnaryExpression() &&
+      rPath.parent.operator === "-"
+    ) {
+      targetNodes.push(rPath.parent.argument);
     } else if (
       isUpdateExpression(rPath.parent) ||
-      (isAssignmentExpression(rPath.parent) && rPath.key === 'left')
+      (isAssignmentExpression(rPath.parent) && rPath.key === "left")
     ) {
       return;
     }

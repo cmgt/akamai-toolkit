@@ -1,9 +1,12 @@
-let G9 = 0,
-  g9 = 9,
-  T9 = 8;
-
-  G9 = T9 + 1;
-
-for (const i = g9; i < T9; i++) {
-  console.log(i);
+function qwl(a, b) {
+  return a.charCodeAt(b);
 }
+
+
+var F3 = function(S3, X3) {
+  return S3 >= X3;
+};
+
+F3(Kw, 0);
+
+var Mwl = qwl(bwl, Kwl);
