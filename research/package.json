@@ -9,6 +9,7 @@
     "putout": "^28.5.0"
   },
   "dependencies": {
-    "js-beautify": "^1.14.7"
+    "js-beautify": "^1.14.7",
+    "js-deobfuscator": "^1.0.19"
   }
 }
