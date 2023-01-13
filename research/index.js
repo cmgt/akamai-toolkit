@@ -25,10 +25,10 @@ const res = putout(source, {
 
     //['convert-jsfuck', require('./rules/putout-plugin-convert-jsfuck.js')],
     //['convert-string', require('./rules/putout-plugin-convert-string.js')],
-    // [
-    //   "replace-const-assignment",
-    //   require("./rules/putout-plugin-replace-const-assignment"),
-    // ],
+    [
+      "replace-const-assignment",
+      require("./rules/putout-plugin-replace-const-assignment"),
+    ],
     [
       "evaluate-expression",
       require("./rules/putout-plugin-evaluate-expression"),
