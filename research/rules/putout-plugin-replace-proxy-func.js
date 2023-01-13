@@ -6,7 +6,7 @@ const { types } = require("putout");
 const { replaceWith } = operator;
 const { isBlockStatement, isReturnStatement } = types;
 
-module.exports.report = () => `replace func call`;
+module.exports.report = () => `replace proxy func`;
 
 module.exports.fix = ({ path, id, body }) => {
   const { name } = id.node;

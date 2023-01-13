@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports.report = () => `replace math funcs`;
+module.exports.report = () => `replace inplace func`;
 
 module.exports.replace = () => ({
     'sum(__a, __b)':'__a + __b',

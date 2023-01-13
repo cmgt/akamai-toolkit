@@ -1,11 +1,8 @@
-var Xv = 10;
-const d = -Xv;
+var F3 = function(S3, X3) {
+    return S3 >= X3;
+  };
 
-function f(Xv)
-{
-    while(Xv < 0) {
-        console.log(Xv);
-    }    
-}
+  var X8 = 10;
+  var K3 = ["test", "0", "1"];
 
-f(d);
+  F3(X8, K3[2]);
