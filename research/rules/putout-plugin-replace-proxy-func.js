@@ -2,7 +2,7 @@
 
 const { operator, types, parse, generate } = require("putout");
 
-const { replaceWith, replaceWithMultiple, traverse } = operator;
+const { replaceWith, replaceWithMultiple, traverse, getBinding } = operator;
 const {
   isBinaryExpression,
   isReturnStatement,
@@ -16,7 +16,8 @@ module.exports.fix = ({ path, id, body, proxyExpression, params }) => {
   // This will become false if the function is referenced, but not within a CallExpression. In that case, we can't remove the original function, but we can still simplify all calls to it
   let shouldDelete = true;  
 
-  const { constant, referencePaths } = path.scope.getBinding(id);
+  const binding = getBinding(path, id);
+  const { constant, referencePaths } = binding;
   // If function is redefined somewhere, don't
   if (!constant) return;
 
@@ -61,20 +62,28 @@ module.exports.fix = ({ path, id, body, proxyExpression, params }) => {
   }
 };
 
+const checkFunctionBody = (body) => {
+  // Check that function has a one-line body, and returns immediately.
+  if (!isReturnStatement(body)) return false;
+  
+  //const proxyExpression = body.argument;
+  // Handle only BinaryExpressions or UnaryExpressions.
+  // if (
+  //   !isBinaryExpression(proxyExpression) &&
+  //   !isUnaryExpression(proxyExpression)
+  // )
+  //   return false;
+
+    return true;
+}
+
 module.exports.traverse = ({ push }) => ({
   FunctionDeclaration: (path) => {
     const { node } = path;
     const { id, body, params } = node;
-    // Check that function has a one-line body, and returns immediately.
-    if (!isReturnStatement(body.body[0])) return;
-    const proxyExpression = body.body[0].argument;
-    // Handle only BinaryExpressions or UnaryExpressions.
-    if (
-      !isBinaryExpression(proxyExpression) &&
-      !isUnaryExpression(proxyExpression)
-    )
-      return;
+    if (!checkFunctionBody(body.body[0])) return;
 
+    const proxyExpression = body.body[0].argument;
     push({ path, id, body, proxyExpression, params });
   },
 
@@ -87,17 +96,9 @@ module.exports.traverse = ({ push }) => ({
     }
 
     const {body, params} = rightPath.node;
+    if (!checkFunctionBody(body.body[0])) return;
 
-    // Check that function has a one-line body, and returns immediately.
-    if (!isReturnStatement(body.body[0])) return;
     const proxyExpression = body.body[0].argument;
-    // Handle only BinaryExpressions or UnaryExpressions.
-    if (
-      !isBinaryExpression(proxyExpression) &&
-      !isUnaryExpression(proxyExpression)
-    )
-      return;
-
     push({ path, id, body, proxyExpression, params });
   },
 });
