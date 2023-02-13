@@ -745,9 +745,6 @@
     } while (h2 != 271);
   };
 
-  function Cwl(a, b, c) {
-    return a.indexOf(b, c);
-  }
   var nw = function() {
     return cL.apply(this, [61, arguments]);
   };
@@ -1640,9 +1637,6 @@
     return pjl.charCodeAt(njl);
   };
 
-  function Owl(a, b, c) {
-    return a.substr(b, c);
-  }
   var PU;
   var tv = function Njl(fjl, Jjl) {
     while (fjl != 82) {
@@ -2341,12 +2335,12 @@
   var Zcl;
 
   function pvl(zvl, lwl, Bvl) {
-    var Gvl = Cwl(zvl, "0x" + Bvl);
-    var Yvl = Cwl(zvl, ';', Gvl);
+    var Gvl = zvl.indexOf("0x" + Bvl);
+    var Yvl = zvl.indexOf(';', Gvl);
     var kvl = Gvl + Bvl.length + 3;
-    var Nvl = Owl(zvl, kvl, Yvl - kvl);
-    var fvl = Owl(zvl, 0, Gvl);
-    var Jvl = Owl(zvl, Yvl + 1);
+    var Nvl = zvl.substr(kvl, Yvl - kvl);
+    var fvl = zvl.substr(0, Gvl);
+    var Jvl = zvl.substr(Yvl + 1);
     var Tvl = fvl + Jvl + typeof ll[lwl];
     var gvl = nvl(Tvl, 629062);
     return Nvl - gvl;

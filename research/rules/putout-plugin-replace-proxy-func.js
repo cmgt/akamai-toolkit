@@ -2,7 +2,8 @@
 
 const { operator, types, parse, generate } = require("putout");
 
-const { replaceWith, replaceWithMultiple, traverse, getBinding } = operator;
+const { replaceWith, replaceWithMultiple, traverse, getBinding, remove } =
+  operator;
 const {
   isBinaryExpression,
   isReturnStatement,
@@ -14,9 +15,14 @@ module.exports.report = () => `replace proxy func`;
 
 module.exports.fix = ({ path, id, body, proxyExpression, params }) => {
   // This will become false if the function is referenced, but not within a CallExpression. In that case, we can't remove the original function, but we can still simplify all calls to it
-  let shouldDelete = true;  
+  let shouldDelete = true;
 
   const binding = getBinding(path, id);
+
+  if (!binding) {
+    return;
+  }
+
   const { constant, referencePaths } = binding;
   // If function is redefined somewhere, don't
   if (!constant) return;
@@ -44,7 +50,11 @@ module.exports.fix = ({ path, id, body, proxyExpression, params }) => {
       Identifier(_path) {
         for (let i = 0; i < params.length; i++) {
           if (params[i].name == _path.node.name) {
-            replaceWith(_path, parentPath.node.arguments[i]);
+            if (i < parentPath.node.arguments.length) {
+              replaceWith(_path, parentPath.node.arguments[i]);
+            } else {
+              remove(_path);
+            }
             return;
           }
         }
@@ -58,14 +68,14 @@ module.exports.fix = ({ path, id, body, proxyExpression, params }) => {
     replaceWithMultiple(parentPath, proxyExpressionCopyAst.program.body);
   }
   if (shouldDelete) {
-    path.remove();
+    remove(path);
   }
 };
 
 const checkFunctionBody = (body) => {
   // Check that function has a one-line body, and returns immediately.
   if (!isReturnStatement(body)) return false;
-  
+
   //const proxyExpression = body.argument;
   // Handle only BinaryExpressions or UnaryExpressions.
   // if (
@@ -74,8 +84,8 @@ const checkFunctionBody = (body) => {
   // )
   //   return false;
 
-    return true;
-}
+  return true;
+};
 
 module.exports.traverse = ({ push }) => ({
   FunctionDeclaration: (path) => {
@@ -95,7 +105,7 @@ module.exports.traverse = ({ push }) => ({
       return;
     }
 
-    const {body, params} = rightPath.node;
+    const { body, params } = rightPath.node;
     if (!checkFunctionBody(body.body[0])) return;
 
     const proxyExpression = body.body[0].argument;
