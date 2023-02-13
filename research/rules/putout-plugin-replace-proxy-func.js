@@ -1,70 +1,103 @@
 "use strict";
 
-const { operator } = require("putout");
-const { types } = require("putout");
+const { operator, types, parse, generate } = require("putout");
 
-const { replaceWith } = operator;
-const { isBlockStatement, isReturnStatement } = types;
+const { replaceWith, replaceWithMultiple, traverse } = operator;
+const {
+  isBinaryExpression,
+  isReturnStatement,
+  isUnaryExpression,
+  isCallExpression,
+} = types;
 
 module.exports.report = () => `replace proxy func`;
 
-module.exports.fix = ({ path, id, body }) => {
-  const { name } = id.node;
-  const binding = path.scope.getBinding(name);
+module.exports.fix = ({ path, id, body, proxyExpression, params }) => {
+  // This will become false if the function is referenced, but not within a CallExpression. In that case, we can't remove the original function, but we can still simplify all calls to it
+  let shouldDelete = true;  
 
-  if (!binding?.referenced) return;
+  const { constant, referencePaths } = path.scope.getBinding(id);
+  // If function is redefined somewhere, don't
+  if (!constant) return;
 
-  const statements = body.get("body");
-  let target = body;
-  if (statements.length === 1) {
-    if (isReturnStatement(statements[0])) {
-        target = statements[0].get('argument');
-    } else {
-      target = statements[0];
+  for (let referencePath of referencePaths) {
+    // referencePath will be a path to an Identifier. To check if it's contained in a CallExpression, we should check it's parentPath.
+    let { parentPath } = referencePath;
+
+    // Don't delete if referenced, but not in a call expression.
+    // This is implemented for sake of generality. Perhaps your obfuscated file has a self-integrity check somewhere idk lol
+    if (
+      !isCallExpression(parentPath) ||
+      (isCallExpression(parentPath) &&
+        parentPath.node.callee !== referencePath.node)
+    ) {
+      shouldDelete = false;
+      continue;
     }
+
+    // Clone the expression into it's own AST so we can modify it
+    const proxyExpressionCopyAst = parse(generate(proxyExpression).code);
+
+    // This visitor replaces the variables in the proxy expression with the actual arguments. Correct ordering of the arguments is maintained.
+    const replaceVarsInExpressionWithArguments = {
+      Identifier(_path) {
+        for (let i = 0; i < params.length; i++) {
+          if (params[i].name == _path.node.name) {
+            replaceWith(_path, parentPath.node.arguments[i]);
+            return;
+          }
+        }
+      },
+    };
+
+    // Execute the visitor
+    traverse(proxyExpressionCopyAst, replaceVarsInExpressionWithArguments);
+
+    // Replace the CallExpression with the modified proxy expression
+    replaceWithMultiple(parentPath, proxyExpressionCopyAst.program.body);
   }
-
-  const { referencePaths } = binding;
-
-  for (const rPath of referencePaths) {
-    try {
-      if (rPath.key === "callee") {
-        replaceWith(rPath.parentPath, target);
-      }
-    } catch (e) {
-      console.log({ e, rPath, name });
-    }
+  if (shouldDelete) {
+    path.remove();
   }
 };
 
 module.exports.traverse = ({ push }) => ({
   FunctionDeclaration: (path) => {
-    const id = path.get("id");
-    const body = path.get("body");
-    const params = path.get("params");
+    const { node } = path;
+    const { id, body, params } = node;
+    // Check that function has a one-line body, and returns immediately.
+    if (!isReturnStatement(body.body[0])) return;
+    const proxyExpression = body.body[0].argument;
+    // Handle only BinaryExpressions or UnaryExpressions.
+    if (
+      !isBinaryExpression(proxyExpression) &&
+      !isUnaryExpression(proxyExpression)
+    )
+      return;
 
-    if (params.length === 0) {
-      push({
-        path,
-        id,
-        body,
-      });
-    }
+    push({ path, id, body, proxyExpression, params });
   },
+
   VariableDeclarator: (path) => {
     const id = path.get("id");
     const rightPath = path.get("init");
 
-    if (
-      id.isIdentifier() &&
-      rightPath.isFunctionExpression() &&
-      rightPath.get("params").length === 0
-    ) {
-      push({
-        path,
-        id,
-        body: rightPath.get("body"),
-      });
+    if (!id.isIdentifier() || !rightPath.isFunctionExpression()) {
+      return;
     }
+
+    const {body, params} = rightPath.node;
+
+    // Check that function has a one-line body, and returns immediately.
+    if (!isReturnStatement(body.body[0])) return;
+    const proxyExpression = body.body[0].argument;
+    // Handle only BinaryExpressions or UnaryExpressions.
+    if (
+      !isBinaryExpression(proxyExpression) &&
+      !isUnaryExpression(proxyExpression)
+    )
+      return;
+
+    push({ path, id, body, proxyExpression, params });
   },
 });
