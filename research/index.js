@@ -36,15 +36,15 @@ const res = putout(source, {
     //['replace-math-func', require('./rules/putout-plugin-replace-math-func')],
     //["replace-func-call", require("./rules/putout-plugin-replace-func-call")],
     //["array-unpack", require("./rules/putout-plugin-array-unpacker")],
-    ["putout-plugin-replace-proxy-func", require("./rules/putout-plugin-replace-proxy-func")],
+    //["putout-plugin-replace-proxy-func", require("./rules/putout-plugin-replace-proxy-func")],
 
-    //"remove-unused-variables",
-    //"remove-unused-expressions",
-    //"remove-unreachable-code",
-    //"remove-nested-blocks",
-    //"remove-unreferenced-variables",
-    //'remove-useless-escape',
-    //"remove-useless-functions",
+    "remove-unused-variables",
+    "remove-unused-expressions",
+    "remove-unreachable-code",
+    "remove-nested-blocks",
+    "remove-unreferenced-variables",
+    'remove-useless-escape',
+    "remove-useless-functions",
   ],
 });
 
