@@ -6,7 +6,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "putout": "^28.5.0"
+    "putout": "^28.16.0"
   },
   "dependencies": {
     "js-beautify": "^1.14.7",
