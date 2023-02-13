@@ -1,20 +1,4 @@
-function xxcWxqPTwX9() {
-  function qwl(a, b) {
-    return a.charCodeAt(b);
-  }
-  const bwl = "test";
-
-  function swl(a) {
-    return a.length;
-  }
-
-  function Qwl(a) {
-    return a.toString();
-  }
-
-  const Ql = Qwl(xxcWxqPTwX);
-
-  for (var Kwl = 0; Kwl < swl(bwl); ++Kwl) {
-    var Mwl = qwl(bwl, Kwl);
-  }
-}
+let foo = [1,2,3,4,5,6,7,8,9]
+let bar = window["navigator"]["userAgent"]
+let baz = Date["now"]()
+let qux = foo[3]
