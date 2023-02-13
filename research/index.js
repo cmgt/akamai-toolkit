@@ -7,7 +7,7 @@ var beautify = require("js-beautify").js;
 
 let input = "test.js";
 //input = "akamai_sephora_2.js";
-//input = "out.js";
+input = "out.js";
 const output = "out.js";
 const source = fs.readFileSync(path.join(__dirname, input), {
   encoding: "utf8",
