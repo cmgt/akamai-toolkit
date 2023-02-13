@@ -1,7 +1,4 @@
 (function xxcWxqPTwX() {
-  function qwl(a, b) {
-    return a.charCodeAt(b);
-  }
   bl = {};
   if (typeof window !== 'undefined') {
     ll = window;
@@ -10,7 +7,7 @@
   } else {
     ll = this;
   }
-  Ql = pvl(Qwl(xxcWxqPTwX), "xxcWxqPTwX", "\x32\x34\x64\x36\x36\x66\x38");
+  Ql = pvl(xxcWxqPTwX.toString(), "xxcWxqPTwX", "24d66f8");
   z9 = 0;
   XD = 32, vD = 50;
   var xU = ['ZD'];
@@ -1640,7 +1637,7 @@
     }
   };
   var d7 = function(pjl, njl) {
-    return pjl['charCodeAt'](njl);
+    return pjl.charCodeAt(njl);
   };
 
   function Owl(a, b, c) {
@@ -2317,8 +2314,8 @@
   function nvl(bwl, Ewl) {
     var Zwl = Ewl;
     var Fwl = 0;
-    for (var Kwl = 0; Kwl < swl(bwl); ++Kwl) {
-      var Mwl = qwl(bwl, Kwl);
+    for (var Kwl = 0; Kwl < bwl.length; ++Kwl) {
+      var Mwl = bwl.charCodeAt(Kwl);
       if (Mwl === 10 || Mwl === 13 || Mwl === 32)
         continue;
       Mwl = (Mwl & 0xffff) * 3432918353 + (((Mwl >>> 16) * 3432918353 & 0xffff) << 16) & 0xffffffff;
@@ -2346,7 +2343,7 @@
   function pvl(zvl, lwl, Bvl) {
     var Gvl = Cwl(zvl, "0x" + Bvl);
     var Yvl = Cwl(zvl, ';', Gvl);
-    var kvl = Gvl + swl(Bvl) + 3;
+    var kvl = Gvl + Bvl.length + 3;
     var Nvl = Owl(zvl, kvl, Yvl - kvl);
     var fvl = Owl(zvl, 0, Gvl);
     var Jvl = Owl(zvl, Yvl + 1);
@@ -2360,10 +2357,6 @@
   var z9;
   var zr;
   var Nw;
-
-  function swl(a) {
-    return a.length;
-  }
   var Vr;
   var lAl;
 
@@ -2402,10 +2395,6 @@
   var Jml;
 
   var rL;
-
-  function Qwl(a) {
-    return a.toString();
-  }
   var HAl;
   var vAl;
   var gml;
