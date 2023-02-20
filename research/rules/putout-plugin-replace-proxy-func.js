@@ -109,6 +109,6 @@ module.exports.traverse = ({ push }) => ({
     if (!checkFunctionBody(body.body[0])) return;
 
     const proxyExpression = body.body[0].argument;
-    push({ path, id, body, proxyExpression, params });
+    push({ path, id: id.node, body, proxyExpression, params });
   },
 });
