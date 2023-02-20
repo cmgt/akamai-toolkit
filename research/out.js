@@ -748,7 +748,7 @@
               return SL;
             }
             if (RL.constructor === ll.Array) {
-              var zL = UL.call(null, 22, [
+              var zL = UL(22, [
                 XL,
                 7,
                 RL[1],
@@ -759,10 +759,7 @@
               RL = RL[0];
               XL -= MUl(33, [zL]);
             } else if (VL[RL].constructor === ll.Array) {
-              var zL = UL.apply(null, [
-                22,
-                [XL, true, 0, nL[VL[RL][0]], rL + V8[V8.length - 1] - Ql],
-              ]);
+              var zL = UL(22, [XL, true, 0, nL[VL[RL][0]], rL + V8[V8.length - 1] - Ql]);
               SL += zL;
               XL -= MUl(33, [zL]);
             } else {
@@ -819,7 +816,7 @@
           for (var D7 = wL[0].length - 1; D7 >= 0; --D7) {
             bl[wL[0][D7]] = (function() {
               return function(P7, m7, h7, x7, j7, c7) {
-                var U7 = U8.apply(null, [42, [false, m7, 83, 2, j7, c7]]);
+                var U7 = U8(42, [false, m7, 83, 2, j7, c7]);
                 bl[wL[0][D7]] = function() {
                   return U7;
                 };
@@ -1609,7 +1606,7 @@
           l2 = function() {
             return rr(18, arguments);
           };
-          Jr.call(null, 37, -449, 27, 52);
+          Jr(37, -449, 27, 52);
           V8.pop();
           tr += 557;
           break;
@@ -1634,7 +1631,7 @@
           Nw = function() {
             return rr(60, arguments);
           };
-          cL.apply(null, [61, [-696, 66]]);
+          cL(61, [-696, 66]);
           tr = 615;
           V8.pop();
           break;
@@ -1654,7 +1651,7 @@
           H2 = function() {
             return rr(62, arguments);
           };
-          s2.call(null, 89, -327);
+          s2(89, -327);
           tr += 592;
           V8.pop();
           break;
@@ -1673,7 +1670,7 @@
           break;
         case 625:
           lAl = [];
-          bl[bl.tZ.apply(null, [48, 41, false, -148])] = [];
+          bl[bl.tZ(48, 41, false, -148)] = [];
           G8 = [];
           h2 = 555;
           bAl = (function() {
@@ -1694,8 +1691,8 @@
           EAl = function(ZAl, IAl) {
             V8.push(102);
             var WAl = {};
-            WAl[bl.fZ.apply(null, [-256, false, 49])] = FAl;
-            WAl[bl.JZ.apply(null, [93, -579])] = IAl;
+            WAl[bl.fZ(-256, false, 49)] = FAl;
+            WAl[bl.JZ(93, -579)] = IAl;
             if (ZAl) WAl[bl.TZ(-456, 32, 46)] = ZAl;
             var KAl;
             KAl = WAl;
@@ -2489,7 +2486,7 @@
           return 0;
         case 259:
           G8[x2[1]] = AAl ? AAl : 1;
-          bl[bl.tZ.apply(null, [48, 92, 83, -616])][0] = x2[1] + 1;
+          bl[bl.tZ(48, 92, 83, -616)][0] = x2[1] + 1;
           V8.pop();
           h2 += 12;
           break;
@@ -2524,18 +2521,18 @@
           }
           return 0;
         case 65:
-          if (typeof G8[x2[1]] !== bl.vZ.call(null, 11, 96, 77, -623)) {
+          if (typeof G8[x2[1]] !== bl.vZ(11, 96, 77, -623)) {
             V8.pop();
             return;
           }
-          var jAl = bl[bl.UZ.call(null, 211, 25)].call(x2[0]);
-          var mAl = jAl[bl.VZ.apply(null, [-171, 47])](
+          var jAl = bl[bl.UZ(211, 25)].call(x2[0]);
+          var mAl = jAl[bl.VZ(-171, 47)](
             m2(18, [PU[x2[1]]]),
             mU[x2[1]]
           );
           var APl = m2(18, [xU[x2[1]]]);
           h2 = 297;
-          var hAl = jAl[bl.VZ.call(null, -171, 47)](APl, mAl + cU[x2[1]]);
+          var hAl = jAl[bl.VZ(-171, 47)](APl, mAl + cU[x2[1]]);
           break;
         case 18:
           V8.push(23);
@@ -2544,7 +2541,7 @@
           mPl =
             typeof x2[0] === bl.vZ(11, false, 58, -748) ?
             bl.RZ(48, 171, true, false) :
-            bl.SZ(12, 75) + x2[0] + bl.XZ.apply(null, [61, -54]);
+            bl.SZ(12, 75) + x2[0] + bl.XZ(61, -54);
           V8.pop();
           return mPl;
         case 58:
@@ -2553,22 +2550,22 @@
           break;
         case 2:
           V8.push(31);
-          var FAl = bl.nZ.apply(null, [100, 21, 98, -257]);
+          var FAl = bl.nZ(100, 21, 98, -257);
           if (
             ll[bl.zZ(7, true, false, -342)] &&
             ll[bl.zZ(7, true, false, -342)][bl.BZ(9, -6)]
           ) {
             if (
               ll[bl.zZ(7, true, false, -342)][bl.BZ(9, -6)][
-                bl.GZ.call(null, 30, -703, false, 52)
+                bl.GZ(30, -703, false, 52)
               ] &&
               ll[bl.zZ(7, true, false, -342)][bl.BZ(9, -6)][
-                bl.GZ.call(null, 30, -703, false, 52)
-              ] !== bl.YZ.call(null, -400, false, 17)
+                bl.GZ(30, -703, false, 52)
+              ] !== bl.YZ(-400, false, 17)
             ) {
               FAl =
                 ll[bl.zZ(7, true, false, -342)][bl.BZ(9, -6)][
-                  bl.GZ.call(null, 30, -703, false, 52)
+                  bl.GZ(30, -703, false, 52)
                 ];
             } else {
               FAl = ll[bl.kZ(-185, 95, 45)][bl.NZ(53, -281)];
@@ -2578,7 +2575,7 @@
           break;
         case 42:
           V8.push(640);
-          this[bl.KW.apply(null, [8, -148])] = x2[0];
+          this[bl.KW(8, -148)] = x2[0];
           V8.pop();
           h2 += 229;
           break;
@@ -2587,13 +2584,13 @@
           V8.push(831);
           if (bl.ml(8, 54, 112, 47, 143) !=
             typeof ll[bl.VI(92, 752, 4, true)][bl.ZW(420, 24, 24)]) {
-            ll[bl.VI.apply(null, [92, 752, 37, 61])][
-              bl.pI.call(null, 90, 396, 20, 96)
+            ll[bl.VI(92, 752, 37, 61)][
+              bl.pI(90, 396, 20, 96)
             ](
               ll[bl.VI(92, 752, true, 45)],
-              bl.ZW.apply(null, [420, 24, 67]),
+              bl.ZW(420, 24, 67),
               MUl(40, [
-                bl.TZ.call(null, 273, 82, 46),
+                bl.TZ(273, 82, 46),
                 function() {
                   return MUl(23, arguments);
                 },
@@ -2985,7 +2982,7 @@
               Nml = Nml[0];
               kml -= m2(38, [lhl]);
             } else if (fml[Nml].constructor === ll.Array) {
-              var lhl = kPl.call(null, 60, [
+              var lhl = kPl(60, [
                 kml,
                 0,
                 50,
@@ -3088,16 +3085,16 @@
           break;
         case 280:
           NPl = 530;
-          for (; 0 < fPl[0][bl.mZ.call(null, 826, 43, 29)];) {
+          for (; 0 < fPl[0][bl.mZ(826, 43, 29)];) {
             (function() {
               V8.push(654);
               var Qhl = 0 < fPl[1];
               var Hhl = Qhl ?
                 bl.xZ(114, 68, 50) :
-                bl.hZ.call(null, 607, 27, 58);
+                bl.hZ(607, 27, 58);
               var Dhl = Qhl ?
                 ll[bl.cZ(725, 84)] :
-                ll[bl.jZ.apply(null, [605, 75, 60])];
+                ll[bl.jZ(605, 75, 60)];
               var Ahl = Hhl + fPl[0][0];
               bl[Ahl] = function() {
                 var Phl = Dhl(mhl(fPl[0][0]));
@@ -3127,7 +3124,7 @@
             do {
               bl[fPl[0][hhl]] = (function() {
                 return function(chl, Uhl) {
-                  var Lhl = Jr.apply(null, [chl, Uhl, 36, 35]);
+                  var Lhl = Jr(chl, Uhl, 36, 35);
                   bl[fPl[0][hhl]] = function() {
                     return Lhl;
                   };
@@ -3306,7 +3303,7 @@
           for (var Pxl = 0; Pxl < Wxl[0].length; ++Pxl) {
             bl[Wxl[0][Pxl]] = (function() {
               return function(xxl, jxl, cxl) {
-                var Uxl = Vr.apply(null, [xxl, 52, cxl]);
+                var Uxl = Vr(xxl, 52, cxl);
                 bl[Wxl[0][Pxl]] = function() {
                   return Uxl;
                 };
@@ -3400,7 +3397,7 @@
           pxl = Wxl[3] - V8[V8.length - 1] + Ql;
           break;
         case 287:
-          for (; 0 < Wxl[0][bl.mZ.call(null, 305, 25, 29)];) {
+          for (; 0 < Wxl[0][bl.mZ(305, 25, 29)];) {
             bjl[bl.HI(-207, 17, 91)](Ejl(Zjl(Wxl[0][0])));
           }
           var Ijl;
@@ -3454,9 +3451,9 @@
         case 34:
           V8.push(482);
           Ixl += 743;
-          var qjl = bl.YZ.call(null, 51, 94, 17);
+          var qjl = bl.YZ(51, 94, 17);
           for (; 0 < Wxl[0][bl.mZ(546, 21, 29)];) {
-            var wjl = Wxl[0][bl.QI.call(null, 76, 522)](0);
+            var wjl = Wxl[0][bl.QI(76, 522)](0);
             qjl += Wxl[1][wjl];
           }
           break;
@@ -3470,11 +3467,11 @@
             G: bl.FI(119, 26, 52, 67),
             J: bl.KI(87, false, 18, -151),
             X: bl.MI(339, 4, 24),
-            _: bl.dI.apply(null, [1, 593, false, 38]),
-            n: bl.CI.apply(null, [756, 4]),
-            p: bl.OI.call(null, 654, 95),
+            _: bl.dI(1, 593, false, 38),
+            n: bl.CI(756, 4),
+            p: bl.OI(654, 95),
             w: bl.qI(591, 12),
-            x: bl.sI.apply(null, [38, 297, 73, 4]),
+            x: bl.sI(38, 297, 73, 4),
           };
           var tjl;
           tjl = function(Sjl) {
@@ -3489,7 +3486,7 @@
           var Zjl = Zxl(1, []);
           var Ejl = Wxl[1] ?
             ll[bl.jZ(192, 75, 27)] :
-            ll[bl.cZ.call(null, 312, 84)];
+            ll[bl.cZ(312, 84)];
           break;
         case 24:
           Ixl = 99;
@@ -3724,14 +3721,14 @@
           var Mcl = Jjl[0];
           fjl = 82;
           Mcl -= 65536;
-          return ll.String.fromCharCode.apply(null, [55360, 56320]);
+          return ll.String.fromCharCode(55360, 56320);
         case 545:
           fjl -= 463;
           if (dcl < Jjl[0].length) {
             do {
               bl[Jjl[0][dcl]] = (function() {
                 return function(qcl, scl) {
-                  var Hcl = XAl.apply(null, [qcl, scl, 25]);
+                  var Hcl = XAl(qcl, scl, 25);
                   bl[Jjl[0][dcl]] = function() {
                     return Hcl;
                   };
@@ -3770,7 +3767,7 @@
           for (var ccl = Jjl[0].length - 1; ccl >= 0; --ccl) {
             bl[Jjl[0][ccl]] = (function() {
               return function(wcl, Lcl, rcl, tcl) {
-                var Scl = t3.call(null, 17, [wcl, Lcl, 8, tcl]);
+                var Scl = t3(17, [wcl, Lcl, 8, tcl]);
                 bl[Jjl[0][ccl]] = function() {
                   return Scl;
                 };
@@ -4046,9 +4043,9 @@
               var hUl = DUl.length > V8.length;
               V8 = DUl.slice();
               if (HUl) {
-                if (CUl[0][bl.mZ.call(null, 805, 33, 29)] > 0) {
+                if (CUl[0][bl.mZ(805, 33, 29)] > 0) {
                   CUl[0][0](
-                    ll[bl.gZ(106, 17, 15, 222)][bl.LZ.call(null, 9, 64, 86)][
+                    ll[bl.gZ(106, 17, 15, 222)][bl.LZ(9, 64, 86)][
                       bl.lI(31, 348, 67, 67)
                     ].call(CUl[0], 1),
                     AUl
@@ -4072,8 +4069,8 @@
           break;
         case 492:
           jUl[bl.LZ(-213, 64, 20)] = new(ll[bl.jl(5, 74, 81, 42, -202)])();
-          jUl[bl.LZ.call(null, -213, 64, 89)][bl.MW.apply(null, [62, 718])] =
-            bl.dW.apply(null, [75, 148, false, 86]);
+          jUl[bl.LZ(-213, 64, 89)][bl.MW(62, 718)] =
+            bl.dW(75, 148, false, 86);
           ll[bl.CW(0, 651, true, 87)][bl.xl(163, 4, 17, -173)] = function(
             cUl
           ) {
@@ -4083,14 +4080,14 @@
                 vUl,
                 wUl = bl.YZ(411, 1, 17),
                 LUl = ll[bl.OW(705, 32, 0)](cUl),
-                rUl = bl[bl.qW.apply(null, [34, 732])](),
+                rUl = bl[bl.qW(34, 732)](),
                 tUl = bl.sW(482, false, 5); LUl[bl.QI(76, 882)](0 | rUl) ||
-              ((tUl = bl.QW(66, 64, true, 965)), rUl % K3[2]); wUl += tUl[bl.QI.apply(null, [76, 882])](
+              ((tUl = bl.QW(66, 64, true, 965)), rUl % K3[2]); wUl += tUl[bl.QI(76, 882)](
                 K3[3] & (UUl >> (8 - (rUl % 1) * 8))
               )
             ) {
               if (
-                (vUl = LUl[bl.pZ.apply(null, [14, 1037])]((rUl += 0.75))) >
+                (vUl = LUl[bl.pZ(14, 1037)]((rUl += 0.75))) >
                 K3[4]
               )
                 throw new jUl(bl.HW(8, 76, 82, 976));
@@ -4111,23 +4108,23 @@
           dUl -= 49;
           V8.push(779);
           var AUl = ll[bl.gZ(106, 10, 29, 260)][
-            bl.LZ.call(null, 47, 64, false)
-          ][bl.lI.apply(null, [31, 386, 32, 8])].call(CUl, 1);
+            bl.LZ(47, 64, false)
+          ][bl.lI(31, 386, 32, 8)].call(CUl, 1);
           var mUl = 10;
           break;
         case 46:
-          RUl[bl.tI.call(null, 48, 244)] = CUl[0];
+          RUl[bl.tI(48, 244)] = CUl[0];
           RUl[bl.SI(96, -61)] = VUl;
           RUl[bl.XI(-72, 39, 58)] = function(pUl, nUl, zUl) {
             V8.push(312);
             if (!RUl[bl.RI(167, 40)](pUl, nUl)) {
               ll[bl.VI(92, 233, 23, 44)][
-                bl.pI.apply(null, [90, -123, 40, 9])
+                bl.pI(90, -123, 40, 9)
               ](
                 pUl,
                 nUl,
                 MUl(40, [
-                  bl.nI.apply(null, [-404, 48, 57]),
+                  bl.nI(-404, 48, 57),
                   true,
                   bl.zI(511, 57, 23),
                   zUl,
@@ -4139,7 +4136,7 @@
           RUl[bl.BI(-99, 65)] = function() {
             return MUl(50, arguments);
           };
-          RUl[bl.Al.apply(null, [72, -519, 1, 4])] = function(GUl, YUl) {
+          RUl[bl.Al(72, -519, 1, 4)] = function(GUl, YUl) {
             V8.push(722);
             if (1 & YUl) {
               GUl = RUl(GUl);
@@ -4154,7 +4151,7 @@
               4 & YUl &&
               bl.NI(64, 14, 43, 733) == typeof GUl &&
               GUl &&
-              GUl[bl.kI.apply(null, [215, 82])]
+              GUl[bl.kI(215, 82)]
             ) {
               var NUl;
               NUl = GUl;
@@ -4162,10 +4159,10 @@
               return NUl;
             }
             var fUl =
-              ll[bl.VI(92, 643, true, 99)][bl.fI.call(null, 73, 53, 73, 118)](
+              ll[bl.VI(92, 643, true, 99)][bl.fI(73, 53, 73, 118)](
                 null
               );
-            RUl[bl.BI.call(null, 468, 65)](fUl);
+            RUl[bl.BI(468, 65)](fUl);
             ll[bl.VI(92, 643, false, 25)][bl.pI(90, 287, 22, 59)](
               fUl,
               bl.JI(38, 85),
@@ -4188,11 +4185,11 @@
           RUl[bl.gI(141, 73, 50)] = function(l3l) {
             V8.push(277);
             var b3l =
-              l3l && l3l[bl.kI.call(null, -230, 82)] ?
+              l3l && l3l[bl.kI(-230, 82)] ?
               function Z3l() {
                 V8.push(550);
                 var I3l;
-                I3l = l3l[bl.JI.call(null, 38, -87)];
+                I3l = l3l[bl.JI(38, -87)];
                 V8.pop();
                 return I3l;
               } :
@@ -4220,7 +4217,7 @@
           break;
         case 616:
           for (
-            var d3l = ll[bl.VI(92, 791, 68, 37)](CUl[0]), C3l = 1; C3l < CUl[bl.mZ.call(null, 934, 56, 29)]; C3l++
+            var d3l = ll[bl.VI(92, 791, 68, 37)](CUl[0]), C3l = 1; C3l < CUl[bl.mZ(934, 56, 29)]; C3l++
           ) {
             if (null != CUl[C3l])
               for (var q3l in CUl[C3l])
@@ -4259,8 +4256,8 @@
             var j3l = bAl();
             if (h3l != Ol[CUl[1]]) {
               j3l = bAl(h3l);
-              j3l[bl.JZ.apply(null, [93, -548])] =
-                bl.UI.call(null, 52, -455) + CUl[1];
+              j3l[bl.JZ(93, -548)] =
+                bl.UI(52, -455) + CUl[1];
               MUl(43, arguments);
               V8.pop();
               return;
@@ -4293,7 +4290,7 @@
             var t3l = (VUl[L3l] = MUl(40, [
               bl.LI(-110, 39),
               L3l,
-              bl.rI.call(null, 62, 86, 26),
+              bl.rI(62, 86, 26),
               false,
               bl.wI(65, 375),
               {},
@@ -4321,7 +4318,7 @@
           return 0;
         case 754:
           var G3l =
-            ll[bl.gZ.call(null, 106, false, 88, -386)][bl.LZ(-599, 64, 99)][
+            ll[bl.gZ(106, false, 88, -386)][bl.LZ(-599, 64, 99)][
               bl.lI(31, -260, 66, true)
             ].call(CUl);
           G3l[bl.vI(266, 75, 2)](0, 2);
@@ -4339,21 +4336,21 @@
           V8.push(291);
           dUl -= 325;
           if (bl.vZ(11, 53, 24, -480) != typeof ll[bl.Dl(6, 8, 76, 32, -416)] &&
-            ll[bl.Dl.call(null, 6, 97, 76, 5, -416)][bl.GI(67, -30)]) {
-            ll[bl.VI.apply(null, [92, 212, 74, true])][
+            ll[bl.Dl(6, 97, 76, 5, -416)][bl.GI(67, -30)]) {
+            ll[bl.VI(92, 212, 74, true)][
               bl.pI(90, -144, 10, false)
             ](
               CUl[0],
-              ll[bl.Dl.apply(null, [6, 97, 76, 10, -416])][
-                bl.GI.call(null, 67, -30)
+              ll[bl.Dl(6, 97, 76, 10, -416)][
+                bl.GI(67, -30)
               ],
               MUl(40, [
-                bl.TZ.call(null, -267, 98, 46),
-                bl.YI.call(null, 1, 75),
+                bl.TZ(-267, 98, 46),
+                bl.YI(1, 75),
               ])
             );
           }
-          ll[bl.VI.call(null, 92, 212, true, 68)][bl.pI(90, -144, 21, 39)](
+          ll[bl.VI(92, 212, true, 68)][bl.pI(90, -144, 21, 39)](
             CUl[0],
             bl.kI(-216, 82),
             MUl(40, [bl.TZ(-267, 51, 46), true])
@@ -4366,8 +4363,8 @@
         case 213:
           V8.push(870);
           if (null == CUl[0])
-            throw new(ll[bl.IW.apply(null, [42, 503, 96, true])])(
-              bl.WW.apply(null, [30, 48, 89, 472])
+            throw new(ll[bl.IW(42, 503, 96, true)])(
+              bl.WW(30, 48, 89, 472)
             );
           dUl -= 168;
           break;
@@ -4387,7 +4384,7 @@
         case 427:
           V8.push(133);
           var m3l =
-            ll[bl.jI.apply(null, [63, 52, 38, -522])][bl.cI(56, 7, 68)]();
+            ll[bl.jI(63, 52, 38, -522)][bl.cI(56, 7, 68)]();
           dUl += 168;
           break;
         case 691:
@@ -4416,8 +4413,8 @@
   function CL(Zvl, Ivl) {
     V8.push(665);
     var Wvl = function() {};
-    Wvl[bl.LZ.apply(null, [-67, 64, 43])][bl.AI(23, 608)] = Zvl;
-    Wvl[bl.LZ.apply(null, [-67, 64, 70])][bl.mI(75, 61, 9, 111)] = function(
+    Wvl[bl.LZ(-67, 64, 43)][bl.AI(23, 608)] = Zvl;
+    Wvl[bl.LZ(-67, 64, 70)][bl.mI(75, 61, 9, 111)] = function(
       Fvl
     ) {
       V8.push(392);
@@ -4426,7 +4423,7 @@
       V8.pop();
       return Kvl;
     };
-    Wvl[bl.LZ.apply(null, [-67, 64, 18])][bl.xI(321, 32, 69)] = function() {
+    Wvl[bl.LZ(-67, 64, 18)][bl.xI(321, 32, 69)] = function() {
       V8.push(496);
       var Mvl;
       Mvl = this[bl.hI(21, -123, false, 88)] = Ivl(
