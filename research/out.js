@@ -15,7 +15,7 @@
   var dv = function() {
     return L7(60, arguments);
   };
-  var J3 = function Av(Pv, mv) {
+function Av(Pv, mv) {
     do {
       switch (Pv) {
         case 205:
@@ -700,7 +700,7 @@
       }
     } while (Pv != 117);
   };
-  var IL = function WL(FL, KL) {
+function WL(FL, KL) {
     var dL = CL(new Number(32), OL);
     dL.set(332);
     do {
@@ -839,7 +839,7 @@
       }
     }
   };
-  var Cv = function L7(r7, t7) {
+function L7(r7, t7) {
     do {
       switch (r7) {
         case 376:
@@ -1564,7 +1564,7 @@
       }
     } while (r7 != 110);
   };
-  var Lr = function rr(tr, Sr) {
+ function rr(tr, Sr) {
     do {
       switch (tr) {
         case 54:
@@ -1660,7 +1660,7 @@
       }
     } while (tr != 615);
   };
-  var zU = function m2(h2, x2) {
+  function m2(h2, x2) {
     do {
       switch (h2) {
         case 555:
@@ -3501,7 +3501,7 @@
     return pjl.charCodeAt(njl);
   };
   var PU;
-  var tv = function Njl(fjl, Jjl) {
+function Njl(fjl, Jjl) {
     while (fjl != 82) {
       switch (fjl) {
         case 94:
@@ -3868,7 +3868,7 @@
       }
     }
   };
-  var pr = function Ncl(fcl, Jcl) {
+function Ncl(fcl, Jcl) {
     for (fcl; fcl != 32; fcl) {
       switch (fcl) {
         case 472:
@@ -4019,7 +4019,7 @@
       }
     }
   };
-  var qv = function MUl(dUl, CUl) {
+function MUl(dUl, CUl) {
     var qUl = CL(new Number(50), OL);
     qUl.set(192);
     while (qUl + 192 != 529) {
