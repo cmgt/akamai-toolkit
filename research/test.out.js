@@ -1,13 +1,11 @@
-var F3 = function f2(S3, X3) {
-  return S3 >= X3;
-};
+var UL = function() {
+  console.log();
+}
 
-var F4 = function f2(S3, X3) {
-  return S3 >= X3;
-};
+var Jr = function() {
+  ;
+}
 
-f2(4, 5);
-F4(4, 5);
-f2(5, 6);
+var zL = UL(22, [XL, true, 0, nL[VL[RL][0]], rL + V8[V8.length - 1] - Ql]);
 
-F4 = f2;
+Jr(37, -449, 27, 52);

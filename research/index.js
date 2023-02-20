@@ -7,7 +7,7 @@ var beautify = require("js-beautify").js;
 
 let input = "test.js";
 //input = "akamai_sephora_2.js";
-input = "out.js";
+//input = "out.js";
 const output = "out.js";
 const source = fs.readFileSync(path.join(__dirname, input), {
   encoding: "utf8",
@@ -36,9 +36,10 @@ const res = putout(source, {
     //['replace-math-func', require('./rules/putout-plugin-replace-math-func')],
     //["replace-func-call", require("./rules/putout-plugin-replace-func-call")],
     //["array-unpack", require("./rules/putout-plugin-array-unpacker")],
-    ["putout-plugin-replace-proxy-func", require("./rules/putout-plugin-replace-proxy-func")],
+    //["putout-plugin-replace-proxy-func", require("./rules/putout-plugin-replace-proxy-func")],
     //["putout-plugin-bracket-to-dot", require("./rules/putout-plugin-bracket-to-dot")],
     //["putout-plugin-replace-func-variable-call", require("./rules/putout-plugin-replace-func-variable-call")],
+    ["putout-plugin-simplify-calls", require("./rules/putout-plugin-simplify-calls")],
 
     // "remove-unused-variables",
     // "remove-unused-expressions",

@@ -1,13 +1,14 @@
-var F3 = function f2(S3, X3) {
-    return S3 >= X3;
-  };
+var UL = function () {
+  console.log();
+}
 
-var F4 = function f2(S3, X3) {
-    return S3 >= X3;
-  };
-  
-  F3(4,5);
-  F4(4,5);
-  f2(5,6);
-  
-  F4 = f2;
+var Jr = function() {
+  ;
+}
+
+var zL = UL.apply(null, [
+  22,
+  [XL, true, 0, nL[VL[RL][0]], rL + V8[V8.length - 1] - Ql],
+]);
+
+Jr.call(null, 37, -449, 27, 52);
