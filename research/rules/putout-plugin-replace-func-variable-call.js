@@ -32,7 +32,7 @@ module.exports.traverse = ({ push }) => ({
     if (
       id.isIdentifier() &&
       funcExpression.isFunctionExpression() &&
-      !!funcExpression.id
+      !!funcExpression.get("id")
     ) {
       push({
         path,

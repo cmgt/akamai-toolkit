@@ -38,8 +38,8 @@ const res = putout(source, {
     //["array-unpack", require("./rules/putout-plugin-array-unpacker")],
     //["putout-plugin-replace-proxy-func", require("./rules/putout-plugin-replace-proxy-func")],
     //["putout-plugin-bracket-to-dot", require("./rules/putout-plugin-bracket-to-dot")],
-    //["putout-plugin-replace-func-variable-call", require("./rules/putout-plugin-replace-func-variable-call")],
-    ["putout-plugin-simplify-calls", require("./rules/putout-plugin-simplify-calls")],
+    ["putout-plugin-replace-func-variable-call", require("./rules/putout-plugin-replace-func-variable-call")],
+    //["putout-plugin-simplify-calls", require("./rules/putout-plugin-simplify-calls")],
 
     // "remove-unused-variables",
     // "remove-unused-expressions",
