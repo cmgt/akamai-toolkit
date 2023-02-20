@@ -1,13 +1,11 @@
 "use strict";
 
 const { operator } = require("putout");
-const { types } = require("putout");
-
-const { replaceWith, getBinding, remove } = operator;
+const { replaceWith, getBinding } = operator;
 
 module.exports.report = () => `replace func variable call`;
 
-module.exports.fix = ({ path, id, funcExpression }) => {  
+module.exports.fix = ({ path, id, funcExpression }) => {
   const binding = getBinding(path, id.node);
 
   if (!binding?.referenced || !binding.constant) return;
@@ -21,7 +19,7 @@ module.exports.fix = ({ path, id, funcExpression }) => {
         replaceWith(rPath, newId);
       }
     } catch (e) {
-      console.log({ e, rPath });
+      console.log({ e, id: id.node.name, path: path.node.name });
     }
   }
 };
@@ -31,7 +29,11 @@ module.exports.traverse = ({ push }) => ({
     const id = path.get("id");
     const funcExpression = path.get("init");
 
-    if (id.isIdentifier() && funcExpression.isFunctionExpression()) {
+    if (
+      id.isIdentifier() &&
+      funcExpression.isFunctionExpression() &&
+      !!funcExpression.id
+    ) {
       push({
         path,
         id,
