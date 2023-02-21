@@ -30,19 +30,19 @@ const res = putout(source, {
         //   "replace-const-assignment",
         //   require("./rules/putout-plugin-replace-const-assignment"),
         // ],
-        // [
-        //   "evaluate-expression",
-        //   require("./rules/putout-plugin-evaluate-expression"),
-        // ],
+        [
+            'evaluate-expression',
+            require('./rules/putout-plugin-evaluate-expression'),
+        ],
         //['replace-math-func', require('./rules/putout-plugin-replace-math-func')],
         //["replace-func-call", require("./rules/putout-plugin-replace-func-call")],
         //["array-unpack", require("./rules/putout-plugin-array-unpacker")],
         //["putout-plugin-replace-proxy-func", require("./rules/putout-plugin-replace-proxy-func")],
         //["putout-plugin-bracket-to-dot", require("./rules/putout-plugin-bracket-to-dot")],
-        [
-            'putout-plugin-replace-func-variable-call',
-            require('./rules/putout-plugin-replace-func-variable-call'),
-        ],
+        // [
+        //     'putout-plugin-replace-func-variable-call',
+        //     require('./rules/putout-plugin-replace-func-variable-call'),
+        // ],
         //["putout-plugin-simplify-calls", require("./rules/putout-plugin-simplify-calls")],
 
         // "remove-unused-variables",
@@ -57,7 +57,7 @@ const res = putout(source, {
 
 const code = beautify(res.code, { indent_size: 2, space_in_empty_paren: true });
 
-if (input !== 'test.js') {
+if (input === 'out.js') {
     fs.writeFileSync(
         path.join(__dirname, 'out', Date.now() + '.' + output),
         code,
@@ -68,7 +68,7 @@ if (input !== 'test.js') {
 
     fs.writeFileSync(path.join(__dirname, output), code, { encoding: 'utf8' });
 } else {
-    fs.writeFileSync(path.join(__dirname, 'test.' + output), code, {
+    fs.writeFileSync(path.join(__dirname, input), code, {
         encoding: 'utf8',
     });
 }
