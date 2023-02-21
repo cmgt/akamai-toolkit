@@ -1,23 +1,37 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Deobfuscate by putout",
-      "request": "launch",
-      "program": "${workspaceFolder}\\index.js",
-      "skipFiles": ["<node_internals>/**"],
-      "type": "node"
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Deobfuscate Sephora",
-      "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\deobfuscate_sephora.js",
-      "outFiles": ["${workspaceFolder}/**/*.js"]
-    }
-  ]
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Deobfuscate by putout",
+            "request": "launch",
+            "program": "${workspaceFolder}\\index.js",
+            "skipFiles": ["<node_internals>/**"],
+            "type": "node"
+        },
+        {
+            "name": "Find entrypoint",
+            "request": "launch",
+            "program": "${workspaceFolder}\\find_entrypoint.js",
+            "skipFiles": ["<node_internals>/**"],
+            "type": "node"
+        },
+        {
+            "name": "Decode strings",
+            "request": "launch",
+            "program": "${workspaceFolder}\\decode\\decode_str.js",
+            "skipFiles": ["<node_internals>/**"],
+            "type": "node"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Deobfuscate Sephora",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}\\deobfuscate_sephora.js",
+            "outFiles": ["${workspaceFolder}/**/*.js"]
+        }
+    ]
 }
