@@ -26,24 +26,27 @@ const res = putout(source, {
 
         //['convert-jsfuck', require('./rules/putout-plugin-convert-jsfuck.js')],
         //['convert-string', require('./rules/putout-plugin-convert-string.js')],
-        // [
-        //   "replace-const-assignment",
-        //   require("./rules/putout-plugin-replace-const-assignment"),
-        // ],
+        [
+            'replace-const-assignment',
+            require('./rules/putout-plugin-replace-const-assignment'),
+        ],
         [
             'evaluate-expression',
             require('./rules/putout-plugin-evaluate-expression'),
         ],
         //['replace-math-func', require('./rules/putout-plugin-replace-math-func')],
         //["replace-func-call", require("./rules/putout-plugin-replace-func-call")],
-        //["array-unpack", require("./rules/putout-plugin-array-unpacker")],
+        ['array-unpack', require('./rules/putout-plugin-array-unpacker')],
         //["putout-plugin-replace-proxy-func", require("./rules/putout-plugin-replace-proxy-func")],
         //["putout-plugin-bracket-to-dot", require("./rules/putout-plugin-bracket-to-dot")],
         // [
         //     'putout-plugin-replace-func-variable-call',
         //     require('./rules/putout-plugin-replace-func-variable-call'),
         // ],
-        //["putout-plugin-simplify-calls", require("./rules/putout-plugin-simplify-calls")],
+        [
+            'putout-plugin-simplify-calls',
+            require('./rules/putout-plugin-simplify-calls'),
+        ],
 
         // "remove-unused-variables",
         // "remove-unused-expressions",
